@@ -1,0 +1,35 @@
+.overlay-up-icon-div {
+  /*background-color: rgba(255, 0, 0, 0.4);*/
+  top: 30px;
+  position: relative;
+}
+
+.overlay-up-icon {
+  color: #2aabd2;
+  font-size: 48px;
+}
+
+.icon {
+  font-size: 32px;
+  margin-right: 25px;
+  vertical-align: middle;
+}
+
+footer {
+  background-color: #2d2d30;
+  color: #f5f5f5;
+  padding-bottom: 32px;
+  padding-top: 32px;
+  /*z-index: -1;*/
+  /*position: relative;*/
+}
+
+footer a, .copyrights {
+  color: #f5f5f5;
+  padding-bottom: 5px;
+}
+
+footer a:hover {
+  color: #777;
+  text-decoration: none;
+}
