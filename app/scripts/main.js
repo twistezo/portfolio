@@ -12,6 +12,3 @@ $(document).ready(function () {
   });
 });
 
-$('#navbar').scrollspy({
-  offset: 40
-});
