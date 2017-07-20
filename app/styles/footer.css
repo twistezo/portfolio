@@ -5,12 +5,14 @@
 }
 
 .overlay-up-icon {
-  color: #7f7f7f;
+  color: #2aabd2;
   font-size: 48px;
 }
 
 .overlay-up-icon:hover{
-  color: #2aabd2;
+  /* color: #95d6ea; */
+text-shadow: 0px 0px 15px black;
+/* box-shadow: -5px 5px 5px rgba(42, 171, 210, 0.2); */
 }
 
 .icon {
