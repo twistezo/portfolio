@@ -1,3 +1,5 @@
+(function () {
+
 $(document).ready(function () {
   $('#myNavbar a').on('click', function(event) {
     if (this.hash !== '') {
@@ -12,3 +14,4 @@ $(document).ready(function () {
   });
 });
 
+})();
