@@ -29,3 +29,8 @@ h3 {
 .img-circle-shadow {
   box-shadow: -5px 5px 5px rgba(42, 171, 210, 0.2);
 }
+
+.blinker {
+  animation: blinker 0.5s cubic-bezier(.5, 0, 1, 1) infinite alternate;  
+}
+@keyframes blinker { to { opacity: 0; } }
