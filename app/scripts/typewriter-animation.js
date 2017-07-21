@@ -64,7 +64,10 @@ class TextScramble {
 
 const phrases = [
   'Łukasz Kółko',
-  'Software Developer',
+  'Software developer',
+  'Web designer',
+  'Mobile apps creator',
+  'Graphics magician',
 ]
 
 const el = document.querySelector('.text')
