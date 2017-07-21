@@ -2,10 +2,10 @@
   background-color: #777;
   z-index: 9999;
   border: 0;
-  font-size: 12px !important;
   letter-spacing: 2px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400; 
+  font-size: 14px; 
 }
 
 /* navbar text color */
@@ -40,4 +40,16 @@
 
 .navbar-default .navbar-toggle:focus {
   background-color: #f5f5f5;
+}
+
+/* blink animation of '_' in logo */
+.blinker {
+  animation: blinker 0.5s cubic-bezier(.5, 0, 1, 1) infinite alternate;  
+  color: #f5f5f5;
+}
+@keyframes blinker { to { opacity: 0; } }
+
+.text {
+  color: orange;
+  font-size: 28px;
 }

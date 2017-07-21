@@ -1,16 +1,29 @@
 body {
   background: #ffffff; 
   font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
   font-weight: 400;
   color: #0f0f0f; /* font color */
 }
 
-#section1, #section2, #section3, #section4 {
+#section1 {
   background-color: #F7F7F7;
-  padding-top: 40px;
+  padding-top: 80px; 
 }
 
-/* style of gradient HR line */
+#section2, #section3, #section4 {
+  background-color: #F7F7F7;
+  padding-top: 60px;
+}
+
+/* styles of gradient HR line */
+hr.style-one {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(42, 171, 210, 0.75), rgba(0, 0, 0, 0));
+     margin-right: 150px; 
+     margin-left: 150px;
+}
 hr.style-two {
     border: 0;
     height: 2px;
@@ -18,19 +31,34 @@ hr.style-two {
     margin-right: 500px;
 }
 
-/* change font in H3 tag */
+/* change font in H3,H4 tags */
 h3 {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   letter-spacing: 1px !important;  
+  /* font-size: 3px; */
+}
+h4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px !important;  
+  /* font-size: 3px; */
 }
 
-/* add shadow to img-circle */
+/* add shadow to img-circle (my photo) */
 .img-circle-shadow {
   box-shadow: -5px 5px 5px rgba(42, 171, 210, 0.2);
 }
 
-.blinker {
-  animation: blinker 0.5s cubic-bezier(.5, 0, 1, 1) infinite alternate;  
+/* skills */
+.circles {
+  font-family: 'Roboto', sans-serif; 
+  letter-spacing: 2px;
 }
-@keyframes blinker { to { opacity: 0; } }
+.skills-font {
+    font-family: 'Roboto', sans-serif;  
+    letter-spacing: 1px;
+}
+
+
+
