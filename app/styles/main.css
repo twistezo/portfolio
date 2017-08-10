@@ -35,12 +35,12 @@ hr.style-two {
 h3 {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  letter-spacing: 1px !important;  
+  letter-spacing: 2px !important;  
   /* font-size: 3px; */
 }
 h4 {
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+   font-weight: 400; 
   letter-spacing: 1px !important;  
   /* font-size: 3px; */
 }
@@ -53,6 +53,7 @@ h4 {
 /* skills */
 .circles {
   font-family: 'Roboto', sans-serif; 
+  font-size: 16px;
   letter-spacing: 2px;
 }
 .skills-font {
@@ -60,5 +61,7 @@ h4 {
     letter-spacing: 1px;
 }
 
-
+.test {
+  background-color: pink !important;
+}
 
