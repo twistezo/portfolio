@@ -5,10 +5,11 @@
             foregroundBorderWidth: 10,
             backgroundBorderWidth: 5,
             foregroundColor: '#2aabd2',
-            fontColor: '#2aabd2',
+            fontColor: '#0f0f0f',
             textBelow: true,
             percent: 85,
             text: 'Technologie Java',
+            textColor: '#0f0f0f',
         });
             $("#circle-rust").circliful({
             animation: 1,
@@ -16,10 +17,11 @@
             foregroundBorderWidth: 10,
             backgroundBorderWidth: 5,
             foregroundColor: '#2aabd2',
-            fontColor: '#2aabd2',
+            fontColor: '#0f0f0f',
             textBelow: true,
             percent: 60,
             text: 'Technologie Rust',
+            textColor: '#0f0f0f',
         });
             $("#circle-web").circliful({
             animation: 1,
@@ -27,10 +29,11 @@
             foregroundBorderWidth: 10,
             backgroundBorderWidth: 5,
             foregroundColor: '#2aabd2',
-            fontColor: '#2aabd2',
+            fontColor: '#0f0f0f',
             textBelow: true,
-            percent: 80,
+            percent: 75,
             text: 'Web',
+            textColor: '#0f0f0f',
         });
            $("#circle-graphics").circliful({
             animation: 1,
@@ -38,10 +41,11 @@
             foregroundBorderWidth: 10,
             backgroundBorderWidth: 5,
             foregroundColor: '#2aabd2',
-            fontColor: '#2aabd2',
+            fontColor: '#0f0f0f',
             textBelow: true,
-            percent: 95,
+            percent: 90,
             text: 'Grafika',
+            textColor: '#0f0f0f',
         });
             $("#circle-mobile").circliful({
             animation: 1,
@@ -49,9 +53,10 @@
             foregroundBorderWidth: 10,
             backgroundBorderWidth: 5,
             foregroundColor: '#2aabd2',
-            fontColor: '#2aabd2',
+            fontColor: '#0f0f0f',
             textBelow: true,
             percent: 50,
             text: 'Android',
+            textColor: '#0f0f0f',
         });
 });
