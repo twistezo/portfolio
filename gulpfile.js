@@ -5,10 +5,12 @@ const browserSync = require('browser-sync').create();
 const del = require('del');
 const wiredep = require('wiredep').stream;
 const runSequence = require('run-sequence');
-var deploy      = require('gulp-gh-pages');
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
+
+var deploy = require('gulp-gh-pages');
+var gutil = require('gulp-util');
 
 let dev = true;
 
@@ -59,7 +61,7 @@ gulp.task('lint:test', () => {
 gulp.task('html', ['styles', 'scripts'], () => {
   return gulp.src('app/*.html')
     .pipe($.useref({searchPath: ['.tmp', 'app', '.']}))
-    .pipe($.if(/\.js$/, $.uglify({compress: {drop_console: true}})))
+    // .pipe($.if(/\.js$/, $.uglify({compress: {drop_console: true}})));
     .pipe($.if(/\.css$/, $.cssnano({safe: true, autoprefixer: false})))
     .pipe($.if(/\.html$/, $.htmlmin({
       collapseWhitespace: true,
@@ -171,3 +173,7 @@ gulp.task('default', () => {
     runSequence(['clean', 'wiredep'], 'build', resolve);
   });
 });
+
+// for gulp-util using
+// add after pipeline
+// .on('error', gutil.log);
