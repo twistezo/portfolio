@@ -1,5 +1,6 @@
+(function () {
     $( document ).ready(function() {
-        $("#circle-java").circliful({
+        $('#circle-java').circliful({
             animation: 1,
             animationStep: 5,
             foregroundBorderWidth: 10,
@@ -11,7 +12,7 @@
             text: 'Technologie Java',
             textColor: '#0f0f0f',
         });
-            $("#circle-rust").circliful({
+            $('#circle-rust').circliful({
             animation: 1,
             animationStep: 5,
             foregroundBorderWidth: 10,
@@ -23,7 +24,7 @@
             text: 'Technologie Rust',
             textColor: '#0f0f0f',
         });
-            $("#circle-web").circliful({
+            $('#circle-web').circliful({
             animation: 1,
             animationStep: 5,
             foregroundBorderWidth: 10,
@@ -35,7 +36,7 @@
             text: 'Web',
             textColor: '#0f0f0f',
         });
-           $("#circle-graphics").circliful({
+            $('#circle-graphics').circliful({
             animation: 1,
             animationStep: 5,
             foregroundBorderWidth: 10,
@@ -47,7 +48,7 @@
             text: 'Grafika',
             textColor: '#0f0f0f',
         });
-            $("#circle-mobile").circliful({
+            $('#circle-mobile').circliful({
             animation: 1,
             animationStep: 5,
             foregroundBorderWidth: 10,
@@ -59,4 +60,5 @@
             text: 'Android',
             textColor: '#0f0f0f',
         });
-});
+    });
+})();
