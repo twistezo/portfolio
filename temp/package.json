@@ -1,0 +1,48 @@
+{
+  "private": true,
+  "engines": {
+    "node": "latest "
+  },
+  "devDependencies": {
+    "browser-sync": "latest ",
+    "del": "latest ",
+    "gulp": "latest ",
+    "gulp-autoprefixer": "latest ",
+    "gulp-babel": "latest ",
+    "gulp-cache": "latest ",
+    "gulp-cssnano": "latest ",
+    "gulp-eslint": "latest ",
+    "gulp-htmlmin": "latest ",
+    "gulp-if": "latest ",
+    "gulp-imagemin": "latest ",
+    "gulp-load-plugins": "latest ",
+    "gulp-plumber": "latest ",
+    "gulp-size": "latest ",
+    "gulp-sourcemaps": "latest ",
+    "gulp-uglify": "latest ",
+    "gulp-useref": "latest ",
+    "gulp-gh-pages": "latest ",
+    "gulp-util": "latest",
+    "main-bower-files": "latest ",
+    "run-sequence": "latest ",
+    "wiredep": "latest ",
+    "babel-core": "latest"
+  },
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "node": true,
+      "browser": true
+    },
+    "rules": {
+      "quotes": [
+        2,
+        "single"
+      ]
+    }
+  },
+  "dependencies": {
+    "browser-sync": "latest ",
+    "gulp": "latest "
+  }
+}

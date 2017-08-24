@@ -9,23 +9,6 @@
 
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:300,400,500" rel="stylesheet">
-  <!-- Place favicon.ico in the root directory -->
-
-  <!-- build:css styles/vendor.css -->
-  <!-- bower:css -->
-  <link rel="stylesheet" href="/bower_components/Ionicons/css/ionicons.css" />
-  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
-  <link rel="stylesheet" href="/bower_components/circliful/css/jquery.circliful.css" />
-  <link rel="stylesheet" href="/bower_components/font-awesome-min/css/font-awesome.min.css" />
-  <!-- endbower -->
-  <!-- endbuild -->
-
-  <!-- build:css styles/main.css -->
-  <link rel="stylesheet" href="styles/main.css">
-  <link rel="stylesheet" href="styles/navbar.css">
-  <link rel="stylesheet" href="styles/footer.css">
-  <link rel="stylesheet" href="styles/animations.css">
-  <!-- endbuild -->
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar">
@@ -70,16 +53,16 @@
 
       <div class="row">
         <div class="col-md-2" style="padding-left: 25px;">
-          <img src="images/identicon.png" class="img-circle img-circle-shadow" alt="Cinque Terre" width="150" height="150">
+          <img src="assets/images/identicon.png" class="img-circle img-circle-shadow" alt="Cinque Terre" width="150" height="150">
         </div>
         <div class="col-md-10" style="padding-left: 50px;">
 
           <h4>Z pasji i zamiłowania twórca aplikacji desktopowych, webowych oraz mobilnych.</h4>
           <p style="padding-top: 15px;">Sprawdź mój zawodowy profil na
-            <a href="http://www.linkedin.com/in/lukaszkolko/" target="_blank">LinkedIn <i class="icon ion-social-linkedin"></i></a>
+            <a href="http://www.linkedin.com/in/lukaszkolko/" target="_blank">LinkedIn <i class="icon ion-logo-linkedin"></i></a>
           </p>
           <p>Sprawdź również moje portfolio projektów na
-            <a href="http://github.com/twistezo" target="_blank">github <i class="icon ion-social-github"></i></a>
+            <a href="http://github.com/twistezo" target="_blank">github <i class="icon ion-logo-github"></i></a>
           </p>
 
         </div>
@@ -169,7 +152,7 @@
 
     <div class="overlay-up-icon-div text-center">
       <a href="#myPage" data-toggle="tooltip" title="Do góry">
-        <i class="ion-android-arrow-dropup-circle overlay-up-icon"></i>
+        <i class="ion-ios-arrow-dropup-circle overlay-up-icon"></i>
       </a>
     </div>
 
@@ -180,47 +163,13 @@
       &copy; twistezo, 2017
     </div>
     <div>
-      <a href="mailto:kolkolukasz@gmail.com">mail <i class="icon ion-android-mail"></i></a>
-      <a href="http://www.linkedin.com/in/lukaszkolko/" target="_blank">linkedin <i class="icon ion-social-linkedin"></i></a>
-      <a href="http://github.com/twistezo" target="_blank">github <i class="icon ion-social-github"></i></a>
-      <a href="http://github.com/twistezo/web-portfolio">source code <i class="icon ion-code"></i></a>
+      <a href="mailto:kolkolukasz@gmail.com">mail <i class="icon ion-md-mail"></i></a>
+      <a href="http://www.linkedin.com/in/lukaszkolko/" target="_blank">linkedin <i class="icon ion-logo-linkedin"></i></a>
+      <a href="http://github.com/twistezo" target="_blank">github <i class="icon ion-logo-github"></i></a>
+      <a href="http://github.com/twistezo/web-portfolio">source code <i class="icon ion-md-code"></i></a>
     </div>
   </footer>
 
-  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-  <script>
-    (function(b, o, i, l, e, r) {
-      b.GoogleAnalyticsObject = l;
-      b[l] || (b[l] =
-        function() {
-          (b[l].q = b[l].q || []).push(arguments)
-        });
-      b[l].l = +new Date;
-      e = o.createElement(i);
-      r = o.getElementsByTagName(i)[0];
-      e.src = 'https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e, r)
-    }(window, document, 'script', 'ga'));
-    ga('create', 'UA-XXXXX-X');
-    ga('send', 'pageview');
-  </script>
-
-  <!-- build:js scripts/vendor.js -->
-  <!-- bower:js -->
-  <script src="/bower_components/jquery/dist/jquery.js"></script>
-  <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
-  <script src="/bower_components/requirejs/require.js"></script>
-  <script src="/bower_components/circliful/js/jquery.circliful.min.js"></script>
-  <!-- endbower -->
-  <!-- endbuild -->
-
-  <!-- build:js scripts/main.js -->
-  <script src="scripts/main.js"></script>
-  <script src="scripts/typewriter-animation.js"></script>
-  <script src="scripts/skills_charts.js"></script>
-  <!-- endbuild -->
 </body>
 
 </html>
-
-rm -rf node_modules && npm cache clean && npm install
