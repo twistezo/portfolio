@@ -17,6 +17,14 @@
 
 https://github.com/angular/angular-cli/wiki/stories-github-pages
 
+### deploy on firebase host
+```
+firebase login
+firebase init
+ng build --prod
+firebase deploy
+```
+
 ### angular clean project files
 ```
 ../
