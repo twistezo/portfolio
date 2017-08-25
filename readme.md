@@ -12,6 +12,11 @@
 ### update package.json packages
 `npm install --save`
 
+### deploy ng project to github page
+`ng build --prod --output-path docs --base-href web-portfolio`
+
+https://github.com/angular/angular-cli/wiki/stories-github-pages
+
 ### angular clean project files
 ```
 ../
