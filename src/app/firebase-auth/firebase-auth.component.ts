@@ -3,10 +3,9 @@ import { AuthService } from './auth.service';
 
 @Component({
     selector: 'app-firebase-auth',
-    templateUrl: './firebaseAuth.component.html',
-    // styleUrls: ['./app.component.css']
+    templateUrl: './firebase-auth.component.html',
  })
- 
+
 export class FirebaseAuthComponent {
   email: string;
   password: string;
