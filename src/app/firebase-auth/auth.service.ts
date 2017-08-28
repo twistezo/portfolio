@@ -13,6 +13,10 @@ export class AuthService {
     this.user = firebaseAuth.authState;
   }
 
+  getUserName(): string {
+    return this.firebaseAuth.auth.currentUser.email;
+  }
+
   signup(email: string, password: string) {
     this.firebaseAuth
       .auth
@@ -21,7 +25,7 @@ export class AuthService {
         console.log('Success!', value);
       })
       .catch(err => {
-        console.log('Something went wrong:',err.message);
+        console.log('Something went wrong:', err.message);
       });
   }
 
@@ -33,7 +37,7 @@ export class AuthService {
         console.log('Nice, it worked!');
       })
       .catch(err => {
-        console.log('Something went wrong:',err.message);
+        console.log('Something went wrong:', err.message);
       });
   }
 

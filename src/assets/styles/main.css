@@ -27,6 +27,10 @@ a:hover {
   padding-bottom: 60px;
 }
 
+.blog-post {
+  padding-bottom: 20px;
+}
+
 #section1 {
   background-color: #F7F7F7;
   padding-top: 80px; 

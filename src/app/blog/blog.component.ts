@@ -1,9 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 
+import { AuthService } from '../firebase-auth/auth.service';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 import { BlogNote } from './blog-note';
 import { Todo } from './todo';
+
+const lorem: string = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis egestas diam non neque hendrerit, at commodo felis suscipit. Nunc a velit rhoncus, imperdiet quam tempor, efficitur libero. Duis sit amet ornare mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis egestas diam non neque hendrerit, at commodo felis suscipit. Nunc a velit rhoncus, imperdiet quam tempor, efficitur libero. Duis sit amet ornare mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis egestas diam non neque hendrerit, at commodo felis suscipit. Nunc a velit rhoncus, imperdiet quam tempor, efficitur libero. Duis sit amet ornare mi.';
 
 @Component({
     selector: 'app-blog',
@@ -13,7 +16,7 @@ import { Todo } from './todo';
  export class BlogComponent implements OnInit {
     notes$: FirebaseListObservable<any[]>;
 
-    constructor(private af: AngularFireDatabase) { }
+    constructor(private af: AngularFireDatabase, private authService: AuthService) { }
 
     ngOnInit() {
         this.notes$ = this.af.list('notes', {
@@ -21,18 +24,16 @@ import { Todo } from './todo';
                 limitToFirst: 100
             }
             });
-        this.addNote(1, 'test', 'Lukasz', 'body');
-        this.addTodo('blalbabl');
+        // this.addNote(1, 'Lukasz', 'Some title', lorem);
     }
 
-    addNote(id: number,
-        author: string,
+    addNote(
         title: string,
         body: string,
     ): void {
         this.notes$.push({
-            id: id,
-            author: author,
+            id: 0,
+            author: this.authService.getUserName(),
             date: new Date().toLocaleDateString(),
             title: title,
             body: body,
