@@ -1,9 +1,34 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   background: #ffffff; 
   font-family: 'Open Sans', sans-serif;
-  /* font-size: 15px; */
+  font-size: 12px;
   font-weight: 400;
   color: #0f0f0f; /* font color */
+  margin-bottom: 130px;
+}
+
+a {
+  color: #006A8C;
+}
+
+a:hover {
+  color: #2aabd2;
+  text-decoration: none;
+}
+
+#blog {
+  background-color: #F7F7F7;
+  padding-top: 80px; 
+  padding-bottom: 60px;
+}
+
+.blog-post {
+  padding-bottom: 20px;
 }
 
 #section1 {
@@ -14,6 +39,10 @@ body {
 #section2, #section3, #section4 {
   background-color: #F7F7F7;
   padding-top: 60px;
+}
+
+#section4 {
+  padding-bottom: 60px;
 }
 
 /* styles of gradient HR line */
@@ -40,7 +69,7 @@ h3 {
 }
 h4 {
   font-family: 'Roboto', sans-serif;
-   font-weight: 400; 
+  font-weight: 400; 
   letter-spacing: 1px !important;  
   /* font-size: 3px; */
 }

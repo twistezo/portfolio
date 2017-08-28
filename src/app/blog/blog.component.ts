@@ -14,9 +14,12 @@ const lorem: string = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
  })
 
  export class BlogComponent implements OnInit {
+    title: string;
+    body: string;
+
     notes$: FirebaseListObservable<any[]>;
 
-    constructor(private af: AngularFireDatabase, private authService: AuthService) { }
+    constructor(private af: AngularFireDatabase, public authService: AuthService) { }
 
     ngOnInit() {
         this.notes$ = this.af.list('notes', {
