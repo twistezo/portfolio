@@ -19,7 +19,6 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
         "../node_modules/ionicons/dist/css/ionicons.min.css",
         "assets/styles/jquery.circliful.css",
         "assets/styles/animations.css",
@@ -31,14 +30,10 @@
       "scripts": [
         "../node_modules/jquery/dist/jquery.min.js",
         "../node_modules/requirejs/require.js",
-        "../node_modules/bootstrap/dist/js/bootstrap.js",
-        "../node_modules/angular-scroll/angular-scroll.js",
         "assets/scripts/jquery.circliful.min.js",
         "assets/scripts/main.js",
-        "assets/scripts/typewriter-animation.js",
         "assets/scripts/skills_charts.js",
-        "assets/scripts/ng-scroll.js",
-        "assets/scripts/firebase.js"
+        "assets/scripts/typewriter-animation.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

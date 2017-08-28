@@ -1,0 +1,58 @@
+<!-- Fixed Spy navbar -->
+<nav id="nav-spy" class="navbar navbar-expand-md fixed-top mr-auto">
+	<div class="container">
+		<a class="navbar-brand" href="#" routerLink="main">
+			<span class="blinker">_</span>
+			<span class="text"></span>
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarCollapse">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#section1">O MNIE</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#section2">UMIEJĘTNOŚCI</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#section3">PROJEKTY</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#section4">KONTAKT</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" routerLink="main" routerLinkActive="active">GŁÓWNA</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" routerLink="blog" routerLinkActive="active">BLOG</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<!-- Main Container -->
+<div class="container" >
+	<router-outlet></router-outlet>
+</div>
+
+<!-- Footer -->
+<footer class="text-center">
+	<!-- 'To the top' button -->
+	<div class="overlay-up-icon-div">
+		<a href="" id="back-to-top" data-toggle="tooltip" title="Do góry">
+			<i class="ion-ios-arrow-dropup-circle overlay-up-icon"></i>
+		</a>
+	</div>
+	<div class="container copyrights">
+		&copy; twistezo, 2017
+	</div>
+	<div>
+		<a href="mailto:kolkolukasz@gmail.com">mail <i class="icon ion-md-mail"></i></a>
+		<a href="http://www.linkedin.com/in/lukaszkolko/" target="_blank">linkedin <i class="icon ion-logo-linkedin"></i></a>
+		<a href="http://github.com/twistezo" target="_blank">github <i class="icon ion-logo-github"></i></a>
+		<a href="http://github.com/twistezo/web-portfolio">source code <i class="icon ion-md-code"></i></a>
+	</div>
+</footer>

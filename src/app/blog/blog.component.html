@@ -1,20 +1,30 @@
-<h1>Hello World</h1>
-<p>
-    Hey there!
-</p>
-<h1>Hello World</h1>
-<p>
-    Hey there!
-</p>
-<h1>Hello World</h1>
-<p>
-    Hey there!
-</p>
-<h1>Hello World</h1>
-<p>
-    Hey there!
-</p>
-<h1>Hello World</h1>
-<p>
-    Hey there!
-</p>
+<div id="blog" class="container-fluid">
+	<h3>Firebase status:</h3>
+	<hr class="style-two">
+
+	<!-- Firebase Login -->
+	<app-firebase-auth></app-firebase-auth>
+
+	<hr class="style-two">
+	<h3>Posty:</h3>
+	<ul>
+		<li *ngFor="let note of (notes$ | async)" [class.done]="note.done">
+			{{ note.id }}, {{ note.author }}, {{ note.date }}, {{ note.title }}, {{ note.body }}
+			{{ note.content }}
+		</li>
+	</ul>	
+	
+	<hr class="style-two">
+		<div class="row">
+		<div class="col-sm-4">
+			<input type="text" [(ngModel)]="todo" class="form-control" placeholder="">
+		</div>
+		<div class="col-sm-3">
+			<button (click)="addTodo(todo)" class="btn btn-primary">Dodaj</button>
+		</div>
+	</div>
+	<br>
+	<p>Twoja notka: {{todo}}</p>
+
+</div>
+

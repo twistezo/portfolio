@@ -1,111 +1,95 @@
-<!-- Main Container -->
-<div class="container main-container">
-    <!-- Container (General Info Section) -->
-    <div id="section1" class="container-fluid">
-      <section id="section-1">
-        <h3>O mnie</h3>
-        <hr class="style-two">
-        <div class="row">
-          <div class="col-md-2" style="padding-left: 25px;">
-            <img src="assets/images/identicon.png" class="img-circle img-circle-shadow" alt="Cinque Terre" width="150" height="150">
-          </div>
-          <div class="col-md-10" style="padding-left: 50px;">
-            <h4>Z pasji i zamiłowania twórca aplikacji desktopowych, webowych oraz mobilnych.</h4>
-            <p style="padding-top: 15px;">Sprawdź mój zawodowy profil na
-              <a href="http://www.linkedin.com/in/lukaszkolko/" target="_blank">LinkedIn <i class="icon ion-logo-linkedin"></i></a>
-            </p>
-            <p>Sprawdź również moje portfolio projektów na
-              <a href="http://github.com/twistezo" target="_blank">github <i class="icon ion-logo-github"></i></a>
-            </p>
-          </div>
-        </div>
-      </section>
+<div id="section1" class="container-fluid">
+    <h3>O mnie</h3>
+    <hr class="style-two">
+    <div class="row">
+      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" style="padding-left: 25px;">
+        <img src="assets/images/identicon.png" class="rounded-circle img-circle-shadow" alt="Cinque Terre" width="150" height="150">
+      </div>
+      <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10" style="padding-left: 50px;">
+        <h4>Z pasji i zamiłowania twórca aplikacji desktopowych, webowych oraz mobilnych.</h4>
+        <p style="padding-top: 15px;">Sprawdź mój zawodowy profil na
+          <a href="http://www.linkedin.com/in/lukaszkolko/" target="_blank">LinkedIn <i class="icon ion-logo-linkedin"></i></a>
+        </p>
+        <p>Sprawdź również moje portfolio projektów na
+          <a href="http://github.com/twistezo" target="_blank">github <i class="icon ion-logo-github"></i></a>
+        </p>
+      </div>
     </div>
+  </div>
 
-    <div class="container-fluid">
-        <app-firebase-auth></app-firebase-auth>
+  <!-- Container (Skills Section) -->
+  <div id="section2" class="container-fluid">
+    <h3>Umiejętności</h3>
+    <hr class="style-two ">
+    <div class="row circles">
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 mx-auto">
+        <div id="circle-java"></div>
+      </div>
+      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 mx-auto">
+        <div id="circle-rust"></div>
+      </div>
+      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 mx-auto">
+        <div id="circle-web"></div>
+      </div>
+      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 mx-auto">
+        <div id="circle-mobile"></div>
+      </div>
+      <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 mx-auto">
+        <div id="circle-graphics"></div>
+      </div>
     </div>
+    <br>
+    <hr class="style-one">
+    <div class="row skills-font" style="text-align: center">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
+        <h4>Back-end</h4>
+        <p>Rust, Java, Spring, Hibernate, Thymeleaf, libGDX</p>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <h4>Testy</h4>
+        <p>JUnit, Mockito, Selenium</p>
+      </div>
+    </div>
+    <div class="row skills-font" style="text-align: center">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <h4>Front-end</h4>
+        <p>HTML, CSS, Bootstrap, JavaScript, Angular</p>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <h4>OS</h4>
+        <p>Windows, Linux, Android</p>
+      </div>
+    </div>
+    <div class="row skills-font" style="text-align: center">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <h4>Narzędzia</h4>
+        <p>SQL, Maven, Gradle, Git, JIRA, npm, Yeoman, Bower</p>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <h4>Grafika</h4>
+        <p>Adobe Photoshop, Adobe Premiere</p>
+      </div>
+    </div>
+  </div>
 
-    <!-- Container (Skills Section) -->
-    <div id="section2" class="container-fluid">
-      <section name="section-2">
-        <h3>Umiejętności</h3>
-        <hr class="style-two">
-        <div class="row circles">
-          <div class="col-sm-2 col-md-offset-1">
-            <div id="circle-java"></div>
-          </div>
-          <div class="col-sm-2">
-            <div id="circle-rust"></div>
-          </div>
-          <div class="col-sm-2">
-            <div id="circle-web"></div>
-          </div>
-          <div class="col-sm-2">
-            <div id="circle-mobile"></div>
-          </div>
-          <div class="col-sm-2">
-            <div id="circle-graphics"></div>
-          </div>
-        </div>
-        <br>
-        <hr class="style-one">
-        <div class="row skills-font" style="text-align: center">
-          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
-            <h4>Back-end</h4>
-            <p>Rust, Java, Spring, Hibernate, Thymeleaf, libGDX</p>
-          </div>
-          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-            <h4>Testy</h4>
-            <p>JUnit, Mockito, Selenium</p>
-          </div>
-        </div>
-        <div class="row skills-font" style="text-align: center">
-          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-            <h4>Front-end</h4>
-            <p>HTML, CSS, Bootstrap, JavaScript</p>
-          </div>
-          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-            <h4>OS</h4>
-            <p>Windows, Linux, Android</p>
-          </div>
-        </div>
-        <div class="row skills-font" style="text-align: center">
-          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-            <h4>Narzędzia</h4>
-            <p>SQL, Maven, Gradle, Git, JIRA, npm, Yeoman, Bower</p>
-          </div>
-          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-            <h4>Grafika</h4>
-            <p>Adobe Photoshop, Adobe Premiere</p>
-          </div>
-        </div>
-      </section>
-    </div>
+  <!-- Container (Test Section) -->
+  <div id="section3" class="container-fluid">
+    <h3>Projekty</h3>
+    <hr class="style-two"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis egestas diam non neque hendrerit, at commodo felis suscipit. Nunc a velit rhoncus, imperdiet quam tempor, efficitur libero. Duis sit amet ornare mi. Nulla viverra ipsum non dolor tempus,
+    sodales feugiat tellus ultricies. Mauris aliquam ligula sit amet dapibus ullamcorper. Phasellus commodo scelerisque ornare. Aenean vestibulum fermentum nisi, nec interdum arcu fermentum non. Nullam sit amet ante porttitor, facilisis velit nec, tincidunt
+    lectus. Maecenas rutrum, nulla vehicula iaculis porta, urna nisl luctus odio, eget porttitor sem dui ac sapien. Curabitur venenatis felis ex, ac posuere dolor interdum vitae. Curabitur dapibus convallis ex quis semper. Lorem ipsum dolor sit amet,
+    consectetur adipiscing elit. Duis egestas diam non neque hendrerit, at commodo felis suscipit. Nunc a velit rhoncus, imperdiet quam tempor, efficitur libero. Duis sit amet ornare mi. Nulla viverra ipsum non dolor tempus, sodales feugiat tellus ultricies.
+    Mauris aliquam ligula sit amet dapibus ullamcorper. Phasellus commodo scelerisque ornare. Aenean vestibulum fermentum nisi, nec interdum arcu fermentum non. Nullam sit amet ante porttitor, facilisis velit nec, tincidunt lectus. Maecenas rutrum,
+    nulla vehicula iaculis porta, urna nisl luctus odio, eget porttitor sem dui ac sapien. Curabitur venenatis felis ex, ac posuere dolor interdum vitae. Curabitur dapibus convallis ex quis semper.
+  </div>
 
-    <!-- Container (Test Section) -->
-    <div id="section3" class="container-fluid">
-      <section id="section-3">
-        <h3>Projekty</h3>
-        <hr class="style-two"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis egestas diam non neque hendrerit, at commodo felis suscipit. Nunc a velit rhoncus, imperdiet quam tempor, efficitur libero. Duis sit amet ornare mi. Nulla viverra ipsum non dolor tempus,
-        sodales feugiat tellus ultricies. Mauris aliquam ligula sit amet dapibus ullamcorper. Phasellus commodo scelerisque ornare. Aenean vestibulum fermentum nisi, nec interdum arcu fermentum non. Nullam sit amet ante porttitor, facilisis velit nec, tincidunt
-        lectus. Maecenas rutrum, nulla vehicula iaculis porta, urna nisl luctus odio, eget porttitor sem dui ac sapien. Curabitur venenatis felis ex, ac posuere dolor interdum vitae. Curabitur dapibus convallis ex quis semper. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Duis egestas diam non neque hendrerit, at commodo felis suscipit. Nunc a velit rhoncus, imperdiet quam tempor, efficitur libero. Duis sit amet ornare mi. Nulla viverra ipsum non dolor tempus, sodales feugiat tellus ultricies.
-        Mauris aliquam ligula sit amet dapibus ullamcorper. Phasellus commodo scelerisque ornare. Aenean vestibulum fermentum nisi, nec interdum arcu fermentum non. Nullam sit amet ante porttitor, facilisis velit nec, tincidunt lectus. Maecenas rutrum,
-        nulla vehicula iaculis porta, urna nisl luctus odio, eget porttitor sem dui ac sapien. Curabitur venenatis felis ex, ac posuere dolor interdum vitae. Curabitur dapibus convallis ex quis semper.
-      </section>
-    </div>
-
-    <!-- Container (Test Section) -->
-    <div id="section4" class="container-fluid">
-      <section id="section-4">
-        <h3>Kontakt</h3>
-        <hr class="style-two"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis egestas diam non neque hendrerit, at commodo felis suscipit. Nunc a velit rhoncus, imperdiet quam tempor, efficitur libero. Duis sit amet ornare mi. Nulla viverra ipsum non dolor tempus,
-        sodales feugiat tellus ultricies. Mauris aliquam ligula sit amet dapibus ullamcorper. Phasellus commodo scelerisque ornare. Aenean vestibulum fermentum nisi, nec interdum arcu fermentum non. Nullam sit amet ante porttitor, facilisis velit nec, tincidunt
-        lectus. Maecenas rutrum, nulla vehicula iaculis porta, urna nisl luctus odio, eget porttitor sem dui ac sapien. Curabitur venenatis felis ex, ac posuere dolor interdum vitae. Curabitur dapibus convallis ex quis semper. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Duis egestas diam non neque hendrerit, at commodo felis suscipit. Nunc a velit rhoncus, imperdiet quam tempor, efficitur libero. Duis sit amet ornare mi. Nulla viverra ipsum non dolor tempus, sodales feugiat tellus ultricies.
-        Mauris aliquam ligula sit amet dapibus ullamcorper. Phasellus commodo scelerisque ornare. Aenean vestibulum fermentum nisi, nec interdum arcu fermentum non. Nullam sit amet ante porttitor, facilisis velit nec, tincidunt lectus. Maecenas rutrum,
-        nulla vehicula iaculis porta, urna nisl luctus odio, eget porttitor sem dui ac sapien. Curabitur venenatis felis ex, ac posuere dolor interdum vitae. Curabitur dapibus convallis ex quis semper.
-      </section>
-    </div>
+  <!-- Container (Test Section) -->
+  <div id="section4" class="container-fluid">
+    <h3>Kontakt</h3>
+    <hr class="style-two"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis egestas diam non neque hendrerit, at commodo felis suscipit. Nunc a velit rhoncus, imperdiet quam tempor, efficitur libero. Duis sit amet ornare mi. Nulla viverra ipsum non dolor tempus,
+    sodales feugiat tellus ultricies. Mauris aliquam ligula sit amet dapibus ullamcorper. Phasellus commodo scelerisque ornare. Aenean vestibulum fermentum nisi, nec interdum arcu fermentum non. Nullam sit amet ante porttitor, facilisis velit nec, tincidunt
+    lectus. Maecenas rutrum, nulla vehicula iaculis porta, urna nisl luctus odio, eget porttitor sem dui ac sapien. Curabitur venenatis felis ex, ac posuere dolor interdum vitae. Curabitur dapibus convallis ex quis semper. Lorem ipsum dolor sit amet,
+    consectetur adipiscing elit. Duis egestas diam non neque hendrerit, at commodo felis suscipit. Nunc a velit rhoncus, imperdiet quam tempor, efficitur libero. Duis sit amet ornare mi. Nulla viverra ipsum non dolor tempus, sodales feugiat tellus ultricies.
+    Mauris aliquam ligula sit amet dapibus ullamcorper. Phasellus commodo scelerisque ornare. Aenean vestibulum fermentum nisi, nec interdum arcu fermentum non. Nullam sit amet ante porttitor, facilisis velit nec, tincidunt lectus. Maecenas rutrum,
+    nulla vehicula iaculis porta, urna nisl luctus odio, eget porttitor sem dui ac sapien. Curabitur venenatis felis ex, ac posuere dolor interdum vitae. Curabitur dapibus convallis ex quis semper.
 </div>
