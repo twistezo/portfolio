@@ -16,6 +16,7 @@ import { FirebaseAuthComponent } from '../firebase-auth/firebase-auth.component'
 import { TemplateComponent } from '../template/template.component';
 import { MainComponent } from '../main/main.component';
 import { BlogComponent } from '../blog/blog.component';
+import { ProjectsComponent } from '../projects/projects.component';
 
 const appRoutes: Routes = [
   { path: 'main', component: MainComponent },
@@ -36,7 +37,8 @@ const appRoutes: Routes = [
     FirebaseAuthComponent,
     MainComponent,
     BlogComponent,
-    TemplateComponent
+    TemplateComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,

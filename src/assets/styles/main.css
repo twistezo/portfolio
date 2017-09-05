@@ -85,6 +85,7 @@ h4 {
   font-size: 16px;
   letter-spacing: 2px;
 }
+
 .skills-font {
     font-family: 'Roboto', sans-serif;  
     letter-spacing: 1px;
@@ -94,3 +95,9 @@ h4 {
   background-color: pink !important;
 }
 
+.rounded {
+  object-fit: contain;
+  background-color: white;
+  width: 200px;
+  height: 250px;
+}
