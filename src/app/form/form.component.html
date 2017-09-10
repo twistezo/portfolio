@@ -1,0 +1,29 @@
+<div class="container-fluid col-md-8" *ngIf="!email; else forminfo">
+	<form [formGroup]="rForm" (ngSubmit)="addPost(rForm.value)">
+		<div class="form-row">
+			<div class="form-group col-md-6">
+				<input type="email" class="form-control" id="email" placeholder="Email" formControlName="email">
+				<div class="alert alert-danger" *ngIf="!rForm.controls['email'].valid && rForm.controls['email'].touched">Pole nie może być puste. Wymagany poprawny format: ja@gmail.com</div>
+			</div>
+			<div class="form-group col-md-6">
+				<input type="text" class="form-control" id="phone" placeholder="Nr telefonu" formControlName="phone">
+				<div class="alert alert-danger" *ngIf="!rForm.controls['phone'].valid && rForm.controls['phone'].touched">Pole nie może być puste. Wymagana ilość cyfr: 7</div>
+			</div>
+		</div>
+		<div class="form-group">
+			<textarea class="form-control" id="text" rows="4" placeholder="Treść wiadomości" formControlName="text"></textarea>
+			<div class="alert alert-danger" *ngIf="!rForm.controls['text'].valid && rForm.controls['text'].touched">Pole nie może być puste. Wymagana ilość znaków pom. 10-500</div>
+		</div>
+		<button type="submit" class="btn btn-primary" [disabled]="!rForm.valid">Wyślij</button>
+	</form>
+</div>
+
+<ng-template #forminfo>
+	<div class="form-container">
+		<div class="row columns">
+			<p>{{ email }}</p>
+			<p>{{ phone }}</p>
+			<p>{{ text }}</p>
+		</div>
+	</div>
+</ng-template>

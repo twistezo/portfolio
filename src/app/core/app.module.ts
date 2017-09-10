@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 // Routing
 import { Router } from '@angular/router';
@@ -17,6 +17,7 @@ import { TemplateComponent } from '../template/template.component';
 import { MainComponent } from '../main/main.component';
 import { BlogComponent } from '../blog/blog.component';
 import { ProjectsComponent } from '../projects/projects.component';
+import { FormComponent } from '../form/form.component';
 
 const appRoutes: Routes = [
   { path: 'main', component: MainComponent },
@@ -38,11 +39,13 @@ const appRoutes: Routes = [
     MainComponent,
     BlogComponent,
     TemplateComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpModule,
     RouterModule.forRoot(appRoutes),
     AngularFireModule.initializeApp(environment.firebase),
