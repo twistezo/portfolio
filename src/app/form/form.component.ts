@@ -19,12 +19,11 @@ export class FormComponent {
     constructor(private fb: FormBuilder) {
         this.rForm = fb.group({
             'email': [null, Validators.compose([Validators.required, Validators.pattern(this.emailRegex)])],
-            'phone': [null, Validators.compose([Validators.required, Validators.pattern(this.onlyDigitsRegex), Validators.minLength(7)])],
+            'phone': [null, Validators.compose([Validators.pattern(this.onlyDigitsRegex), Validators.minLength(7)])],
             'text': [null, Validators.compose([Validators.required, Validators.minLength(10), Validators.maxLength(500)])],
             'validate': ''
         });
     }
-z
 
     addPost(message) {
         this.email = message.email;

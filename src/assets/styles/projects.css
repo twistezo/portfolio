@@ -13,7 +13,8 @@
     width: 20rem;
 }
 
-.card:hover {
+.card:hover,
+.form-control:hover {
     box-shadow: 0px 0px 10px #2aabd2;
 }
 
@@ -29,12 +30,12 @@
 .btn-primary:active,
 .btn-primary:visited,
 .btn-primary:focus {
-    background-color: #2aabd2;
-    border-color: #2aabd2;
+    background-color: #2aabd2 !important;
+    border-color: #2aabd2 !important;
 }
 
 .btn-primary:hover {
-    box-shadow: 0px 0px 15px black;
+    box-shadow: 0px 0px 15px black !important;
 }
 
 hr.style-three {
