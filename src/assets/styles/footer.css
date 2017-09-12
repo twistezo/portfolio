@@ -1,12 +1,11 @@
 .overlay-up-icon-div {
-  /* background-color: rgba(255, 0, 0, 0.4); */
   top: -35px;
   left: 49%;
   position: absolute;
 }
 
 .overlay-up-icon {
-  color: #2aabd2;
+  color: var(--second-color);
   font-size: 40px;
 }
 
@@ -22,8 +21,8 @@
 }
 
 footer {
-  background-color: #2d2d30;
-  color: #f5f5f5;
+  background-color: var(--footer-color);
+  color: var(--white-text-color);
   padding-bottom: 32px; 
   padding-top: 32px;
   position: absolute;
@@ -32,12 +31,13 @@ footer {
   height: 130px;
 }
 
-footer a, .copyrights {
-  color: #f5f5f5;
+footer a,
+.copyrights {
+  color: var(--white-text-color);
   padding-bottom: 5px;
 }
 
 footer a:hover {
-  color: #777;
+  color: var(--second-color);
   text-decoration: none;
 }
