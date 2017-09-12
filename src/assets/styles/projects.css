@@ -26,22 +26,10 @@
     padding-top: 20px;
 }
 
-.btn-primary,
-.btn-primary:active,
-.btn-primary:visited,
-.btn-primary:focus {
-    background-color: #2aabd2 !important;
-    border-color: #2aabd2 !important;
-}
-
-.btn-primary:hover {
-    box-shadow: 0px 0px 15px black !important;
-}
-
 hr.style-three {
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(42, 171, 210, 0.75), rgba(0, 0, 0, 0));
     margin-right: 30px;
     margin-left: 30px;
-  }
+}

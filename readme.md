@@ -1,16 +1,9 @@
-## angular-playground
+## Web Portfolio source code
 
-### install ng cli
+### build & run
 `npm install -g @angular/cli`
-
-### running project
-`ng serve -o -> http://localhost:4200/`
-
-### create new ng project
-`ng new app-name`
-
-### update package.json packages
-`npm install --save`
+`npm install`
+`ng serve`
 
 ### deploy ng project to github page
 `ng build --prod --output-path docs --base-href web-portfolio`
@@ -43,5 +36,4 @@ test.ts - main point for unit tests
 tsconfig.app.json - TypeScript compiler configuration
 tsconfig.spec.json  - TypeScript compiler configuration.
 typing.d.ts - TypesScript declaration files
-
 ```

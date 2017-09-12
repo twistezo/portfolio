@@ -1,13 +1,13 @@
 .overlay-up-icon-div {
   /* background-color: rgba(255, 0, 0, 0.4); */
-  top: -42px;
+  top: -35px;
   left: 49%;
   position: absolute;
 }
 
 .overlay-up-icon {
   color: #2aabd2;
-  font-size: 48px;
+  font-size: 40px;
 }
 
 .overlay-up-icon:hover{
@@ -16,7 +16,7 @@
 
 /* footer icons */
 .icon {
-  font-size: 32px;
+  font-size: 26px;
   margin-right: 25px;
   vertical-align: middle;
 }
@@ -26,7 +26,6 @@ footer {
   color: #f5f5f5;
   padding-bottom: 32px; 
   padding-top: 32px;
-  font-size: 14px;
   position: absolute;
   bottom: 0;
   width: 100%;

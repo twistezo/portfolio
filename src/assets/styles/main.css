@@ -6,10 +6,20 @@ html {
 body {
   background: #ffffff; 
   font-family: 'Open Sans', sans-serif;
-  font-size: 12px;
+
   font-weight: 400;
   color: #0f0f0f; /* font color */
   margin-bottom: 130px;
+}
+
+/* Fonts sizes */
+body,
+.navbar,
+footer,
+.circles,
+.btn,
+.form-control {
+  font-size: 11px !important;
 }
 
 a {
@@ -62,12 +72,14 @@ hr.style-two {
 
 /* change font in H3,H4 tags */
 h3 {
+  font-size: 20px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   letter-spacing: 2px !important;  
   /* font-size: 3px; */
 }
 h4 {
+  font-size: 16px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400; 
   letter-spacing: 1px !important;  
@@ -82,7 +94,6 @@ h4 {
 /* skills */
 .circles {
   font-family: 'Roboto', sans-serif; 
-  font-size: 16px;
   letter-spacing: 2px;
 }
 
@@ -98,6 +109,19 @@ h4 {
 .rounded {
   object-fit: contain;
   background-color: white;
-  width: 200px;
-  height: 250px;
+  width: 150px;
+  height: 200px;
 }
+
+.btn-primary,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+  background-color: #2aabd2 !important;
+  border-color: #2aabd2 !important;
+}
+
+.btn-primary:hover {
+  box-shadow: 0px 0px 15px black !important;
+}
+
