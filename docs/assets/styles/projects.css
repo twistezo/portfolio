@@ -1,0 +1,35 @@
+.card-img-top {
+    object-fit: contain;
+    height: 250px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+} 
+
+.card-block {
+    padding-bottom: 15px;
+}
+
+.card {
+    width: 20rem;
+}
+
+.card:hover,
+.form-control:hover {
+    box-shadow: 0px 0px 10px var(--my-blue);
+}
+
+.cards-first-row {
+    padding-top: 25px;
+}
+
+.cards-second-row {
+    padding-top: 20px;
+}
+
+hr.style-three {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--my-blue), rgba(0, 0, 0, 0));
+    margin-right: 30px;
+    margin-left: 30px;
+}
