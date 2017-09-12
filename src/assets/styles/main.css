@@ -25,10 +25,14 @@ h4 {
 
 body,
 .navbar,
-footer,
 .btn,
 .form-control {
   font-size: 11px !important;
+}
+
+footer {
+  font-size: 12px !important;
+  letter-spacing: 1px;
 }
 
 a {
@@ -40,11 +44,12 @@ a:hover {
   text-decoration: none;
 }
 
-h3,
-h4,
+.navbar,
+.footer,
+.h3,
+.h4,
 .circles,
 .skills-font {
-  font-family: 'Roboto', sans-serif;
   font-family: 'Roboto', sans-serif;
 }
 
