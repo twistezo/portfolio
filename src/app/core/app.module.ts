@@ -24,12 +24,12 @@ const appRoutes: Routes = [
   { path: 'blog', component: BlogComponent },
   { path: '',
     redirectTo: '/main',
-    pathMatch: 'full'
+    pathMatch: 'prefix'
   },
   {
     path: '**',
-    redirectTo: '/home',
-    pathMatch: 'full'
+    redirectTo: '/main',
+    pathMatch: 'prefix'
   }
 ];
 
