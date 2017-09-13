@@ -22,9 +22,5 @@
         return false;
     });
   
-    // starting page animations
-    $('img, .circles').addClass('bounce-top');
-    $('h3').addClass('bounce-left');
-
   });
 })();
