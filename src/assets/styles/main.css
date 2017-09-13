@@ -35,6 +35,10 @@ footer {
   letter-spacing: 1px;
 }
 
+.bg-light {
+  background-color: #f9f9f9 !important;
+}
+
 a {
   color: #006A8C;
 }
@@ -77,9 +81,12 @@ h4 {
   box-shadow: 0px 0px 15px black !important;
 }
 
+
+
 #section1 {
   padding-top: 80px; 
   padding-bottom: 40px;
+  text-align: center;
 }
 
 #section2 {
@@ -93,7 +100,7 @@ h4 {
 }
 
 #section4 {
-  padding-bottom: 60px;
+  padding-bottom: 90px;
 }
 
 #blog {
@@ -119,6 +126,10 @@ hr.style-one {
 hr.style-two {
   background-image: linear-gradient(to right, var(--my-blue), rgba(0, 0, 0, 0));
   margin-right: 80%;
+}
+
+.my-photo-row {
+  padding-bottom: 20px;
 }
 
 .my-photo {
