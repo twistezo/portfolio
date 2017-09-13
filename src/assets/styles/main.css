@@ -1,6 +1,6 @@
 html {
-  --navbar-color: #2d2d30;
-  --navbar-hover-color: #2d2d30;
+  --navbar-color: #343a40;
+  --navbar-hover-color: var(--navbar-color:);
   --footer-color: var(--navbar-color);
   --second-color: orange;
   --white-text-color: #f5f5f5;
@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background: #ffffff; 
+  /* background: #ffffff;  */
   font-family: 'Open Sans', sans-serif;
   color: #0f0f0f; /* font color */
   margin-bottom: 130px;
@@ -35,6 +35,10 @@ footer {
   letter-spacing: 1px;
 }
 
+.bg-light {
+  background-color: #f9f9f9 !important;
+}
+
 a {
   color: #006A8C;
 }
@@ -54,8 +58,11 @@ a:hover {
 }
 
 h3 {
-  font-size: 20px;
-  letter-spacing: 2px !important;  
+  font-size: 26px;
+  letter-spacing: 5px !important;  
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 h4 {
   font-size: 16px;
@@ -64,8 +71,8 @@ h4 {
 
 .btn-primary,
 .btn-primary:active,
-.btn-primary:visited,
-.btn-primary:focus {
+.btn-primary:focus,
+.btn-primary:visited {
   background-color: var(--my-blue) !important;
   border-color: var(--my-blue) !important;
 }
@@ -74,24 +81,26 @@ h4 {
   box-shadow: 0px 0px 15px black !important;
 }
 
-#blog,
-#section1,
-#section2,
-#section3,
-#section4 {
-  background-color: var(--my-gray-background);
-}
+
 
 #section1 {
   padding-top: 80px; 
+  padding-bottom: 40px;
+  text-align: center;
 }
 
-#section2, #section3, #section4 {
-  padding-top: 60px;
+#section2 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#section3, #section3, #section4 {
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 #section4 {
-  padding-bottom: 60px;
+  padding-bottom: 90px;
 }
 
 #blog {
@@ -111,12 +120,16 @@ hr.style-two {
 
 hr.style-one {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--my-blue), rgba(0, 0, 0, 0));
-  margin-right: 150px; 
-  margin-left: 150px;
+  width: 50%;
 }
+
 hr.style-two {
   background-image: linear-gradient(to right, var(--my-blue), rgba(0, 0, 0, 0));
-  margin-right: 500px;
+  margin-right: 80%;
+}
+
+.my-photo-row {
+  padding-bottom: 20px;
 }
 
 .my-photo {
@@ -131,6 +144,7 @@ hr.style-two {
 
 .skills-font {
     letter-spacing: 1px;
+    padding-top: 15px;
 }
 
 .test {
