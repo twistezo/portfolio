@@ -23,5 +23,3 @@
   Witaj, {{ (authService.user | async)?.email }} &nbsp;
   <button (click)="logout()" *ngIf="authService.user | async" class="btn btn-danger ">Wyloguj</button>
 </h5>
-
-

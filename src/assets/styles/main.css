@@ -5,7 +5,7 @@ html {
   --second-color: orange;
   --white-text-color: #f5f5f5;
   --my-blue: #2aabd2;
-  --my-gray-background: #F7F7F7;
+  --my-gray-background: #f9f9f9;
   position: relative;
   min-height: 100%;
 }
@@ -36,7 +36,7 @@ footer {
 }
 
 .bg-light {
-  background-color: #f9f9f9 !important;
+  background-color: var(--my-gray-background) !important;
 }
 
 a {
@@ -101,7 +101,8 @@ h4 {
   padding-bottom: 90px;
 }
 
-#blog {
+#blog,
+#dashboard {
   padding-top: 80px; 
   padding-bottom: 60px;
 }

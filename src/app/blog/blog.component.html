@@ -1,35 +1,13 @@
 <div id="blog" class="container-fluid">
 	<div class="row">
 		<div class="col-lg-7 mx-auto">
-			<h3>Firebase status:</h3>
-			<hr class="style-two">
-			<app-firebase-auth></app-firebase-auth>
-
-			<h3>Dodaj post:</h3>
-			<hr class="style-two">
-			<div class="col-sm-8">
-				<div class="form-row">
-					<div class="form-group col-md-12">
-						<input [(ngModel)]="title" type="text" class="form-control" placeholder="Tytuł">
-					</div>
-					<div class="form-group col-md-12">
-						<textarea [(ngModel)]="body" type="text" class="form-control" placeholder="Treść" rows="5"></textarea>
-					</div>
-				</div>
-				<div class="form-row">
-					<div class="form-group col-md-12">
-						<button (click)="addNote(title, body)" type="submit" class="btn btn-primary">Dodaj</button>
-					</div>
-				</div>
-			</div>
 
 			<h3>Najnowsze posty:</h3>
-			<hr class="style-two">
 			<div class="col-sm-10">
-				<div class="blog-post" *ngFor="let note of (notes$ | async)">
-					<h4> {{ note.title }} </h4>
-					<p>{{ note.date }}, {{ note.author }} </p>
-					{{ note.body }}
+				<div class="blog-post" *ngFor="let p of (posts$ | async)">
+					<h4> {{ p.title }} </h4>
+					<p>{{ p.date }}, {{ p.author }} </p>
+					{{ p.body }}
 				</div>
 				<nav class="blog-pagination">
 					<a class="btn btn-outline-primary" href="#">Older</a>
@@ -39,5 +17,3 @@
 		</div>
 	</div>
 </div>
-
-Witaj, {{ (authService.user | async)?.email }}

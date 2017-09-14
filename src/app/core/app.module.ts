@@ -18,10 +18,12 @@ import { MainComponent } from '../main/main.component';
 import { BlogComponent } from '../blog/blog.component';
 import { ProjectsComponent } from '../projects/projects.component';
 import { FormComponent } from '../form/form.component';
+import { DashboardComponent } from '../dashboard/dashboard.component';
 
 const appRoutes: Routes = [
   { path: 'main', component: MainComponent },
   { path: 'blog', component: BlogComponent },
+  { path: 'dashboard', component: DashboardComponent },
   { path: '',
     redirectTo: '/main',
     pathMatch: 'prefix'
@@ -40,7 +42,8 @@ const appRoutes: Routes = [
     BlogComponent,
     TemplateComponent,
     ProjectsComponent,
-    FormComponent
+    FormComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +54,7 @@ const appRoutes: Routes = [
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
   ],
-  providers: [AuthService, AngularFireDatabase],
+  providers: [AuthService, AngularFireDatabase, BlogComponent],
   bootstrap: [TemplateComponent]  // main (first) component
 })
 
