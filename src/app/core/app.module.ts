@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { enableProdMode } from '@angular/core';
 // Routing
 import { Router } from '@angular/router';
 import { RouterModule, Routes } from '@angular/router';
@@ -24,7 +25,8 @@ const appRoutes: Routes = [
   { path: 'main', component: MainComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'dashboard', component: DashboardComponent },
-  { path: '',
+  {
+    path: '',
     redirectTo: '/main',
     pathMatch: 'prefix'
   },
@@ -60,4 +62,7 @@ const appRoutes: Routes = [
 
 export class AppModule { }
 
+if (!/localhost/.test(document.location.host)) {
+  enableProdMode();
+}
 
