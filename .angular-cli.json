@@ -25,7 +25,8 @@
         "assets/styles/navbar.css",
         "assets/styles/scrollbar.css",
         "assets/styles/projects.css",
-        "assets/styles/circle.css"
+        "assets/styles/circle.css",
+        "assets/styles/loader.css"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.min.js",
