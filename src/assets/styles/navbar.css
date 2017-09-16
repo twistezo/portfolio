@@ -25,7 +25,6 @@
 	margin-bottom: 8px;
 }
 
-/* blink animation of '_' in logo */
 .blinker {
 	animation: blinker 0.5s cubic-bezier(.5, 0, 1, 1) infinite alternate;  
 	color: var(--white-text-color);

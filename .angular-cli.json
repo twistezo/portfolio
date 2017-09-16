@@ -20,20 +20,17 @@
       "prefix": "app",
       "styles": [
         "../node_modules/ionicons/dist/css/ionicons.min.css",
-        "assets/styles/jquery.circliful.css",
-        "assets/styles/animations.css",
         "assets/styles/footer.css",
         "assets/styles/main.css",
         "assets/styles/navbar.css",
         "assets/styles/scrollbar.css",
-        "assets/styles/projects.css"
+        "assets/styles/projects.css",
+        "assets/styles/circle.css"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.min.js",
         "../node_modules/requirejs/require.js",
-        "assets/scripts/jquery.circliful.min.js",
-        "assets/scripts/main.js",
-        "assets/scripts/skills_charts.js",
+        "assets/scripts/navigate.js",
         "assets/scripts/typewriter-animation.js"
       ],
       "environmentSource": "environments/environment.ts",

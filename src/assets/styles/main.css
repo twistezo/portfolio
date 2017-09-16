@@ -7,14 +7,11 @@ html {
   --my-blue: #2aabd2;
   --my-gray-background: #f9f9f9;
   position: relative;
-  min-height: 100%;
 }
 
 body {
-  /* background: #ffffff;  */
   font-family: 'Open Sans', sans-serif;
-  color: #0f0f0f; /* font color */
-  margin-bottom: 130px;
+  margin-bottom: 110px;
 }
 
 body,
@@ -30,9 +27,19 @@ body,
   font-size: 11px !important;
 }
 
+.circle {
+  font-size: 12px !important;
+  letter-spacing: 2px;
+}
+
 footer {
   font-size: 12px !important;
   letter-spacing: 1px;
+}
+
+/* Size of skills circles */
+.c100 {
+  font-size: 100px !important;
 }
 
 .bg-light {
@@ -59,14 +66,18 @@ a:hover {
 
 h3 {
   font-size: 26px;
-  letter-spacing: 5px !important;  
+  letter-spacing: 5px !important;
   text-align: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 h4 {
   font-size: 16px;
-  letter-spacing: 1px !important;  
+  letter-spacing: 1px !important;
+}
+
+
+
+.skills-font {
+  letter-spacing: 1px;
 }
 
 .btn-primary,
@@ -82,28 +93,23 @@ h4 {
 }
 
 #section1 {
-  padding-top: 80px; 
+  padding-top: 80px;
   padding-bottom: 40px;
   text-align: center;
 }
 
-#section2 {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-#section3, #section3, #section4 {
-  padding-top: 20px;
-  padding-bottom: 50px;
+#section2, #section3, #section3, #section4 {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 #section4 {
-  padding-bottom: 90px;
+  padding-bottom: 120px;
 }
 
 #blog,
 #dashboard {
-  padding-top: 80px; 
+  padding-top: 80px;
   padding-bottom: 60px;
 }
 
@@ -111,8 +117,7 @@ h4 {
   padding-bottom: 20px;
 }
 
-hr.style-one,
-hr.style-two {
+hr.style-one {
   border: 0;
   height: 2px;
 }
@@ -122,30 +127,8 @@ hr.style-one {
   width: 50%;
 }
 
-hr.style-two {
-  background-image: linear-gradient(to right, var(--my-blue), rgba(0, 0, 0, 0));
-  margin-right: 80%;
-}
-
-.my-photo-row {
-  padding-bottom: 20px;
-}
-
 .my-photo {
   width: 150px;
   height: 200px;
 }
 
-.circles {
-  font-size: 14px !important;
-  letter-spacing: 2px;
-}
-
-.skills-font {
-    letter-spacing: 1px;
-    padding-top: 15px;
-}
-
-.test {
-  background-color: pink !important;
-}

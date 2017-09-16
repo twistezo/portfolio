@@ -1,11 +1,11 @@
-<div class="container-fluid col-md-8">
+<div class="container-fluid col-sm-8">
 	<form [formGroup]="rForm" (ngSubmit)="addMessage(rForm.value)">
 		<div class="form-row">
-			<div class="form-group col-md-6">
+			<div class="form-group col-sm-6">
 				<input type="email" class="form-control" id="email" placeholder="Email*" formControlName="email">
 				<div class="alert alert-danger" *ngIf="!rForm.controls['email'].valid && rForm.controls['email'].touched">Wymagany poprawny format: example@gmail.com</div>
 			</div>
-			<div class="form-group col-md-6">
+			<div class="form-group col-sm-6">
 				<input type="text" class="form-control" id="phone" placeholder="Nr telefonu" formControlName="phone">
 				<div class="alert alert-danger" *ngIf="!rForm.controls['phone'].valid && rForm.controls['phone'].touched">Wymagana ilość cyfr: 7</div>
 			</div>
@@ -13,25 +13,10 @@
 		<div class="form-group">
 			<textarea class="form-control" id="text" rows="8" placeholder="Treść wiadomości*" formControlName="text"></textarea>
 			<div class="alert alert-danger" *ngIf="!rForm.controls['text'].valid && rForm.controls['text'].touched">Wymagana ilość znaków pom. 10-500</div>
-			<span>Pola oznaczone gwiazdką są wymagane.</span>
+			<p>Pola oznaczone gwiazdką są wymagane.</p>
 		</div>
 		<div class="text-right">
 			<button type="submit" class="btn btn-primary" [disabled]="!rForm.valid">Wyślij</button>
 		</div>
 	</form>
-</div>
-
-<div class="form-container">
-	<div class="row columns">
-		<p>{{ email }}</p>
-		<p>{{ phone }}</p>
-		<p>{{ text }}</p>
-	</div>
-</div>
-
-<div class="col-sm-10">
-	<div class="blog-post" *ngFor="let message of (messages$ | async)">
-		<h4> {{ message.email }} </h4>
-		<p>{{ message.phone }}, {{ message.text }}</p>
-	</div>
 </div>
