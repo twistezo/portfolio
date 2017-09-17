@@ -1,17 +1,19 @@
-<div *ngIf="!(authService.user | async)">
-  <div class="form-group row">
-    <input [(ngModel)]="email" name="email" type="text" class="form-control" placeholder="Email">
+<div class="container-fluid pt-3">
+  <div *ngIf="!(authService.user | async)">
+    <div class="form-group row">
+      <input [(ngModel)]="email" name="email" type="text" class="form-control" placeholder="Email">
+    </div>
+    <div class="form-group row">
+      <input [(ngModel)]="password" name="password" type="password" class="form-control" placeholder="Hasło">
+    </div>
+    <div class="form-group row float-right">
+      <!-- <button (click)="signup()" [disabled]="!email || !password" class="btn btn-primary" style="margin-right: 10px">Zarejestruj</button> -->
+      <button (click)="login()" [disabled]="!email || !password" class="btn btn-light">Zaloguj</button>
+    </div>
   </div>
-  <div class="form-group row">
-    <input [(ngModel)]="password" name="password" type="password" class="form-control" placeholder="Hasło">
-  </div>
-  <div class="form-group row float-right">
-    <button (click)="signup()" [disabled]="!email || !password" class="btn btn-primary" style="margin-right: 10px">Zarejestruj</button>
-    <button (click)="login()" [disabled]="!email || !password" class="btn btn-primary">Zaloguj</button>
+  <div *ngIf="(authService.user | async)">
+    <div class="form-group row justify-content-center">
+      <button (click)="logout()" *ngIf="authService.user | async" class="btn btn-danger ">Wyloguj się</button>
+    </div>
   </div>
 </div>
-
-<h5 *ngIf="authService.user | async">
-  Witaj, {{ (authService.user | async)?.email }} &nbsp;
-  <button (click)="logout()" *ngIf="authService.user | async" class="btn btn-danger ">Wyloguj</button>
-</h5>

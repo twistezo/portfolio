@@ -10,18 +10,6 @@ html {
   position: relative;
 }
 
-/* html {
-  --background: white;
-  --navbar-color: #343a40;
-  --navbar-hover-color: var(--navbar-color:);
-  --footer-color: var(--navbar-color);
-  --second-color: orange;
-  --my-blue: #2aabd2;
-  --black-text-color: #333;
-  --white-text-color: #f5f5f5;
-  position: relative;
-} */
-
 body {
   background-color: var(--background);
   color: var(--black-text-color);
@@ -91,7 +79,22 @@ h4 {
 }
 
 .btn-primary:hover {
-  box-shadow: 0px 0px 15px black !important;
+  box-shadow: 0px 0px 15px var(--black-text-color) !important;
+}
+
+.btn-light,
+.btn-light:active,
+.btn-light:focus,
+.btn-light:visited {
+  cursor: pointer;
+  background-color: var(--white-text-color) !important;
+  border-color: var(--white-text-color) !important;
+}
+
+.btn-light:hover {
+  box-shadow: 0px 0px 15px var(--my-blue) !important;
+  background-color: var(--white-text-color) !important;
+  border-color: var(--my-blue) !important;
 }
 
 #section1 {
@@ -161,4 +164,23 @@ hr.style-one {
   width: 100%;
   height: 100%;
   z-index: -1;
+}
+
+.dropdown-menu {
+  background-color: var(--navbar-color);
+  min-width: 200px;
+  border-radius: 5px 5px 5px 5px ; 
+  margin-top: 2px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  cursor: default;
+}
+
+.ion-md-log-in {
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+.dropdown {
+  cursor: pointer;
 }
