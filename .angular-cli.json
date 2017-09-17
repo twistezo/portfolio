@@ -21,8 +21,8 @@
       "styles": [
         "../node_modules/bootstrap/dist/css/bootstrap.min.css",
         "../node_modules/ionicons/dist/css/ionicons.min.css",
-        "assets/styles/footer.css",
         "assets/styles/main.css",
+        "assets/styles/footer.css",
         "assets/styles/navbar.css",
         "assets/styles/scrollbar.css",
         "assets/styles/projects.css",
@@ -35,6 +35,7 @@
         "../node_modules/popper.js/dist/umd/popper.min.js",
         "../node_modules/bootstrap/dist/js/bootstrap.min.js",
         "../node_modules/requirejs/require.js",
+        "assets/scripts/jarallax.js",
         "assets/scripts/navigate.js",
         "assets/scripts/typewriter-animation.js"
       ],

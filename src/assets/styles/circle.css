@@ -72,7 +72,7 @@
   width: 5em;
   line-height: 5em;
   font-size: 0.2em;
-  color: #2aabd2;
+  color: var(--font);
   display: block;
   text-align: center;
   white-space: nowrap;
@@ -100,7 +100,7 @@
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
-  background-color: whitesmoke;
+  background-color: var(--background);
   width: 0.84em;
   height: 0.84em;
   -webkit-transition-property: all;
