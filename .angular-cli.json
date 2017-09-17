@@ -27,7 +27,8 @@
         "assets/styles/scrollbar.css",
         "assets/styles/projects.css",
         "assets/styles/circle.css",
-        "assets/styles/loader.css"
+        "assets/styles/loader.css",
+        "assets/styles/experience.css"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.min.js",
@@ -37,7 +38,8 @@
         "../node_modules/requirejs/require.js",
         "assets/scripts/jarallax.js",
         "assets/scripts/navigate.js",
-        "assets/scripts/typewriter-animation.js"
+        "assets/scripts/typewriter-animation.js",
+        "assets/scripts/timeline.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

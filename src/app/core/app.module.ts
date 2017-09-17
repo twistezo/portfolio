@@ -20,6 +20,7 @@ import { BlogComponent } from '../blog/blog.component';
 import { ProjectsComponent } from '../projects/projects.component';
 import { FormComponent } from '../form/form.component';
 import { DashboardComponent } from '../dashboard/dashboard.component';
+import { ExperienceComponent } from '../experience/experience.component';
 
 const appRoutes: Routes = [
   { path: 'main', component: MainComponent },
@@ -45,7 +46,8 @@ const appRoutes: Routes = [
     TemplateComponent,
     ProjectsComponent,
     FormComponent,
-    DashboardComponent
+    DashboardComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,
