@@ -7,6 +7,8 @@ html {
   --my-blue: #2aabd2;
   --black-text-color: #333;
   --white-text-color: #f5f5f5;
+  --timeline-background: var(--background);
+  --timeline-item: rgba(204, 204, 204, 0.4);
   position: relative;
 }
 
@@ -33,7 +35,9 @@ body,
 footer
 .skills-font,
 .circle,
-time {
+.job-date,
+.job-name,
+.job-company {
   font-size: 12px !important;
   letter-spacing: 1px;
 }
@@ -58,7 +62,10 @@ a:hover {
 .h4,
 .circles,
 .skills-font,
-time {
+.job-date,
+.job-name,
+.job-company,
+.job-desc {
   font-family: 'Roboto', sans-serif !important;
 }
 
@@ -97,6 +104,10 @@ h4 {
   box-shadow: 0px 0px 15px var(--my-blue) !important;
   background-color: var(--white-text-color) !important;
   border-color: var(--my-blue) !important;
+}
+
+#section3 {
+  background-color: var(--timeline-background);
 }
 
 #section1 {
@@ -179,8 +190,8 @@ hr.style-one {
 }
 
 .ion-md-log-in {
-  vertical-align: middle;
-  font-size: 20px;
+  /* vertical-align: middle; */
+  font-size: 13px;
 }
 
 .dropdown {

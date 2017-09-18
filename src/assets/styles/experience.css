@@ -1,3 +1,19 @@
+.job-date,
+.job-name {
+  font-weight: bold;
+}
+.job-date {
+  padding-bottom: 2px;
+}
+
+.job-desc {
+  line-height: 200%;
+}
+
+.job-highlight {
+  color: var(--second-color);
+}
+
 .container {
   width: 90%;
   max-width: 1200px;
@@ -6,7 +22,7 @@
 }
 
 .timeline ul {
-  background: var(--background);
+  background: var(--timeline-background);
   padding-left: 0px;
 }
 
@@ -15,7 +31,7 @@
   position: relative;
   width: 4px;
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 20px;
   background: var(--my-blue);
 }
 
@@ -37,18 +53,18 @@
   bottom: 0;
   width: 400px;
   padding: 15px;
-  background: white;
+  background: var(--timeline-item);
   border-style: solid;
-  border-width: 2px;
+  border-width: 1px;
   border-radius: 5px;
-  border-color: var(--my-blue);
+  border-color: var(--timeline-item);
 }
 
 /* vertical position of element */
 .timeline ul li div::before {
   content: '';
   position: absolute;
-  bottom: 3px;
+  bottom: 0px;
   width: 0;
   height: 0;
   border-style: solid;
@@ -61,22 +77,24 @@
 .timeline ul li:nth-child(odd) div::before {
   left: -17px;
   border-width: 8px 16px 8px 0;
-  border-color: transparent var(--my-blue) transparent transparent;
+  border-color: transparent var(--timeline-item) transparent transparent;
+  
 }
 
 .timeline ul li:nth-child(even) div {
   left: -439px;
+  
 }
 
 .timeline ul li:nth-child(even) div::before {
   right: -17px;
   border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent var(--my-blue);
+  border-color: transparent transparent transparent var(--timeline-item);
+  
 }
 
 time {
   display: block;
-  font-weight: bold;
   margin-bottom: 8px;
 }
 
@@ -86,6 +104,7 @@ time {
 
 .timeline ul li::after {
   transition: background .5s ease-in-out;
+  
 }
 
 .timeline ul li.in-view::after {
@@ -96,10 +115,12 @@ time {
   visibility: hidden;
   opacity: 0;
   transition: all .5s ease-in-out;
+  
 }
 
 .timeline ul li:nth-child(odd) div {
   transform: translate3d(200px, 0, 0);
+  
 }
 
 .timeline ul li:nth-child(even) div {
@@ -128,10 +149,10 @@ time {
 
 @media screen and (max-width: 600px) {
   .timeline ul li {
-    margin-left: 20px;
+    margin-left: 0px;
   }
   .timeline ul li div {
-    width: calc(100vw - 91px);
+    width: calc(100vw - 140px);
   }
   .timeline ul li:nth-child(even) div {
     left: 45px;
@@ -139,6 +160,6 @@ time {
   .timeline ul li:nth-child(even) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent var(--my-blue) transparent transparent;
+    border-color: transparent var(--timeline-item) transparent transparent;
   }
 }
