@@ -7,7 +7,7 @@
 }
 
 .job-desc {
-  line-height: 200%;
+  line-height: 170%;
 }
 
 .job-highlight {
@@ -17,7 +17,7 @@
 .job-date,
 .job-name,
 .job-desc {
-  color: var(--black-text-color);
+  color: var(--white-text-color);
 }
 
 .container {
@@ -30,7 +30,6 @@
 .timeline ul {
   background: var(--timeline-background);
   padding-left: 0px;
-
 }
 
 .timeline ul li {
@@ -53,18 +52,21 @@
   height: 20px;
   border-radius: 50%;
   background: inherit;
+  /* box-shadow: 0px 0px 5px black; */
+
 }
 
 .timeline ul li div {
   position: relative;
-  bottom: 0;
+  bottom: 2px;
   width: 400px;
   padding: 15px;
-  /* background: var(--timeline-item); */
+  background: var(--timeline-item);
   border: 2px; 
-  border-style: solid;
+  /* border-style: solid; */
   border-radius: 5px;
-  border-color: var(--my-blue);
+  /* border-color: var(--my-blue); */
+  box-shadow: 4px 4px 0px 0px var(--second-color);
 }
 
 /* vertical position of element */
@@ -84,7 +86,7 @@
 .timeline ul li:nth-child(odd) div::before {
   left: -16px;
   border-width: 8px 16px 8px 0;
-  border-color: transparent var(--my-blue) transparent transparent;
+  border-color: transparent var(--timeline-item) transparent transparent;
   
 }
 
@@ -96,8 +98,8 @@
 .timeline ul li:nth-child(even) div::before {
   right: -16px;
   border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent var(--my-blue);
-  
+  border-color: transparent transparent transparent var(--timeline-item);
+  filter: drop-shadow(4px 4px 0px var(--second-color));
 }
 
 time {
@@ -168,5 +170,6 @@ time {
     left: -15px;
     border-width: 8px 16px 8px 0;
     border-color: transparent var(--timeline-item) transparent transparent;
+    filter: drop-shadow(0px 0px 0px var(--second-color));
   }
 }

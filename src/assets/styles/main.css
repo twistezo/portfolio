@@ -8,8 +8,8 @@ html {
   --black-text-color: #333;
   --white-text-color: #f5f5f5;
   --timeline-background: white;
-  --timeline-item: #ebebeb;
-  --timeline-highlight: var(--my-blue);
+  --timeline-item: var(--navbar-color);
+  --timeline-highlight: var(--second-color);
   position: relative;
 }
 
