@@ -47,7 +47,7 @@ const appRoutes: Routes = [
     ProjectsComponent,
     FormComponent,
     DashboardComponent,
-    ExperienceComponent
+    ExperienceComponent,
   ],
   imports: [
     BrowserModule,

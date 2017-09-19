@@ -174,7 +174,7 @@ hr.style-one {
 }
 
 .dropdown-menu {
-  background-color: var(--second-background);
+  background-color: var(--navbar-color);
   min-width: 200px;
   border-radius: 5px 5px 5px 5px ; 
   margin-top: 2px;
@@ -205,5 +205,4 @@ hr.style-one {
 .form-control:focus,
 .form-control:hover {
   border-color: var(--second-color);
-
 }

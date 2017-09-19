@@ -39,7 +39,8 @@
         "assets/scripts/jarallax.js",
         "assets/scripts/navigate.js",
         "assets/scripts/typewriter-animation.js",
-        "assets/scripts/timeline.js"
+        "assets/scripts/experience.js",
+        "assets/scripts/check-is-on-viewport.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
