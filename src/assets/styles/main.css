@@ -8,8 +8,8 @@ html {
   --my-blue: #2aabd2;
   --black-text-color: #333;
   --white-text-color: #f5f5f5;
-  --timeline-background: white;
-  --timeline-item: var(--navbar-color);
+  --timeline-background: var(--second-background);
+  --timeline-item: #434A54;
   --timeline-highlight: var(--second-color);
   position: relative;
 }
@@ -95,6 +95,7 @@ h4 {
   letter-spacing: 1px !important;
   font-family: 'Roboto', sans-serif !important;
   color: black;
+  border-radius: 3px;
 }
 
 .btn-primary:hover {
@@ -198,10 +199,11 @@ hr.style-one {
   margin-top: 5px;
   padding: 5px 5px 5px 5px;
   box-shadow: 2px 2px 0px 1px var(--my-blue);
-  /* border-radius: 0px; */
+  border-radius: 4px;
 }
 
 .form-control:focus,
 .form-control:hover {
   border-color: var(--second-color);
+
 }

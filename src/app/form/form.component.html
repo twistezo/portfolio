@@ -2,7 +2,7 @@
 	<form [formGroup]="rForm" (ngSubmit)="addMessage(rForm.value)">
 		<div class="form-row">
 			<div class="form-group col-sm-6">
-				<input type="email" class="form-control" id="email" placeholder="Email*" formControlName="email">
+				<input type="email" class="form-control" id="email" placeholder="Email" formControlName="email">
 				<div class="alert alert-danger" *ngIf="!rForm.controls['email'].valid && rForm.controls['email'].touched">Wymagany poprawny format: example@gmail.com</div>
 			</div>
 			<div class="form-group col-sm-6">
@@ -11,9 +11,8 @@
 			</div>
 		</div>
 		<div class="form-group">
-			<textarea class="form-control" id="text" rows="8" placeholder="Treść wiadomości*" formControlName="text"></textarea>
+			<textarea class="form-control" id="text" rows="8" placeholder="Treść wiadomości" formControlName="text"></textarea>
 			<div class="alert alert-danger" *ngIf="!rForm.controls['text'].valid && rForm.controls['text'].touched">Wymagana ilość znaków pom. 10-500</div>
-			<p>Pola oznaczone gwiazdką są wymagane.</p>
 		</div>
 		<div class="text-right">
 			<button type="submit" class="btn btn-primary" [disabled]="!rForm.valid">Wyślij</button>
