@@ -72,7 +72,7 @@
   width: 5em;
   line-height: 5em;
   font-size: 0.2em;
-  color: var(--font);
+  color: var(--white-text-color);
   display: block;
   text-align: center;
   white-space: nowrap;
@@ -100,7 +100,7 @@
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
-  background-color: var(--background);
+  background-color: var(--second-background);
   width: 0.84em;
   height: 0.84em;
   -webkit-transition-property: all;
@@ -824,21 +824,22 @@
 }
 .c100:hover {
   cursor: default;
-  box-shadow: 0px 0px 15px black !important;
+  box-shadow: 0px 0px 30px 0px var(--second-color) !important;
 
 }
 .c100:hover > span {
   width: 3.33em;
   line-height: 3.33em;
   font-size: 0.3em;
-  color: #2aabd2;
+  font-style: bold;
+  color: var(--second-color);
   
 }
 .c100:hover:after {
-  top: 0.04em;
+  /* top: 0.04em;
   left: 0.04em;
   width: 0.92em;
-  height: 0.92em;
+  height: 0.92em; */
   
 }
 .c100.dark {

@@ -13,7 +13,7 @@
 }
 
 .overlay-up-icon:hover{
-  text-shadow: 0px 0px 15px black;
+  text-shadow: 0px 0px 20px var(--my-blue);
 }
 
 /* footer icons */
@@ -25,7 +25,7 @@
 
 footer {
   background-color: var(--footer-color);
-  color: var(--white-text-color);
+  /* color: var(--white-text-color); */
   padding-top: 35px;
   position: absolute;
   bottom: 0;
