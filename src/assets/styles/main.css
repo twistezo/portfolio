@@ -1,6 +1,7 @@
 html {
   --background: white;
-  --navbar-color: #343a40;
+  --second-background: #343a40;
+  --navbar-color: black;
   --navbar-hover-color: var(--navbar-color:);
   --footer-color: var(--navbar-color);
   --second-color: orange;
@@ -14,28 +15,30 @@ html {
 }
 
 body {
-  background-color: var(--background);
-  color: var(--black-text-color);
+  background-color: var(--second-background);
+  color: var(--white-text-color);
   font-family: 'Open Sans', sans-serif;
   margin-bottom: 110px;
+  font-size: 12px !important;
+  font-weight: 400 !important;
 }
 
-body,
-h3,
-h4 {
-  font-weight: 400;
+.navbar {
+  font-size: 11px !important;
+  font-family: 'Roboto', sans-serif !important;
 }
 
-body,
-.navbar,
+footer {
+  font-size: 13px !important;
+  letter-spacing: 1px !important;
+  font-family: 'Roboto', sans-serif !important;
+}
+
 .btn,
 .form-control {
-  font-size: 11px !important;
+  font-size: 12px !important;
 }
 
-footer,
-.skills-font,
-.circle,
 .job-date,
 .job-name,
 .job-company {
@@ -43,9 +46,11 @@ footer,
   letter-spacing: 1px !important;
 }
 
-/* Size of skills circles */
+/* Skill circle */
 .c100 {
   font-size: 80px !important;
+  letter-spacing: 1px;
+  font-family: 'Roboto', sans-serif !important;
 }
 
 a {
@@ -57,10 +62,6 @@ a:hover {
   text-decoration: none;
 }
 
-.navbar,
-.footer,
-.h3,
-.h4,
 .circles,
 .skills-font,
 .job-date,
@@ -71,45 +72,35 @@ a:hover {
 }
 
 h3 {
-  font-size: 26px;
+  font-size: 26px !important;
+  font-weight: 400 !important;
   letter-spacing: 5px !important;
-  text-align: center;
+  text-align: center !important;
+  font-family: 'Roboto', sans-serif !important;
 }
 h4 {
-  font-size: 16px;
+  font-size: 16px !important;
+  font-weight: 400 !important;
   letter-spacing: 1px !important;
+  text-align: center !important;
+  font-family: 'Roboto', sans-serif !important;
 }
 
 .btn-primary,
 .btn-primary:active,
 .btn-primary:focus,
 .btn-primary:visited {
-  background-color: var(--my-blue) !important;
-  border-color: var(--my-blue) !important;
+  background-color: var(--second-color) !important;
+  border-color: var(--second-color) !important;
+  letter-spacing: 1px !important;
+  font-family: 'Roboto', sans-serif !important;
+  color: black;
 }
 
 .btn-primary:hover {
-  box-shadow: 0px 0px 15px var(--black-text-color) !important;
-}
-
-.btn-light,
-.btn-light:active,
-.btn-light:focus,
-.btn-light:visited {
-  cursor: pointer;
-  background-color: var(--white-text-color) !important;
-  border-color: var(--white-text-color) !important;
-}
-
-.btn-light:hover {
-  box-shadow: 0px 0px 15px var(--my-blue) !important;
-  background-color: var(--white-text-color) !important;
-  border-color: var(--my-blue) !important;
-}
-
-#section3 {
-  background-color: var(--timeline-background);
-  /* color: white; */
+  /* box-shadow: 0px 0px 30px var(--second-color) !important; */
+  box-shadow: 2px 2px 0px 1px var(--my-blue);
+  color: black;
 }
 
 #section1 {
@@ -182,7 +173,7 @@ hr.style-one {
 }
 
 .dropdown-menu {
-  background-color: var(--navbar-color);
+  background-color: var(--second-background);
   min-width: 200px;
   border-radius: 5px 5px 5px 5px ; 
   margin-top: 2px;
@@ -198,4 +189,19 @@ hr.style-one {
 
 .dropdown {
   cursor: pointer;
+}
+
+.alert-danger {
+  background-color: #ED5565;
+  border-color: #ED5565;
+  color: var(--white-text-color);
+  margin-top: 5px;
+  padding: 5px 5px 5px 5px;
+  box-shadow: 2px 2px 0px 1px var(--my-blue);
+  /* border-radius: 0px; */
+}
+
+.form-control:focus,
+.form-control:hover {
+  border-color: var(--second-color);
 }
