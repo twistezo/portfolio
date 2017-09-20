@@ -146,7 +146,7 @@ time {
 /* GENERAL MEDIA QUERIES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   .timeline ul li div {
     width: 250px;
   }

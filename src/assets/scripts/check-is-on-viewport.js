@@ -29,20 +29,20 @@
         var isAnimCirclesPlayed = false;
         function animCircles() {
             if ($('.c100').isInViewport()) {
-                $('.c100').addClass('rotate-in-center');
-                window.setTimeout(removeAnimCircles, 1000);
+                $('.c100').addClass('bounce-in-top');
+                window.setTimeout(removeAnimCircles, 1250);
                 isAnimCirclesPlayed = true;
             }
         }
         function removeAnimCircles() {
-            $('.c100').removeClass('rotate-in-center');
+            $('.c100').removeClass('bounce-in-top');
         };
 
         var isAnimCardsPlayed = false;
         function animCards() {
             if ($('.card').isInViewport()) {
                 $('.card').addClass('scale-in-ver-center');
-                window.setTimeout(remove_anim_circles, 1000);
+                window.setTimeout(removeAnimCards, 1000);
                 isAnimCardsPlayed = true;
             }
         }
@@ -52,7 +52,7 @@
 
         var isContactButtonPlayed = false;
         function animContactButton() {
-            if ($('#section5').isInViewport()) {
+            if ($('footer').isInViewport()) {
                 $('.btn').addClass('heartbeat');
                 window.setTimeout(removeAnimContactButton, 5000);
                 isContactButtonPlayed = true;
