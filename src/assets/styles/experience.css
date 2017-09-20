@@ -52,8 +52,6 @@
   height: 20px;
   border-radius: 50%;
   background: inherit;
-  /* box-shadow: 0px 0px 5px black; */
-
 }
 
 .timeline ul li div {
@@ -63,9 +61,7 @@
   padding: 15px;
   background: var(--timeline-item);
   border: 2px; 
-  /* border-style: solid; */
   border-radius: 5px;
-  /* border-color: var(--my-blue); */
   box-shadow: 4px 4px 0px 0px var(--second-color);
 }
 
@@ -129,7 +125,6 @@ time {
 
 .timeline ul li:nth-child(odd) div {
   transform: translate3d(200px, 0, 0);
-  
 }
 
 .timeline ul li:nth-child(even) div {
@@ -171,5 +166,8 @@ time {
     border-width: 8px 16px 8px 0;
     border-color: transparent var(--timeline-item) transparent transparent;
     filter: drop-shadow(0px 0px 0px var(--second-color));
+  }
+  .timeline ul li:nth-child(odd) div {
+    transform: none;
   }
 }
