@@ -1,5 +1,6 @@
-(function() {
+(function () {
     $(document).ready(function () {
+        
         class TextScramble {
             constructor(el) {
                 this.el = el
@@ -29,16 +30,16 @@
                 for (let i = 0, n = this.queue.length; i < n; i++) {
                     let { from, to, start, end, char } = this.queue[i]
                     if (this.frame >= end) {
-                    complete++
-                    output += to
+                        complete++
+                        output += to
                     } else if (this.frame >= start) {
-                    if (!char || Math.random() < 0.28) {
-                        char = this.randomChar()
-                        this.queue[i].char = char
-                    }
-                    output += `<span class="dud">${char}</span>`
+                        if (!char || Math.random() < 0.28) {
+                            char = this.randomChar()
+                            this.queue[i].char = char
+                        }
+                        output += `<span class="dud">${char}</span>`
                     } else {
-                    output += from
+                        output += from
                     }
                 }
                 this.el.innerHTML = output
