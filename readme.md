@@ -5,6 +5,9 @@
 `npm install`
 `ng serve`
 
+### build - best options
+`ng build --aot=true --output-hashing=all --sourcemaps=false --extract-css=true --named-chunks=false`
+
 ### deploy ng project to github page
 `ng build --prod --output-path docs --base-href web-portfolio`
 
