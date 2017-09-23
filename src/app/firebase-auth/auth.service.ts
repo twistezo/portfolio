@@ -12,7 +12,6 @@ export class AuthService {
 
   constructor(private firebaseAuth: AngularFireAuth) {
     this.user = firebaseAuth.authState;
-    console.log('inside constructor auth service');
     this.loginFailed = false;
   }
 
@@ -34,7 +33,6 @@ export class AuthService {
       .auth
       .signInWithEmailAndPassword(email, password)
       .catch(err => {
-        console.log('Error:', err.message);
         this.loginFailed = true;
       });
   }
