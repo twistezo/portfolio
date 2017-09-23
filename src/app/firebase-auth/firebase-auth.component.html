@@ -1,15 +1,21 @@
 <div class="container-fluid pt-3">
   <div *ngIf="!(authService.user | async)">
-    <div class="form-group row">
-      <input [(ngModel)]="email" name="email" type="text" class="form-control" placeholder="Email">
-    </div>
-    <div class="form-group row">
-      <input [(ngModel)]="password" name="password" type="password" class="form-control" placeholder="Hasło">
-    </div>
-    <div class="form-group row float-right">
-      <!-- <button (click)="signup()" [disabled]="!email || !password" class="btn btn-primary" style="margin-right: 10px">Zarejestruj</button> -->
-      <button (click)="login()" [disabled]="!email || !password" class="btn btn-primary">Zaloguj</button>
-    </div>
+    <form [formGroup]="authForm" (ngSubmit)="login(authForm.value)">
+      <div class="form-group row">
+        <input type="email" class="form-control" id="email" placeholder="Email" formControlName="email">
+        <div class="alert alert-danger" *ngIf="!authForm.controls['email'].valid && authForm.controls['email'].touched" style="font-size: 10px;">Wymagany poprawny format email</div>
+      </div>
+      <div class="form-group row">
+        <input type="password" class="form-control" id="password" placeholder="Hasło" formControlName="password">
+        <div class="alert alert-danger" *ngIf="!authForm.controls['password'].valid && authForm.controls['password'].touched" style="font-size: 10px;">Min. 5 znaków</div>
+      </div>
+      <div class="form-group row float-none">
+        <button type="submit" class="btn btn-primary" [disabled]="!authForm.valid">Zaloguj</button>
+      </div>
+      <div class="form-group row float-none">
+        <div class="alert alert-danger" *ngIf="authService.loginFailed" style="font-size: 10px;">Błędny login lub hasło</div>
+      </div>
+    </form>
   </div>
   <div *ngIf="(authService.user | async)">
     <div class="form-group row justify-content-center">

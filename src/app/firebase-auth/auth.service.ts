@@ -8,9 +8,12 @@ import { Observable } from 'rxjs/Observable';
 @Injectable()
 export class AuthService {
   user: Observable<firebase.User>;
+  loginFailed = false;
 
   constructor(private firebaseAuth: AngularFireAuth) {
     this.user = firebaseAuth.authState;
+    console.log('inside constructor auth service');
+    this.loginFailed = false;
   }
 
   getUserName(): string {
@@ -21,11 +24,8 @@ export class AuthService {
     this.firebaseAuth
       .auth
       .createUserWithEmailAndPassword(email, password)
-      .then(value => {
-        console.log('Success!', value);
-      })
       .catch(err => {
-        console.log('Something went wrong:', err.message);
+        console.log('Error:', err.message);
       });
   }
 
@@ -33,11 +33,9 @@ export class AuthService {
     this.firebaseAuth
       .auth
       .signInWithEmailAndPassword(email, password)
-      .then(value => {
-        console.log('Nice, it worked!');
-      })
       .catch(err => {
-        console.log('Something went wrong:', err.message);
+        console.log('Error:', err.message);
+        this.loginFailed = true;
       });
   }
 
@@ -46,4 +44,9 @@ export class AuthService {
       .auth
       .signOut();
   }
+
+  setLoginFailed(value: boolean) {
+    this.loginFailed = value;
+  }
 }
+
