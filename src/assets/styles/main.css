@@ -111,11 +111,12 @@ h4 {
   padding-bottom: 60px;
 }
 
-.blog-post {
-  padding-bottom: 20px;
+.dashboard {
+  padding-bottom: 80px;
 }
 
-hr.style-one {
+hr.style-one,
+hr.style-two {
   border: 0;
   height: 2px;
 }
@@ -123,6 +124,11 @@ hr.style-one {
 hr.style-one {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--my-blue), rgba(0, 0, 0, 0));
   width: 50%;
+}
+
+hr.style-two {
+  background-image: linear-gradient(to right, var(--my-blue), rgba(0, 0, 0, 0));
+  margin-right: 80%;
 }
 
 .my-photo {
@@ -191,6 +197,21 @@ hr.style-one {
 .form-control:focus,
 .form-control:hover {
   border-color: var(--second-color);
+}
+
+.nav-tabs > li > a {
+  color: var(--white-text-color) !important;
+}
+
+.nav-tabs {
+  border-color: var(--second-color) !important;
+}
+
+.nav-tabs > li > a.active,
+.nav-tabs > li  > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: var(--second-color) !important; 
+  border-color: var(--second-color) !important;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */

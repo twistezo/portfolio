@@ -20,12 +20,38 @@ import { BlogComponent } from '../blog/blog.component';
 import { ProjectsComponent } from '../projects/projects.component';
 import { FormComponent } from '../form/form.component';
 import { DashboardComponent } from '../dashboard/dashboard.component';
+import { DashboardBlogComponent } from '../dashboard/dashboard-blog.component';
+import { DashboardContactComponent } from '../dashboard/dashboard-contact.component';
 import { ExperienceComponent } from '../experience/experience.component';
 
 const appRoutes: Routes = [
-  { path: 'main', component: MainComponent },
-  { path: 'blog', component: BlogComponent },
-  { path: 'dashboard', component: DashboardComponent },
+  {
+    path: 'main',
+    component: MainComponent
+  },
+  {
+    path: 'blog',
+    component: BlogComponent
+  },
+  {
+    path: 'dashboard',
+    component: DashboardComponent,
+    children: [
+      {
+        path: '',
+        redirectTo: 'blog',
+        pathMatch: 'full'
+      },
+      {
+        path: 'blog',
+        component: DashboardBlogComponent
+      },
+      {
+        path: 'contact',
+        component: DashboardContactComponent
+      }
+    ]
+  },
   {
     path: '',
     redirectTo: '/main',
@@ -47,6 +73,8 @@ const appRoutes: Routes = [
     ProjectsComponent,
     FormComponent,
     DashboardComponent,
+    DashboardBlogComponent,
+    DashboardContactComponent,
     ExperienceComponent,
   ],
   imports: [
@@ -58,7 +86,7 @@ const appRoutes: Routes = [
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
   ],
-  providers: [AuthService, AngularFireDatabase, BlogComponent],
+  providers: [AuthService, AngularFireDatabase, BlogComponent, DashboardContactComponent],
   bootstrap: [TemplateComponent]  // main (first) component
 })
 

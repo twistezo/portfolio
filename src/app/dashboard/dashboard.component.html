@@ -1,28 +1,19 @@
 <div id="dashboard" class="container-fluid" style="width: auto;">
-	<div class="row">
-		<div class="col-sm-7 mx-auto">
-
-			<div class="row">
-				<div class="col-sm-10 mx-auto">
-					<h4>Dodaj post:</h4>
-					<form [formGroup]="rForm" (ngSubmit)="add(title, body)">
-						<div class="form-row">
-							<div class="form-group col-sm-12">
-								<input [(ngModel)]="title" type="text" class="form-control" placeholder="Tytuł" formControlName="title">
-							</div>
-							<div class="form-group col-sm-12">
-								<textarea [(ngModel)]="body" type="text" class="form-control" placeholder="Treść" rows="5" formControlName="body"></textarea>
-							</div>
-						</div>
-						<div class="form-row">
-							<div class="form-group col-sm-12">
-								<button type="submit" class="btn btn-primary">Dodaj</button>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-
+	<div class="row ">
+		<div class="col-sm-7 mx-auto dashboard">
+			<ul class="nav nav-tabs">
+				<li class="nav-item">
+					<a class="nav-link active" routerLink="blog" routerLinkActive="active">
+						Blog
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" routerLink="contact" routerLinkActive="active">
+						Kontakt
+					</a>
+				</li>
+			</ul>
+			<router-outlet></router-outlet>
 		</div>
 	</div>
 </div>

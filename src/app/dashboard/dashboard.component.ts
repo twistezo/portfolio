@@ -1,35 +1,9 @@
-import { Component, OnInit } from '@angular/core';
-import { BlogComponent } from '../blog/blog.component';
-import { AuthService } from '../firebase-auth/auth.service';
-import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-dashboard',
     templateUrl: '../dashboard/dashboard.component.html'
 })
 
-export class DashboardComponent implements OnInit {
-    rForm: FormGroup;
-    title: string;
-    body: string;
-    blogComponent: BlogComponent;
+export class DashboardComponent { }
 
-    constructor(private bComponent: BlogComponent, private fb: FormBuilder) {
-        this.blogComponent = bComponent;
-        this.rForm = fb.group({
-            'title': [null],
-            'body': [null],
-        });
-    }
-
-    ngOnInit() {
-        this.blogComponent.ngOnInit();
-    }
-
-    add(title, body) {
-        this.blogComponent.addPost(title, body);
-        this.rForm.reset();
-    }
-
-}
