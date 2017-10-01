@@ -2,21 +2,15 @@
 
 ### build & run
 `npm install -g @angular/cli`
-`npm install`
 `ng serve`
 
-### build - best options
+### build for deploy
 `ng build --aot=true --output-hashing=all --sourcemaps=false --extract-css=true --named-chunks=false`
 
-### deploy ng project to github page
-`ng build --prod --output-path docs --base-href web-portfolio`
+### deploy on github page
+`... --output-path docs --base-href web-portfolio`
 
-https://github.com/angular/angular-cli/wiki/stories-github-pages
-
-### deploy on firebase host
+### deploy on firebase
 ```
-firebase login
-firebase init
-ng build --prod
-firebase deploy
+... firebase deploy
 ```
