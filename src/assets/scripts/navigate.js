@@ -22,5 +22,10 @@
       return false;
     });
 
+    // hide collapse navbar on click
+    $('.navbar-nav>li>.hide-on-click').on('click', function () {
+      $('.navbar-collapse').collapse('hide');
+    });
+
   });
 })();
