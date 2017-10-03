@@ -220,6 +220,27 @@ hr.style-two {
   border-color: var(--second-color) !important;
 }
 
+.cookie-warning {
+  position: fixed;
+  display: block;
+  width: 280px;
+  right: 0; 
+  bottom: 0;
+  margin-bottom: 20px;
+  margin-right: 20px;
+	z-index: 99999;
+	background-color: var(--navbar-color);
+	color: white;
+}
+
+.cookie-warning-text {
+  padding: 20px 20px 20px 20px;
+}
+
+.hidden {
+  display:none;
+}
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575px) { 
   .text,
