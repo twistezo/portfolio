@@ -7,7 +7,7 @@ ng serve
 ```
 
 ### build
-`ng build --aot=true --output-hashing=all --sourcemaps=false --extract-css=true --named-chunks=false`
+`ng build --prod`
 
 ### deploy on github page
 `--output-path docs --base-href web-portfolio`
