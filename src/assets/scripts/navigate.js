@@ -33,12 +33,12 @@
     if (readCookie(cookieWarningName) != 1) {
       showCookieWarning();
       hideOnClickCookieWarning();
-      createCookie(cookieWarningName, 1, 30);
     }
 
     function hideOnClickCookieWarning() {
       $('.btn-cookie-warning').on('click', function () {
         $('.cookie-warning').addClass('hidden');
+        createCookie(cookieWarningName, 1, 30);
       });
     }
 
