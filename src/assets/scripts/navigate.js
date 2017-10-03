@@ -28,7 +28,7 @@
     });
 
     // cookie warning behaviour
-    var cookieWarningName = `cookie-warning`;
+    var cookieWarningName = 'cookie-warning';
 
     if (readCookie(cookieWarningName) != 1) {
       showCookieWarning();
@@ -46,7 +46,6 @@
       $('.cookie-warning').removeClass('hidden');
     }
 
-    // cookies
     function createCookie(name, value, days) {
       var expires = "";
       if (days) {
