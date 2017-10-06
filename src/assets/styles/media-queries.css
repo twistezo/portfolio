@@ -1,0 +1,69 @@
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575px) {
+    .text, .blinker {
+        font-size: 13px !important;
+    }
+    .card {
+        margin-bottom: 15px;
+    }
+    .bounce-in-top {
+        -webkit-animation: scale-in-center .5s cubic-bezier(.25, .46, .45, .94) both !important;
+        animation: scale-in-center .5s cubic-bezier(.25, .46, .45, .94) both !important
+    }
+    .scale-in-ver-center {
+        -webkit-animation: scale-in-center .5s cubic-bezier(.25, .46, .45, .94) both !important;
+        animation: scale-in-center .5s cubic-bezier(.25, .46, .45, .94) both !important
+    }
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) and (max-width: 767px) {}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .text, .blinker {
+        display: none;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) and (max-width: 1399px) {}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1400px) {
+    body {
+        font-size: 13px !important;
+    }
+    .navbar {
+        font-size: 13px !important;
+    }
+    footer {
+        font-size: 15px !important;
+    }
+    h3 {
+        font-size: 30px !important;
+    }
+    h4 {
+        font-size: 20px !important;
+    }
+    .btn, .form-control {
+        font-size: 12px !important;
+    }
+    .text, .blinker {
+        font-size: 24px !important;
+    }
+}

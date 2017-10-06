@@ -1,14 +1,16 @@
 .navbar {
+  font-size: 11px !important;
+  font-family: 'Roboto', sans-serif !important;
   background-color: var(--navbar-color);
   letter-spacing: 2px;
-  font-weight: 400; 
+  font-weight: 400;
   padding-top: 0;
   padding-bottom: 0;
 }
 
 .navbar li a {
- color: var(--white-text-color) !important; 
-	line-height: 34px;
+  color: var(--white-text-color) !important;
+  line-height: 34px;
 }
 
 .navbar a:hover, a.active {
@@ -17,20 +19,64 @@
 }
 
 .navbar-brand {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .navbar-toggler {
-	margin-top: 8px;
-	margin-bottom: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .blinker {
-	animation: blinker 0.5s cubic-bezier(.5, 0, 1, 1) infinite alternate;  
-	color: var(--white-text-color);
+  animation: blinker 0.5s cubic-bezier(.5, 0, 1, 1) infinite alternate;
+  color: var(--white-text-color);
 }
-@keyframes blinker { to { opacity: 0; } }
+
+@keyframes blinker {
+  to {
+    opacity: 0;
+  }
+}
 
 .text {
-	color: var(--second-color);
+  color: var(--second-color);
+}
+
+.dropdown-menu {
+  background-color: var(--navbar-color);
+  min-width: 200px;
+  border-radius: 5px 5px 5px 5px;
+  margin-top: 2px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  cursor: default;
+}
+
+.fa-sign-in {
+  vertical-align: middle;
+  font-size: 20px;
+  padding-bottom: 2px;
+}
+
+.fa-circle {
+  vertical-align: middle;
+  font-size: 5px !important;
+  color: var(--second-color);
+}
+
+.dropdown {
+  cursor: pointer;
+}
+
+.nav-tabs > li > a {
+  color: var(--white-text-color) !important;
+}
+
+.nav-tabs {
+  border-color: var(--second-color) !important;
+}
+
+.nav-tabs > li > a.active, .nav-tabs > li > a:hover, .nav-tabs > li.active > a:focus {
+  color: var(--second-color) !important;
+  border-color: var(--second-color) !important;
 }

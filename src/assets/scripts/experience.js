@@ -1,6 +1,6 @@
+'use strict';
 (function () {
     $(document).ready(function () {
-        'use strict';
         var items = document.querySelectorAll(".timeline li");
 
         function isElementInViewport(el) {

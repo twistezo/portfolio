@@ -10,9 +10,7 @@
   color: var(--timeline-highlight);
 }
 
-.job-date,
-.job-name,
-.job-desc {
+.job-date, .job-name, .job-desc {
   color: var(--white-text-color);
 }
 
@@ -37,7 +35,9 @@
   background: var(--my-blue);
 }
 
+
 /* circle */
+
 .timeline ul li::after {
   content: '';
   position: absolute;
@@ -56,12 +56,14 @@
   width: 400px;
   padding: 15px;
   background: var(--timeline-item);
-  border: 2px; 
+  border: 2px;
   border-radius: 5px;
   box-shadow: 4px 4px 0px 0px var(--second-color);
 }
 
+
 /* vertical position of element */
+
 .timeline ul li div::before {
   content: '';
   position: absolute;
@@ -79,12 +81,10 @@
   left: -16px;
   border-width: 8px 16px 8px 0;
   border-color: transparent var(--timeline-item) transparent transparent;
-  
 }
 
 .timeline ul li:nth-child(even) div {
   left: -439px;
-  
 }
 
 .timeline ul li:nth-child(even) div::before {
@@ -105,7 +105,6 @@ time {
 
 .timeline ul li::after {
   transition: background .5s ease-in-out;
-  
 }
 
 .timeline ul li.in-view::after {
@@ -116,7 +115,6 @@ time {
   visibility: hidden;
   opacity: 0;
   transition: all .5s ease-in-out;
-  
 }
 
 .timeline ul li:nth-child(odd) div {

@@ -1,0 +1,16 @@
+.cookie-warning {
+    position: fixed;
+    display: block;
+    width: 280px;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    z-index: 99999;
+    background-color: var(--navbar-color);
+    color: var(--white-text-color);
+}
+
+.cookie-warning-text {
+    padding: 20px 20px 20px 20px;
+}

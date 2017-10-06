@@ -1,0 +1,12 @@
+.btn-primary, .btn-primary:active, .btn-primary:focus, .btn-primary:visited {
+    background-color: var(--second-color) !important;
+    border-color: var(--second-color) !important;
+    letter-spacing: 1px !important;
+    color: black;
+    border-radius: 3px;
+}
+
+.btn-primary:hover {
+    box-shadow: 2px 2px 0px 1px var(--my-blue);
+    color: black;
+}

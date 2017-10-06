@@ -1,6 +1,5 @@
+'use strict';
 (function (window) {
-    'use strict';
-
     var tempDiv = document.createElement('div');
     function isPropertySupported(property) {
         var prefixes = ['O', 'Moz', 'ms', 'Ms', 'Webkit'];

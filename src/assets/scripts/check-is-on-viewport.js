@@ -1,13 +1,12 @@
+'use strict';
 (function () {
     $(document).ready(function () {
 
         $.fn.isInViewport = function () {
             var elementTop = $(this).offset().top;
             var elementBottom = elementTop + $(this).outerHeight();
-
             var viewportTop = $(window).scrollTop();
             var viewportBottom = viewportTop + $(window).height();
-
             return elementBottom > viewportTop && elementTop < viewportBottom;
         };
 
@@ -28,15 +27,30 @@
 
         var isAnimCirclesPlayed = false;
         function animCircles() {
-            if ($('.c100').isInViewport()) {
-                $('.c100').addClass('bounce-in-top');
-                window.setTimeout(removeAnimCircles, 1250);
+            if ($('.skill-circle').isInViewport()) {
+                createCircle('.java-circle', 70);
+                createCircle('.rust-circle', 90);
+                createCircle('.web-circle', 85);
+                createCircle('.mobile-circle', 60);
+                createCircle('.graphics-circle', 95);
+
+                function createCircle(divId, percent) {
+                    var circleSize = 80;
+                    $(divId).circleProgress({
+                        value: percent * 0.01,
+                        fill: '#2aabd2',
+                        size: circleSize,
+                        emptyFill: 'rgba(204, 204, 204, 0.4)',
+                        startAngle: -Math.PI / 2,
+                        animation: { duration: 1600, easing: "circleProgressEasing" },
+                        insertMode: 'append',
+                    }).on('circle-animation-progress', function (event, progress, stepValue) {
+                        $(this).find('strong').html(Math.round(100 * stepValue) + '<span>%</span>');
+                    });
+                }
                 isAnimCirclesPlayed = true;
             }
         }
-        function removeAnimCircles() {
-            $('.c100').removeClass('bounce-in-top');
-        };
 
         var isAnimCardsPlayed = false;
         function animCards() {
