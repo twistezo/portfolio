@@ -29,7 +29,6 @@
 
 .form-control:hover {
     box-shadow: 0px 0px 0px 1px var(--second-color);
-    /* box-shadow: 5px 5px 0px 1px var(--second-color); */
 }
 
 hr.style-three {

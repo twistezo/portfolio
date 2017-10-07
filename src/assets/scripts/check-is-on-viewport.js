@@ -40,7 +40,7 @@
                         value: percent * 0.01,
                         fill: '#2aabd2',
                         size: circleSize,
-                        emptyFill: 'rgba(204, 204, 204, 0.4)',
+                        emptyFill: 'rgba(119, 119, 119, 1)',    // #777
                         startAngle: -Math.PI / 2,
                         animation: { duration: 1600, easing: "circleProgressEasing" },
                         insertMode: 'append',

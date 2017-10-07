@@ -6,6 +6,7 @@ html {
   --footer-color: var(--navbar-color);
   --second-color: orange;
   --my-blue: #2aabd2;
+  --gray: #777;
   --black-text-color: #333;
   --white-text-color: #f5f5f5;
   --timeline-background: var(--second-background);

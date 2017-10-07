@@ -8,5 +8,5 @@
 
 #scrollbar::-webkit-scrollbar-thumb {
 	border-radius: 10px;
-	background-color: #777;
+	background-color: var(--gray);
 }
