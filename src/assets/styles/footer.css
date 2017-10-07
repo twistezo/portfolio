@@ -1,5 +1,5 @@
 .overlay-up-icon-div {
-  top: -35px;
+  top: -25px;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -9,7 +9,7 @@
 
 .overlay-up-icon {
   color: var(--second-color);
-  font-size: 40px;
+  font-size: 50px;
 }
 
 .overlay-up-icon:hover {
@@ -17,9 +17,10 @@
 }
 
 .icon {
-  font-size: 26px;
+  font-size: 24px;
   margin-right: 25px;
-  vertical-align: middle;
+  position: relative;
+  top: 4px;
 }
 
 footer {

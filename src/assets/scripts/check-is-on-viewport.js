@@ -30,7 +30,7 @@
             if ($('.skill-circle').isInViewport()) {
                 createCircle('.java-circle', 70);
                 createCircle('.rust-circle', 90);
-                createCircle('.web-circle', 85);
+                createCircle('.web-circle', 80);
                 createCircle('.mobile-circle', 60);
                 createCircle('.graphics-circle', 95);
 

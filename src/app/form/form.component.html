@@ -3,11 +3,11 @@
 		<div class="form-row">
 			<div class="form-group col-sm-6">
 				<input type="email" class="form-control" id="email" placeholder="Email" formControlName="email">
-				<div class="alert alert-danger" *ngIf="!rForm.controls['email'].valid && rForm.controls['email'].touched">Wymagany poprawny format: example@gmail.com</div>
+				<div class="alert alert-danger" *ngIf="!rForm.controls['email'].valid && rForm.controls['email'].touched">Poprawny format: example@gmail.com</div>
 			</div>
 			<div class="form-group col-sm-6">
 				<input type="text" class="form-control" id="phone" placeholder="Nr telefonu" formControlName="phone">
-				<div class="alert alert-danger" *ngIf="!rForm.controls['phone'].valid && rForm.controls['phone'].touched">Wymagana ilość cyfr: 7</div>
+				<div class="alert alert-danger" *ngIf="!rForm.controls['phone'].valid && rForm.controls['phone'].touched">Poprawny format: 600700800</div>
 			</div>
 		</div>
 		<div class="form-group">
