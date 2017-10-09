@@ -67,13 +67,13 @@
         var isContactButtonPlayed = false;
         function animContactButton() {
             if ($('footer').isInViewport()) {
-                $('.btn').addClass('heartbeat');
+                $('.btn-footer').addClass('heartbeat');
                 window.setTimeout(removeAnimContactButton, 5000);
                 isContactButtonPlayed = true;
             }
         }
         function removeAnimContactButton() {
-            $('.btn').removeClass('heartbeat');
+            $('.btn-footer').removeClass('heartbeat');
         };
 
     });

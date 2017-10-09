@@ -27,9 +27,3 @@
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-
-.skill-circle:hover {
-  /* border-radius: 40px;
-  cursor: default;
-  box-shadow: 0px 0px 20px 0px var(--second-color); */
-}

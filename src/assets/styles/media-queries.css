@@ -7,13 +7,8 @@
     .card {
         margin-bottom: 15px;
     }
-    .bounce-in-top {
-        -webkit-animation: scale-in-center .5s cubic-bezier(.25, .46, .45, .94) both !important;
-        animation: scale-in-center .5s cubic-bezier(.25, .46, .45, .94) both !important
-    }
     .scale-in-ver-center {
-        -webkit-animation: scale-in-center .5s cubic-bezier(.25, .46, .45, .94) both !important;
-        animation: scale-in-center .5s cubic-bezier(.25, .46, .45, .94) both !important
+        display: none;
     }
 }
 
