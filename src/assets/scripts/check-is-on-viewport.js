@@ -28,11 +28,11 @@
         var isAnimCirclesPlayed = false;
         function animCircles() {
             if ($('.skill-circle').isInViewport()) {
-                createCircle('.java-circle', 70);
-                createCircle('.rust-circle', 90);
-                createCircle('.web-circle', 80);
-                createCircle('.mobile-circle', 60);
-                createCircle('.graphics-circle', 95);
+                createCircle('.java-circle', 60);
+                createCircle('.rust-circle', 80);
+                createCircle('.web-circle', 70);
+                createCircle('.mobile-circle', 50);
+                createCircle('.graphics-circle', 90);
 
                 function createCircle(divId, percent) {
                     var circleSize = 80;
