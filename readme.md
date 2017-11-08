@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/twistezo/portfolio.svg?branch=master)](https://travis-ci.org/twistezo/portfolio)
+
 ## Portfolio source code
 
 ### build & run
