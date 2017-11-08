@@ -2,7 +2,7 @@ html {
   --background: white;
   --second-background: #343a40;
   --navbar-color: #222929;
-  --navbar-hover-color: var(--navbar-color: );
+  --navbar-hover-color: var(--navbar-color);
   --footer-color: var(--navbar-color);
   --second-color: orange;
   --my-blue: #2aabd2;

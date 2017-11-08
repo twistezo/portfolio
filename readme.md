@@ -5,7 +5,7 @@
 ### build & run
 ```
 npm install
-npm install -g @angular/cli
+npm install -g @angular/cli@1.4.4
 ng serve
 ```
 
