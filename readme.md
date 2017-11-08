@@ -5,6 +5,7 @@
 ### build & run
 ```
 npm install
+npm install -g @angular/cli
 ng serve
 ```
 
