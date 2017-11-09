@@ -2,19 +2,15 @@
 [![Build Status](https://travis-ci.org/twistezo/portfolio.svg?branch=master)](https://travis-ci.org/twistezo/portfolio)
 
 ### Description
----
 My personal portfolio with management dashboard and blog (both are hidden for unregistered users)
 
 ### Tools
----
 Angular 4 (JS + TypeScript), Bootstrap 4, Firebase
 
 ### Requirements
----
 npm, angular-cli
 
 ### Build, run, deploy
----
 ```
 build:
 npm install
