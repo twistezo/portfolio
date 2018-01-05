@@ -31,7 +31,8 @@
         "assets/styles/media-queries.css",
         "assets/styles/navbar.css",
         "assets/styles/projects.css",
-        "assets/styles/scrollbar.css"
+        "assets/styles/scrollbar.css",
+        "assets/styles/corner-ribbon.css"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.min.js",

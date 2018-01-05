@@ -118,7 +118,7 @@ hr.style-two {
   min-height: 300px;
 }
 
-.jarallax > .jarallax-img {
+.jarallax>.jarallax-img {
   position: absolute;
   object-fit: cover;
   top: 0;
@@ -152,10 +152,10 @@ hr.style-two {
   text-align: center;
 }
 
-.skill-logo > img {
+.skill-logo>img {
   max-height: 8vh;
 }
 
-.skill-logo > img:hover {
+.skill-logo>img:hover {
   filter: drop-shadow( 0px 0px 10px var(--second-color));
 }
