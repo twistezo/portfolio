@@ -9,7 +9,8 @@
       "outDir": "dist",
       "assets": [
         "assets",
-        "favicon.ico"
+        "favicon.ico",
+        "assets/particlesjs-config.json"
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -40,6 +41,8 @@
         "../node_modules/popper.js/dist/umd/popper.min.js",
         "../node_modules/bootstrap/dist/js/bootstrap.min.js",
         "../node_modules/requirejs/require.js",
+        "../node_modules/particles.js/particles.js",
+        "assets/scripts/particles-loader.js",
         "assets/scripts/check-is-on-viewport.js",
         "assets/scripts/cookie-warning.js",
         "assets/scripts/experience.js",
