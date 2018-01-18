@@ -2,7 +2,7 @@
   <div *ngIf="!(authService.user | async)">
     <form [formGroup]="authForm" (ngSubmit)="login(authForm.value)">
       <div class="form-group row">
-        <input type="email" class="form-control" id="email" placeholder="Email" formControlName="email">
+        <input type="email" class="form-control" id="fb-auth-email" placeholder="Email" formControlName="email">
         <div class="alert alert-danger" *ngIf="!authForm.controls['email'].valid && authForm.controls['email'].touched" style="font-size: 10px;">Wymagany poprawny format email</div>
       </div>
       <div class="form-group row">

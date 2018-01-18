@@ -2,7 +2,7 @@
 	<form [formGroup]="rForm" (ngSubmit)="addMessage(rForm.value)">
 		<div class="form-row">
 			<div class="form-group col-sm-6">
-				<input type="email" class="form-control" id="email" placeholder="Email" formControlName="email">
+				<input type="email" class="form-control" id="form-email" placeholder="Email" formControlName="email">
 				<div class="alert alert-danger" *ngIf="!rForm.controls['email'].valid && rForm.controls['email'].touched">Poprawny format: example@gmail.com</div>
 			</div>
 			<div class="form-group col-sm-6">
