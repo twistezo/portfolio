@@ -12,7 +12,6 @@
 .ribbon span {
     font-size: 10px;
     font-weight: bold;
-    color: var(--black-text-color);
     text-transform: uppercase;
     text-align: center;
     line-height: 20px;
@@ -20,7 +19,6 @@
     -webkit-transform: rotate(45deg);
     width: 100px;
     display: block;
-    background: var(--second-color);
     box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
     position: absolute;
     top: 19px;
@@ -33,10 +31,8 @@
     left: 0px;
     top: 100%;
     z-index: -1;
-    border-left: 3px solid #b47500;
     border-right: 3px solid transparent;
     border-bottom: 3px solid transparent;
-    border-top: 3px solid #b47500;
 }
 
 .ribbon span::after {
@@ -46,7 +42,50 @@
     top: 100%;
     z-index: -1;
     border-left: 3px solid transparent;
-    border-right: 3px solid #b47500;
     border-bottom: 3px solid transparent;
+}
+
+.ribbon-orange span {
+    color: var(--black-text-color);
+    background: var(--second-color);
+}
+
+.ribbon-orange span::before {
+    border-left: 3px solid #b47500;
     border-top: 3px solid #b47500;
+}
+
+.ribbon-orange span::after {
+    border-right: 3px solid #b47500;
+    border-top: 3px solid #b47500;
+}
+
+.ribbon-blue span {
+    color: var(--black-text-color);
+    background: var(--my-blue);
+}
+
+.ribbon-blue span::before {
+    border-left: 3px solid #2aabd298;
+    border-top: 3px solid #2aabd298;
+}
+
+.ribbon-blue span::after {
+    border-right: 3px solid #2aabd298;
+    border-top: 3px solid #2aabd298;
+}
+
+.ribbon-black span {
+    color: var(--white-text-color);
+    background: var(--gray);
+}
+
+.ribbon-black span::before {
+    border-left: 3px solid rgb(45, 45, 45);
+    border-top: 3px solid rgb(45, 45, 45);
+}
+
+.ribbon-black span::after {
+    border-right: 3px solid rgb(45, 45, 45);
+    border-top: 3px solid rgb(45, 45, 45);
 }
