@@ -4,7 +4,7 @@ html {
   --navbar-color: #222929;
   --navbar-hover-color: var(--navbar-color);
   --footer-color: var(--navbar-color);
-  --second-color: orange;
+  --second-color: #ffa500;
   --my-blue: #2aabd2;
   --gray: #777;
   --black-text-color: #333;
@@ -12,6 +12,9 @@ html {
   --timeline-background: var(--second-background);
   --timeline-item: #434A54;
   --timeline-highlight: var(--second-color);
+  --important-lvl-3: #ffa500;
+  --important-lvl-2: #ffce73;
+  --important-lvl-1: #fff0d4;
   position: relative;
 }
 
