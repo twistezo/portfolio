@@ -7,5 +7,7 @@ ReactDOM.render(
   <div>
     <Layout />
   </div>,
-  document.getElementById('root'),
+  document.getElementById('app')
 );
+
+module.hot.accept();
