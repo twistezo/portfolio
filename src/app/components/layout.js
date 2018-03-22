@@ -1,16 +1,7 @@
 import React from 'react';
-import {
-  HashRouter,
-  Link,
-  withRouter,
-  Route,
-  BrowserRouter
-} from 'react-router-dom';
+import { Link, BrowserRouter } from 'react-router-dom';
 import $ from 'jquery';
-import PropTypes from 'prop-types';
-
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/js/bootstrap.js';
+import VisibilitySensor from 'react-visibility-sensor';
 
 import AboutMe from './about-me';
 import Skills from './skills';
@@ -18,21 +9,22 @@ import Experience from './experience';
 import Projects from './projects';
 import Contact from './contact';
 
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.js';
+import '../styles/layout.css';
+
 class Navbar extends React.Component {
 
   render() {
     return (
       <BrowserRouter>
         <div>
-          <div className="fixed-top">
-            <ul className="nav justify-content-end">
-              <li className="nav-item">
-                <Link to="#about-me">About-me</Link>
-              </li>
-              <li className="nav-item">
-                <Link to="#skills">Skills</Link>
-              </li>
-            </ul>
+          <div>
+            <Link to="#about-me">About-me </Link>
+            <Link to="#skills">Skills </Link>
+            <Link to="#experience">Experience </Link>
+            <Link to="#projects">Projects </Link>
+            <Link to="#contact">Contact </Link>
           </div>
         </div>
       </BrowserRouter>
@@ -58,8 +50,23 @@ class Layout extends React.Component {
   render() {
     return (
       <div>
-        <Navbar />
         <AboutMe />
+        <VisibilitySensor>
+          {
+            ({ isVisible }) =>
+              <div>
+                {isVisible ? (
+                  <div className="navbar">
+                    <Navbar />
+                  </div>
+                ) : (
+                    <div className="navbar stickedNavbar">
+                      <Navbar />
+                    </div>
+                  )}
+              </div>
+          }
+        </VisibilitySensor>
         <Skills />
         <Experience />
         <Projects />

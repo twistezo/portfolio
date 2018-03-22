@@ -1,0 +1,10 @@
+.navbar {
+    width: 100%;
+    background: pink;
+}
+
+.stickedNavbar {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
