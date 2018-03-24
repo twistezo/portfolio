@@ -6,7 +6,7 @@ import 'bootstrap/dist/js/bootstrap.js';
 class Projects extends React.Component {
   render() {
     return (
-      <div id="projects" className="text-center ">
+      <div>
         <h4>{'Projects'}</h4>
         <div className="container">
           <div className="row">

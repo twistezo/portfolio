@@ -3,12 +3,21 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
 
+
+import '../styles/skills.css';
+
 class Skills extends React.Component {
   render() {
     return (
-      <div id="skills" className="text-center ">
-        <h4>{'Skills'}</h4>
-        <div className="container">
+      <div className="skills">
+        <div data-aos="flip-left" data-aos-delay="200">
+          <h4>{'Skills'}</h4>
+        </div>
+        <div data-aos="fade-right" className="container">
+          <div data-aos="fade-right">
+            <div className="reactangle">
+            </div>
+          </div>
           <div className="row">
             <div className="col-sm-2" />
             <div className="col-sm-8">

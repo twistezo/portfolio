@@ -6,7 +6,7 @@ import 'bootstrap/dist/js/bootstrap.js';
 class Contact extends React.Component {
   render() {
     return (
-      <div id="contact" className="text-center ">
+      <div>
         <h4>{'Contact'}</h4>
         <div className="container">
           <div className="row">

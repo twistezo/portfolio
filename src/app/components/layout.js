@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, BrowserRouter } from 'react-router-dom';
 import $ from 'jquery';
-import VisibilitySensor from 'react-visibility-sensor';
+import AOS from 'aos';
 
 import AboutMe from './about-me';
 import Skills from './skills';
@@ -11,14 +11,14 @@ import Contact from './contact';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
+import '../../../node_modules/aos/dist/aos.css';
 import '../styles/layout.css';
 
 class Navbar extends React.Component {
-
   render() {
     return (
       <BrowserRouter>
-        <div>
+        <div className="navbar">
           <div>
             <Link to="#about-me">About-me </Link>
             <Link to="#skills">Skills </Link>
@@ -30,11 +30,11 @@ class Navbar extends React.Component {
       </BrowserRouter>
     );
   }
-
 }
 
 class Layout extends React.Component {
-  componentWillMount() {
+  componentDidMount() {
+    AOS.init();
     this.enableHashSmoothScrolling();
   }
 
@@ -49,28 +49,23 @@ class Layout extends React.Component {
 
   render() {
     return (
-      <div>
-        <AboutMe />
-        <VisibilitySensor>
-          {
-            ({ isVisible }) =>
-              <div>
-                {isVisible ? (
-                  <div className="navbar">
-                    <Navbar />
-                  </div>
-                ) : (
-                    <div className="navbar stickedNavbar">
-                      <Navbar />
-                    </div>
-                  )}
-              </div>
-          }
-        </VisibilitySensor>
-        <Skills />
-        <Experience />
-        <Projects />
-        <Contact />
+      <div className="text-center">
+        <div id="about-me" className="spaceBetweenSections fullHeight">
+          <AboutMe />
+        </div>
+        <Navbar />
+        <div id="skills" className="spaceBetweenSections">
+          <Skills />
+        </div>
+        <div id="experience" className="spaceBetweenSections">
+          <Experience />
+        </div>
+        <div id="projects" className="spaceBetweenSections">
+          <Projects />
+        </div>
+        <div id="contact" className="spaceBetweenSections">
+          <Contact />
+        </div>
       </div >
     );
   }

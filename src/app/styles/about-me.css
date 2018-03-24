@@ -1,0 +1,24 @@
+.aboutMe {
+    background-color: lightcyan;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.buttonJumpToNextSection {
+    position: absolute;
+    bottom: 50px;
+}
+
+/* Text Scramble Type Writer */
+.textScrambleStyle {
+    font-size: 36px;
+}
+.blinker {
+    animation: blinker 0.5s cubic-bezier(.5, 0, 1, 1) infinite alternate;
+    color: orange;
+}
+@keyframes blinker {
+    to {
+        opacity: 0;
+    }
+}
