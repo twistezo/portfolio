@@ -1,12 +1,12 @@
 import { html } from 'lit-html';
-import 'bootstrap/dist/js/bootstrap.js';
+import 'bootstrap/dist/js/bootstrap';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import '../styles/about-me.css';
 import '../styles/scroll-down-button.css';
-import '../scripts/text-scramble.js';
-import myPhotoImg from '../images/me.jpg';
+import '../components/text-scramble';
+import mePhotoImg from '../images/me.jpg';
 
 const AboutMe =
   html`
@@ -56,7 +56,7 @@ const AboutMe =
           </p>
         </div>
         <div class="col-sm-4" data-aos="fade-left">
-          <img class="img-fluid" src=${myPhotoImg} />
+          <img class="img-fluid" src=${mePhotoImg} />
         </div>
       </div>
     </div>
