@@ -1,16 +1,23 @@
+.sectionPaddingTop {
+    padding-top: 120px;
+}
+
 .fullHeight {
     height: 100vh;
 }
 
-.navbar {
-    width: 100%;
-    height: 50px;
+.aosScrollbarFix {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.stickyNavbar {
     position: sticky;
     top: 0;
     z-index: 1;
-    background: lightgoldenrodyellow;
 }
 
-.spaceBetweenSections {
-    padding-top: 120px;
+.selected {
+    color: pink !important;
+    font-weight: bold !important;
 }

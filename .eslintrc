@@ -1,14 +1,15 @@
 {
     "parser": "babel-eslint",
-    "plugins": [
-        "react"
-    ],
+    "plugins": [],
     "rules": {
-        "no-unused-vars": 0,
-        "no-undef": 0
+        "no-unused-vars": 1,
+        "no-undef": 0,
+        "no-console": 1
     },
     "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended"
-    ]
+        "eslint:recommended"
+    ],
+    "env": {
+        "browser": true
+    }
 }
