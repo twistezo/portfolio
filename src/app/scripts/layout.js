@@ -1,5 +1,6 @@
 import { html, render } from 'lit-html';
 import AOS from 'aos';
+import Parallax from 'parallax-js';
 import 'bootstrap/dist/js/bootstrap.js';
 import '../scripts/text-scramble';
 
@@ -31,6 +32,9 @@ export default class App {
     this.smoothScrolling();
     const el = document.querySelector('#app');
     render(this.Layout(), el);
+
+    var scene = document.getElementById('scene');
+    new Parallax(scene);
   }
 
   smoothScrolling() {
