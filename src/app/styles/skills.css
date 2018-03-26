@@ -1,4 +1,6 @@
-.skills {
+#skills {
   max-width: 100%;
   overflow: hidden;
+  background-color: #696c6e;
+  color: white;
 }

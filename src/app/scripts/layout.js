@@ -1,6 +1,5 @@
 import { html, render } from 'lit-html';
 import AOS from 'aos';
-import Parallax from 'parallax-js';
 import 'bootstrap/dist/js/bootstrap.js';
 import '../scripts/text-scramble';
 
@@ -15,6 +14,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import '../../../node_modules/aos/dist/aos.css';
 import '../styles/layout.css';
 import '../styles/about-me.css';
+import '../styles/skills.css';
 import '../styles/navbar.css';
 import '../styles/scroll-down-button.css';
 
@@ -31,8 +31,6 @@ export default class App {
     this.smoothScrolling();
     const el = document.querySelector('#app');
     render(this.Layout(), el);
-    const scene = document.getElementById('scene');
-    new Parallax(scene);
   }
 
   smoothScrolling() {
@@ -47,7 +45,7 @@ export default class App {
   Layout = () => {
     return html`
     <div>
-      <div id="about-me" class="sectionPaddingTop fullHeight aosScrollbarFix sectionBackground">
+      <div id="about-me" class="sectionPaddingTop fullHeight aosScrollbarFix">
         ${AboutMe}
       </div>
       ${Navbar}
