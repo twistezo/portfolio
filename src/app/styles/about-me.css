@@ -1,41 +1,73 @@
+.sectionBackground {
+  /* background-color: lightblue; */
+}
+
+.scene-depth-0 {
+  z-index: 0;
+}
+
+.scene-depth-1 {
+  z-index: 10;
+}
+
+.cloudImg {
+  position: absolute;
+  width: 200px;
+  top: -100px;
+  left: 45%;
+  opacity: 0.1;
+}
+
+.left-bracket {
+  position: absolute;
+  top: 250px;
+  left: 90px;
+}
+
+.right-bracket {
+  position: absolute;
+  top: 250px;
+  right: 70px;
+}
+
 .buttonJumpToNextSection {
-    position: absolute;
-    bottom: 50px;
+  position: absolute;
+  bottom: 50px;
 }
 
 .bracesEffect {
-    font-size: 100px;
-    font-weight: bold;
-    color: lightgray;
-    animation: text-shadow-pop-tl 0.6s both;
-    opacity: 0.1;
-    /* text-shadow: 4px 4px 0px #fff, 6px 6px 0px rgba(54, 54, 54, 0.5); */
+  font-size: 100px;
+  font-weight: bold;
+  color: lightgray;
+  animation: text-shadow-pop-tl 0.6s both;
+  opacity: 0.1;
+  /* text-shadow: 4px 4px 0px #fff, 6px 6px 0px rgba(54, 54, 54, 0.5); */
 }
 
 /* Text Scramble Type Writer */
 
 .textScrambleStyle {
-    font-size: 36px;
+  font-size: 36px;
 }
 
 .blinker {
-    animation: blinker 0.5s cubic-bezier(.5, 0, 1, 1) infinite alternate;
-    color: orange;
+  animation: blinker 0.5s cubic-bezier(.5, 0, 1, 1) infinite alternate;
+  color: orange;
 }
 
 @keyframes blinker {
-    to {
-        opacity: 0;
-    }
+  to {
+    opacity: 0;
+  }
 }
 
 @keyframes text-shadow-pop-tl {
-    0% {
-        text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
-        transform: translateX(0) translateY(0);
-    }
-    100% {
-        text-shadow: -1px -1px #555555, -2px -2px #555555, -3px -3px #555555, -4px -4px #555555, -5px -5px #555555, -6px -6px #555555, -7px -7px #555555, -8px -8px #555555;
-        transform: translateX(8px) translateY(8px);
-    }
+  0% {
+    text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    text-shadow: -1px -1px #555555, -2px -2px #555555, -3px -3px #555555, -4px -4px #555555, -5px -5px #555555, -6px -6px #555555, -7px -7px #555555, -8px -8px #555555;
+    transform: translateX(8px) translateY(8px);
+  }
 }

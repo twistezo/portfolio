@@ -1,13 +1,13 @@
 .navbar {
-    background: lightgray;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  background: lightgray;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .selected {
-    color: pink !important;
-    font-weight: bold !important;
+  color: pink !important;
+  font-weight: bold !important;
 }
 
 .active {
-    color: orange !important;
+  color: orange !important;
 }

@@ -1,5 +1,6 @@
 import { html, render } from 'lit-html';
 import AOS from 'aos';
+import Parallax from 'parallax-js';
 import 'bootstrap/dist/js/bootstrap.js';
 
 import Navbar from './navbar';
@@ -14,33 +15,36 @@ import '../../../node_modules/aos/dist/aos.css';
 import '../styles/layout.css';
 
 export default class App {
-    constructor() {
-        AOS.init();
-        this.navbar = new Navbar().NavbarComponent();
-        const el = document.querySelector('#app');
-        render(this.Layout(''), el);
-    }
+  constructor() {
+    AOS.init();
+    this.navbar = new Navbar().NavbarComponent();
+    const el = document.querySelector('#app');
+    render(this.Layout(''), el);
 
-    Layout = () => {
-        return html`
+    const scene = document.getElementById('scene');
+    new Parallax(scene);
+  }
+
+  Layout = () => {
+    return html`
         <div>
-            <div id="about-me" class="sectionPaddingTop fullHeight aosScrollbarFix">
-                ${AboutMe}
-            </div>
-            ${this.navbar}
-            <div id="skills" class="sectionPaddingTop aosScrollbarFix">
-                ${Skills}
-            </div>
-            <div id="experience" class="sectionPaddingTop aosScrollbarFix">
-                ${Experience}
-            </div>
-            <div id="projects" class="sectionPaddingTop aosScrollbarFix">
-                ${Projects}
-            </div>
-            <div id="contact" class="sectionPaddingTop aosScrollbarFix">
-                ${Contact}
-            </div>
+          <div id="about-me" class="sectionPaddingTop fullHeight aosScrollbarFix sectionBackground">
+            ${AboutMe}
+          </div>
+          ${this.navbar}
+          <div id="skills" class="sectionPaddingTop aosScrollbarFix">
+            ${Skills}
+          </div>
+          <div id="experience" class="sectionPaddingTop aosScrollbarFix">
+            ${Experience}
+          </div>
+          <div id="projects" class="sectionPaddingTop aosScrollbarFix">
+            ${Projects}
+          </div>
+          <div id="contact" class="sectionPaddingTop aosScrollbarFix">
+            ${Contact}
+          </div>
         </div>
       `;
-    };
+  };
 }
