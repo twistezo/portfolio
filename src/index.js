@@ -1,3 +1,3 @@
-import App from '../src/app/components/layout';
+import App from '../src/app/scripts/layout';
 
 new App();

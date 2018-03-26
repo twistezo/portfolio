@@ -1,17 +1,3 @@
-import { html } from 'lit-html';
-import 'bootstrap/dist/js/bootstrap';
-
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/css/bootstrap.css';
-import '../styles/about-me.css';
-import '../styles/scroll-down-button.css';
-import '../components/text-scramble';
-import mePhotoImg from '../images/me.jpg';
-import cloudImg from '../images/clound.png';
-
-const AboutMe =
-  html`
-
 <div class="scene-depth-0">
   <div data-relative-input="true" id="scene">
     <div data-depth="0.1">
@@ -22,26 +8,21 @@ const AboutMe =
         /&gt;
       </div>
       <div data-depth="0.2">
-        <img class="img-fluid cloudImg" src=${cloudImg} />
+        <img class="img-fluid cloudImg" src="../images/clound.png" />
       </div>
     </div>
   </div>
 </div>
-
 <div class="text-center scene-depth-1">
   <div class="row mx-auto">
-
     <div class="col-sm-2">
     </div>
-
     <div class="col-sm-8 ">
       <div class="textScrambleStyle text-left pb-4" data-aos="fade-right ">
         <span class="blinker ">_</span>
         <span class="textScramble "></span>
       </div>
-
       <div class="row ">
-
         <div class="col-sm-8 text-justify text-left " data-aos="fade-up ">
           <p>
             Znajdziesz tutaj krótkie podsumowanie moich umiejętności, używanych przeze mnie narzędzi, wybrane projekty oraz przebieg
@@ -71,23 +52,16 @@ const AboutMe =
         </div>
 
         <div class="col-sm-4 " data-aos="fade-left ">
-          <img class="img-fluid " src=${mePhotoImg} />
+          <img class="img-fluid " src="../images/me.jpg" />
         </div>
-
       </div>
-
     </div>
     <div class="col-sm-2 " data-aos="fade-left ">
     </div>
-
   </div>
   <a href="#skills " class="buttonJumpToNextSection " role="button ">
     <div class="chevron "></div>
     <div class="chevron "></div>
     <div class="chevron "></div>
   </a>
-
 </div>
-`;
-
-export default AboutMe;
