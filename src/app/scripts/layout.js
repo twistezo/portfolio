@@ -10,14 +10,17 @@ import skillsHTML from '../components/skills.html';
 import experienceHTML from '../components/experience.html';
 import projectsHTML from '../components/projects.html';
 import contactHTML from '../components/contact.html';
+import footerHTML from '../components/footer.html';
 
 import 'bootstrap/dist/css/bootstrap.css';
+import '../../../node_modules/font-awesome/css/font-awesome.css';
 import '../../../node_modules/aos/dist/aos.css';
 import '../styles/layout.css';
 import '../styles/about-me.css';
-import '../styles/skills.css';
-import '../styles/navbar.css';
 import '../styles/scroll-down-button.css';
+import '../styles/navbar.css';
+import '../styles/skills.css';
+import '../styles/footer.css';
 
 const AboutMe = html([aboutMeHTML]);
 const Navbar = html([navbarHTML]);
@@ -25,6 +28,7 @@ const Skills = html([skillsHTML]);
 const Experience = html([experienceHTML]);
 const Projects = html([projectsHTML]);
 const Contact = html([contactHTML]);
+const Footer = html([footerHTML]);
 
 export default class App {
   constructor() {
@@ -63,8 +67,11 @@ export default class App {
       <div id="projects" class="section-padding-top aos-scrollbar-fix">
         ${Projects}
       </div>
-      <div id="contact" class="section-padding-top aos-scrollbar-fix">
+      <div id="contact" class="section-padding-top aos-scrollbar-fix pb-5">
         ${Contact}
+      </div>
+      <div id="footer">
+        ${Footer}
       </div>
     </div>
   `;

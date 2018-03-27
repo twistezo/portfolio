@@ -7,7 +7,7 @@
 }
 
 #about-me a {
-  color: orange !important;
+  color: var(--second) !important;
 }
 
 .parallax-container {
@@ -41,7 +41,7 @@
 
 .blinker {
   animation: blinker 0.5s cubic-bezier(.5, 0, 1, 1) infinite alternate;
-  color: orange;
+  color: var(--second);
 }
 
 @keyframes blinker {
