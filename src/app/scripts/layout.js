@@ -30,6 +30,7 @@ export default class App {
   constructor() {
     AOS.init();
     this.smoothScrolling();
+
     const el = document.querySelector('#app');
     render(this.Layout(), el);
 
@@ -49,20 +50,20 @@ export default class App {
   Layout = () => {
     return html`
     <div>
-      <div id="about-me" class="sectionPaddingTop fullHeight aosScrollbarFix">
+      <div id="about-me" class="section-padding-top full-height aos-scrollbar-fix">
         ${AboutMe}
       </div>
       ${Navbar}
-      <div id="skills" class="sectionPaddingTop aosScrollbarFix">
+      <div id="skills" class="section-padding-top aos-scrollbar-fix">
         ${Skills}
       </div>
-      <div id="experience" class="sectionPaddingTop aosScrollbarFix">
+      <div id="experience" class="section-padding-top aos-scrollbar-fix">
         ${Experience}
       </div>
-      <div id="projects" class="sectionPaddingTop aosScrollbarFix">
+      <div id="projects" class="section-padding-top aos-scrollbar-fix">
         ${Projects}
       </div>
-      <div id="contact" class="sectionPaddingTop aosScrollbarFix">
+      <div id="contact" class="section-padding-top aos-scrollbar-fix">
         ${Contact}
       </div>
     </div>
