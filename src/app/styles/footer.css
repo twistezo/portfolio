@@ -2,15 +2,34 @@
   background-color: var(--navbar);
   padding-top: 50px;
   padding-bottom: 50px;
-  color: var(--white-text);
+  color: var(--white);
   overflow: hidden;
-  box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
-#footer hr {
-  border-color: var(--second);
+#footer a {
+  color: var(--white);
 }
 
-#footer i {
-  color: var(--second);
+#footer a:hover {
+  color: var(--second) !important;
+  text-decoration: none;
+}
+
+#footer .fa {
+  margin-right: 25px;
+  position: relative;
+  top: 4px;
+}
+
+#footer .wrapper {
+  position: absolute;
+  width: 100%;
+}
+
+#footer .go-up {
+  position: absolute;
+  bottom: 115px;
+  left: 49%;
+  color: var(--second) !important;
 }

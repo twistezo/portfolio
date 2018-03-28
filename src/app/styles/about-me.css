@@ -3,7 +3,7 @@
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  color: #f5f5f5;
+  color: var(--white);
 }
 
 #about-me a {
@@ -50,7 +50,7 @@
   }
 }
 
-.button-jump-to-next-section {
+.go-down {
   position: absolute;
   bottom: 50px;
   left: 50%;
