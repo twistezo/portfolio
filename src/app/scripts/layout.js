@@ -15,9 +15,10 @@ import footerHTML from '../components/footer.html';
 import 'bootstrap/dist/css/bootstrap.css';
 import '../../../node_modules/font-awesome/css/font-awesome.css';
 import '../../../node_modules/aos/dist/aos.css';
+import '../styles/scroll-down-button.css';
+import '../styles/scrollbar.css';
 import '../styles/layout.css';
 import '../styles/about-me.css';
-import '../styles/scroll-down-button.css';
 import '../styles/navbar.css';
 import '../styles/skills.css';
 import '../styles/footer.css';
@@ -54,20 +55,20 @@ export default class App {
   Layout = () => {
     return html`
     <div>
-      <div id="about-me" class="section-padding-top full-height aos-scrollbar-fix">
+      <div id="about-me">
         ${AboutMe}
       </div>
       ${Navbar}
-      <div id="skills" class="section-padding-top aos-scrollbar-fix">
+      <div id="skills">
         ${Skills}
       </div>
-      <div id="experience" class="section-padding-top aos-scrollbar-fix">
+      <div id="experience">
         ${Experience}
       </div>
-      <div id="projects" class="section-padding-top aos-scrollbar-fix">
+      <div id="projects">
         ${Projects}
       </div>
-      <div id="contact" class="section-padding-top aos-scrollbar-fix pb-5">
+      <div id="contact">
         ${Contact}
       </div>
       <div id="footer">

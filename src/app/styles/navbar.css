@@ -1,16 +1,12 @@
 .navbar {
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
+  background-color: var(--navbar) !important;
 }
 
 .sticky-navbar {
   position: sticky;
   top: 0;
   z-index: 1;
-}
-
-.selected {
-  color: pink !important;
-  font-weight: bold !important;
 }
 
 .active {

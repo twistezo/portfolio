@@ -3,22 +3,21 @@ html {
   --black-text: #333;
   --second: orange;
   --navbar: #222929;
+  --background: #343a40;
+  background-color: var(--navbar);
 }
 
-.section-padding-top {
+#about-me, #skills, #experience, #projects, #contact {
   padding-top: 120px;
-}
-
-.full-height {
-  height: 100vh;
-}
-
-.aos-scrollbar-fix {
   max-width: 100%;
   overflow: hidden;
 }
 
-.selected {
-  color: pink !important;
-  font-weight: bold !important;
+#skills, #experience, #projects, #contact {
+  background: var(--background);
+  color: var(--white);
+}
+
+#contact {
+  padding-bottom: 80px;
 }

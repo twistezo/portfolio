@@ -1,31 +1,27 @@
 <div class="text-center">
-  <div data-aos="flip-left" data-aos-delay="200">
-    <h4>Contact</h4>
+  <div class="pb-5" data-aos="fade-left" data-aos-delay="200">
+    <h4>Kontakt</h4>
   </div>
   <div data-aos="fade-right" class="container">
-    <div data-aos="fade-right">
-      <div class="reactangle">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-2"></div>
+    <div class="row justify-content-md-center">
       <div class="col-sm-8">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lacinia sapien in risus ullamcorper lacinia. Etiam
-          elementum sapien mauris. In vestibulum finibus lacus ultricies blandit. Donec rutrum quam velit, eget ultrices
-          tellus sollicitudin in. Cras in nisi vel neque euismod aliquam. Nunc a fringilla mi, vel mattis quam. Maecenas
-          malesuada non arcu sit amet posuere. Duis pulvinar nisl nec leo fermentum volutpat. Nam viverra nec elit vitae
-          maximus. Etiam eleifend sem non nibh finibus viverra. Morbi eu aliquet ex. Suspendisse mattis efficitur magna nec
-          consectetur. Aliquam posuere accumsan tortor eget semper. Proin et facilisis tellus, sed interdum est. Phasellus
-          viverra augue orci, et eleifend dui blandit quis.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lacinia sapien in risus ullamcorper lacinia. Etiam
-          elementum sapien mauris. In vestibulum finibus lacus ultricies blandit. Donec rutrum quam velit, eget ultrices
-          tellus sollicitudin in. Cras in nisi vel neque euismod aliquam. Nunc a fringilla mi, vel mattis quam. Maecenas
-          malesuada non arcu sit amet posuere. Duis pulvinar nisl nec leo fermentum volutpat. Nam viverra nec elit vitae
-          maximus. Etiam eleifend sem non nibh finibus viverra. Morbi eu aliquet ex. Suspendisse mattis efficitur magna nec
-          consectetur. Aliquam posuere accumsan tortor eget semper. Proin et facilisis tellus, sed interdum est. Phasellus
-          viverra augue orci, et eleifend dui blandit quis.</p>
+        <form method="POST" action="https://formspree.io/kolkolukasz@gmail.com">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email">
+            </div>
+            <div class="form-group col-md-6">
+              <input type="phone" name="phone" class="form-control" id="inputPassword" placeholder="Nr telefonu">
+            </div>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" name="contents" id="inputContents" placeholder="Treść wiadomości" rows="7"></textarea>
+          </div>
+          <div class="row justify-content-end submit-button">
+            <button type="submit" class="btn btn-primary">Wyślij</button>
+          </div>
+        </form>
       </div>
-      <div class="col-sm-2"></div>
     </div>
   </div>
 </div>
