@@ -13,8 +13,8 @@ import contactHTML from '../components/contact.html';
 import footerHTML from '../components/footer.html';
 
 import 'bootstrap/dist/css/bootstrap.css';
-import '../../../node_modules/font-awesome/css/font-awesome.css';
 import '../../../node_modules/aos/dist/aos.css';
+import '../styles/fontello/css/fontello.css'
 import '../styles/scroll-down-button.css';
 import '../styles/scrollbar.css';
 import '../styles/layout.css';
