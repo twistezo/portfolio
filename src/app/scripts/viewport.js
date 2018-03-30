@@ -12,7 +12,7 @@
   // class="test" -> '.test'
   // <h3> -> 'h3'
   $(window).on('resize scroll', function () {
-    animWhenInViewport('#skills-logos', 'bounce-in-top');
+    // animWhenInViewport('#skills-logos', 'bounce-in-top');
   });
 
   function animWhenInViewport(viewportEl, animClass) {

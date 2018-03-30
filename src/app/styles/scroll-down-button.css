@@ -1,3 +1,19 @@
+#about-me .go-down-fake-container {
+  position: absolute;
+  bottom: 30px;
+  width: 70px;
+  left: 26px;
+  right: 0;
+  height: 100px;
+  margin: auto;
+}
+
+#about-me .go-down {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+}
+
 .chevron {
   position: absolute;
   width: 28px;

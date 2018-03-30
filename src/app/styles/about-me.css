@@ -1,9 +1,5 @@
 #about-me {
   height: 100vh;
-  background-image: url('../images/parallax-background.jpg');
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
   color: var(--white);
 }
 
@@ -23,17 +19,28 @@
   justify-content: flex-end;
 }
 
-.parallax-me {
+.parallax-background {
   position: relative;
-  width: 800px;
-  left: 50px;
-  bottom: 420px;
+  left: -160px;
+}
+
+.parallax-skill-svg {
+  position: relative;
+  /* max-height: 15vh; */
+  width: 120px;
 }
 
 .parallax-ground {
   position: relative;
   left: -160px;
-  bottom: -60px;
+  top: 1400px;
+}
+
+.parallax-me {
+  position: relative;
+  width: 800px;
+  left: 50px;
+  top: 960px;
 }
 
 .text-scramble {
@@ -49,10 +56,4 @@
   to {
     opacity: 0;
   }
-}
-
-.go-down {
-  position: absolute;
-  bottom: 50px;
-  left: 50%;
 }
