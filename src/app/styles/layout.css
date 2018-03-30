@@ -4,6 +4,9 @@ html {
   --second: orange;
   --navbar: #222929;
   --background: #343a40;
+  --important-lvl-3: #ffa500;
+  --important-lvl-2: #ffce73;
+  --important-lvl-1: #fff0d4;
   background-color: var(--navbar);
 }
 
@@ -20,4 +23,9 @@ html {
 
 #contact {
   padding-bottom: 80px;
+}
+
+.square-bracket {
+  font-size: 20px;
+  color: var(--second) !important;
 }

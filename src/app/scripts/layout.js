@@ -3,6 +3,7 @@ import AOS from 'aos';
 import Parallax from 'parallax-js';
 import 'bootstrap/dist/js/bootstrap.js';
 import '../scripts/text-scramble';
+import '../scripts/viewport';
 
 import aboutMeHTML from '../components/about-me.html';
 import navbarHTML from '../components/navbar.html';
@@ -21,6 +22,8 @@ import '../styles/layout.css';
 import '../styles/about-me.css';
 import '../styles/navbar.css';
 import '../styles/skills.css';
+import '../styles/projects.css';
+import '../styles/contact.css';
 import '../styles/footer.css';
 
 const AboutMe = html([aboutMeHTML]);
@@ -35,12 +38,8 @@ export default class App {
   constructor() {
     AOS.init();
     this.smoothScrolling();
-
-    const el = document.querySelector('#app');
-    render(this.Layout(), el);
-
-    var scene = document.getElementById('scene');
-    new Parallax(scene);
+    render(this.Layout(), document.querySelector('#app'));
+    new Parallax(document.getElementById('scene'));
   }
 
   smoothScrolling() {
@@ -52,8 +51,8 @@ export default class App {
     });
   }
 
-  Layout = () => {
-    return html`
+Layout = () => {
+  return html`
     <div>
       <div id="about-me">
         ${AboutMe}
@@ -76,5 +75,5 @@ export default class App {
       </div>
     </div>
   `;
-  };
+};
 }

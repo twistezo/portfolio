@@ -10,10 +10,5 @@ module.exports = merge(common, {
     new HtmlWebpackPlugin({
       template: './src/index-template.html'
     })
-  ],
-  module: {
-    rules: [
-
-    ]
-  }
+  ]
 });
