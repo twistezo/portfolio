@@ -37,12 +37,13 @@ const Footer = html([footerHTML]);
 export default class App {
   constructor() {
     AOS.init();
-    this.smoothScrolling();
-    render(this.Layout(), document.querySelector('#app'));
-    new Parallax(document.getElementById('scene'));
+    this.smoothScroll();
+    this.renderLayout();
+    let parallax = new Parallax(document.getElementById('scene'));
+    this.disableParallaxWhenScrollDown(parallax);
   }
 
-  smoothScrolling() {
+  smoothScroll() {
     $(document).on('click', 'a[href^="#"]', function (event) {
       event.preventDefault();
       $('html, body').animate({
@@ -51,8 +52,20 @@ export default class App {
     });
   }
 
-Layout = () => {
-  return html`
+  renderLayout() {
+    render(this.Layout(), document.querySelector('#app'));
+  }
+
+  // for performance reason
+  disableParallaxWhenScrollDown(parallax) {
+    $(document).on('click', 'a[href="#skills"]', () => {
+      parallax.disable();
+      setTimeout(() => parallax.enable(), 1000);
+    });
+  }
+
+  Layout = () => {
+    return html`
     <div>
       <div id="about-me">
         ${AboutMe}
@@ -75,5 +88,5 @@ Layout = () => {
       </div>
     </div>
   `;
-};
+  };
 }
