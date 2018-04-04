@@ -22,6 +22,7 @@ import '../styles/scrollbar.css';
 import '../styles/layout.css';
 import '../styles/about-me.css';
 import '../styles/navbar.css';
+import '../styles/experience.css';
 import '../styles/skills.css';
 import '../styles/projects.css';
 import '../styles/contact.css';

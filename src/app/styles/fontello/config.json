@@ -35,6 +35,18 @@
       "css": "angle-double-up",
       "code": 61698,
       "src": "fontawesome"
+    },
+    {
+      "uid": "130380e481a7defc690dfb24123a1f0c",
+      "css": "circle",
+      "code": 61713,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "fa10777b2d88cc64cd6e4f26ef0e5264",
+      "css": "terminal",
+      "code": 61728,
+      "src": "fontawesome"
     }
   ]
 }

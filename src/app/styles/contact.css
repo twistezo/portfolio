@@ -2,16 +2,16 @@
   padding-right: 15px;
 }
 
-.parsley-success {
+#contact .parsley-success {
   background-color: #DFF0D8;
 }
 
-.parsley-errors-list {
+#contact .parsley-errors-list {
   list-style-type: none;
   padding-left: 0px;
 }
 
-.parsley-errors-list li {
+#contact .parsley-errors-list li {
   margin-top: 5px;
   padding: 3px 0px 5px 0px;
   background-color: var(--second);

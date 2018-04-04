@@ -29,3 +29,15 @@ html {
   font-size: 20px;
   color: var(--second) !important;
 }
+
+@font-face {
+  font-family: 'fontello';
+  src: url('../styles/fontello/font/fontello.eot?56638982');
+  src: url('../styles/fontello/font/fontello.eot?56638982#iefix') format('embedded-opentype'), url('../styles/fontello/font/fontello.woff?56638982') format('woff'), url('../styles/fontello/font/fontello.ttf?56638982') format('truetype'), url('../styles/fontello/font/fontello.svg?56638982#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  font-family: "fontello";
+}
