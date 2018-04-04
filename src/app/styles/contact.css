@@ -1,3 +1,45 @@
 #contact .submit-button {
   padding-right: 15px;
 }
+
+.parsley-success {
+  background-color: #DFF0D8;
+}
+
+.parsley-errors-list {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.parsley-errors-list li {
+  margin-top: 5px;
+  padding: 3px 0px 5px 0px;
+  background-color: var(--second);
+  color: var(--black-text);
+  border-radius: 4px;
+}
+
+.vibrate-1 {
+  animation: vibrate-1 0.3s linear infinite both;
+}
+
+@keyframes vibrate-1 {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}

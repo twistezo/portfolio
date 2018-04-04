@@ -9,20 +9,23 @@
   <div data-aos="fade-up" data-aos-delay="200" class="container">
     <div class="row justify-content-md-center">
       <div class="col-sm-8">
-        <form method="POST" action="https://formspree.io/kolkolukasz@gmail.com">
+        <form id="contact-form">
           <div class="form-row">
             <div class="form-group col-md-6">
-              <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email">
+              <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email" data-parsley-trigger="input" required=""
+                data-parsley-error-message="Poprawny format: example@gmail.com">
             </div>
             <div class="form-group col-md-6">
-              <input type="phone" name="phone" class="form-control" id="inputPassword" placeholder="Nr telefonu">
+              <input type="phone" name="phone" class="form-control" id="inputPassword" placeholder="Nr telefonu" data-parsley-trigger="input"
+                data-parsley-pattern="^[\d\+\-\.\(\)\/\s]*$" data-parsley-error-message="Wpisz poprawny numer telefonu">
             </div>
           </div>
           <div class="form-group">
-            <textarea class="form-control" name="contents" id="inputContents" placeholder="Treść wiadomości" rows="7"></textarea>
+            <textarea class="form-control" name="contents" id="inputContents" placeholder="Treść wiadomości" rows="7" data-parsley-minlength="10"
+              data-parsley-maxlength="500" data-parsley-trigger="input" required="" data-parsley-error-message="Wymagana ilość znaków pom. 10-500"></textarea>
           </div>
           <div class="row justify-content-end submit-button">
-            <button type="submit" class="btn btn-primary">Wyślij</button>
+            <button type="submit" class="btn btn-primary" value="validate">Wyślij</button>
           </div>
         </form>
       </div>

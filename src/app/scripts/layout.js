@@ -1,6 +1,7 @@
 import { html, render } from 'lit-html';
 import AOS from 'aos';
 import Parallax from 'parallax-js';
+import Parsley from 'parsleyjs';
 import 'bootstrap/dist/js/bootstrap.js';
 import '../scripts/text-scramble';
 import '../scripts/viewport';
@@ -41,6 +42,7 @@ export default class App {
     this.renderLayout();
     let parallax = new Parallax(document.getElementById('scene'));
     this.disableParallaxWhenScrollDown(parallax);
+    this.contactFormOnSubmit();
   }
 
   smoothScroll() {
@@ -61,6 +63,19 @@ export default class App {
     $(document).on('click', 'a[href="#skills"]', () => {
       parallax.disable();
       setTimeout(() => parallax.enable(), 1000);
+    });
+  }
+
+  contactFormOnSubmit() {
+    $(function () {
+      $('#contact-form').parsley().on('field:validated', function () {
+        var ok = $('.parsley-error').length === 0;
+        $('.parsley-errors-list').toggleClass('vibrate-1', !ok);
+        setTimeout(() => $('.parsley-errors-list').removeClass('vibrate-1'), 1000);
+      })
+        .on('form:submit', function () {
+          return false;
+        });
     });
   }
 
