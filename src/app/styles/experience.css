@@ -3,6 +3,14 @@
   padding: 20px 0 20px;
 }
 
+#experience .icon-circle {
+  font-size: 6px;
+  margin-right: 5px;
+  position: relative;
+  bottom: 3px;
+  color: var(--second);
+}
+
 .timeline-job {
   color: var(--second);
 }
@@ -13,7 +21,7 @@
   position: absolute;
   content: " ";
   width: 3px;
-  background-color: var(--white);
+  background-color: var(--gray);
   left: 50%;
   margin-left: -1.5px;
 }
@@ -34,12 +42,10 @@
 .timeline>li>.timeline-panel {
   width: 44%;
   float: left;
-  border: 1px solid #d4d4d4;
-  border-radius: 2px;
-  padding: 10px;
-  position: relative;
-  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  border: 0.5px solid var(--timeline-item);
+  border-radius: 5px;
+  padding: 15px;
+  background-color: var(--timeline-item);
 }
 
 .timeline>li>.timeline-panel:before {
@@ -48,35 +54,20 @@
   right: -15px;
   display: inline-block;
   border-top: 10px solid transparent;
-  border-left: 15px solid #ccc;
-  border-right: 0 solid #ccc;
+  border-left: 15px solid var(--timeline-item);
+  border-right: 0 solid var(--timeline-item);
   border-bottom: 10px solid transparent;
   content: " ";
 }
 
-/* .timeline>li>.timeline-panel:after {
-  position: absolute;
-  top: 27px;
-  right: -14px;
-  display: inline-block;
-  border-top: 14px solid transparent;
-  border-left: 14px solid #fff;
-  border-right: 0 solid #fff;
-  border-bottom: 14px solid transparent;
-  content: " ";
-} */
-
 .timeline>li>.timeline-badge {
-  color: #fff;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   line-height: 50px;
-  font-size: 1.4em;
-  text-align: center;
-  position: absolute;
-  top: 16px;
+  position: relative;
+  top: 32px;
   left: 50%;
-  margin-left: -10px;
+  margin-left: -7.5px;
   background-color: var(--second);
   z-index: 100;
   border-top-right-radius: 50%;
@@ -114,8 +105,8 @@
   }
   ul.timeline>li>.timeline-badge {
     left: 15px;
-    margin-left: 0;
-    top: 16px;
+    margin-left: 17px;
+    top: 32px;
   }
   ul.timeline>li>.timeline-panel {
     float: right;
