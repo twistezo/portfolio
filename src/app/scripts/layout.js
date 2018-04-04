@@ -71,11 +71,8 @@ export default class App {
       $('#contact-form').parsley().on('field:validated', function () {
         var ok = $('.parsley-error').length === 0;
         $('.parsley-errors-list').toggleClass('vibrate-1', !ok);
-        setTimeout(() => $('.parsley-errors-list').removeClass('vibrate-1'), 1000);
-      })
-        .on('form:submit', function () {
-          return false;
-        });
+        setTimeout(() => $('.parsley-errors-list').removeClass('vibrate-1'), 500);
+      });
     });
   }
 
