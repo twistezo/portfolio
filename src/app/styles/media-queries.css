@@ -1,20 +1,44 @@
-/* Extra small devices (portrait phones, less than 576px) */
-
 @media (max-width: 575px) {}
-
-/* Small devices (landscape phones, 576px and up) */
 
 @media (min-width: 576px) and (max-width: 767px) {}
 
-/* Medium devices (tablets, 768px and up) */
-
-@media (min-width: 768px) and (max-width: 991px) {}
-
-/* Large devices (desktops, 992px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .card-columns {
+    column-count: 2;
+  }
+}
 
 @media (min-width: 992px) and (max-width: 1199px) {}
 
-/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1199px) {
+  body {
+    font-size: 30px;
+  }
+  #about-me .text-scramble {
+    font-size: 64px;
+  }
+  #skills .star-text {
+    font-size: 24px;
+    letter-spacing: normal;
+  }
+  h3 {
+    font-size: 50px;
+  }
+  h4 {
+    font-size: 40px;
+  }
+  .square-bracket {
+    font-size: 32px;
+  }
+  #about-me .parallax-skill-svg {
+    display: none;
+  }
+  #about-me .parallax-me {
+    width: 500px;
+    left: 5px;
+    top: 1595px;
+  }
+}
 
 @media (min-width: 1200px) and (max-width: 1399px) {
   body {
@@ -35,6 +59,9 @@
   }
   .btn {
     font-size: 12px;
+  }
+  .square-bracket {
+    font-size: 18px;
   }
   #about-me .parallax-skill-svg {
     width: 80px;
@@ -66,8 +93,6 @@
   }
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
-
 @media (min-width: 1400px) {
   body {
     font-size: 16px;
@@ -87,6 +112,9 @@
   }
   .btn {
     font-size: 15px;
+  }
+  .square-bracket {
+    font-size: 20px;
   }
   #about-me .parallax-skill-svg {
     width: 120px;
@@ -116,34 +144,7 @@
     left: 930px;
     top: 1760px;
   }
-}
-
-@media (max-width: 1199px) {
-  body {
-    font-size: 30px;
-  }
-  #about-me .text-scramble {
-    font-size: 60px;
-  }
-  #skills .star-text {
-    font-size: 20px;
-    letter-spacing: normal;
-  }
-  h3 {
-    font-size: 50px;
-  }
-  h4 {
-    font-size: 40px;
-  }
-  #about-me .parallax-skill-svg {
-    display: none;
-  }
-  #about-me .parallax-me {
-    width: 500px;
-    left: 5px;
-    top: 1595px;
-  }
-  #about-me {
-    background-color: var(--my-black);
+  .card-columns {
+    column-count: 4;
   }
 }
