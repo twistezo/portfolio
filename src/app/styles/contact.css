@@ -14,8 +14,8 @@
 #contact .parsley-errors-list li {
   margin-top: 5px;
   padding: 3px 0px 5px 0px;
-  background-color: var(--second);
-  color: var(--black-text);
+  background-color: var(--my-orange);
+  color: var(--my-black);
   border-radius: 4px;
 }
 

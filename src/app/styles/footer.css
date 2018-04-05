@@ -2,17 +2,17 @@
   background-color: var(--navbar);
   padding-top: 50px;
   padding-bottom: 50px;
-  color: var(--white);
+  color: var(--my-white);
   overflow: hidden;
   box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 #footer a {
-  color: var(--white);
+  color: var(--my-white);
 }
 
 #footer a:hover {
-  color: var(--second) !important;
+  color: var(--my-orange) !important;
   text-decoration: none;
 }
 
@@ -43,7 +43,7 @@
   margin-right: auto;
   width: 100px;
   font-size: 64px;
-  color: var(--second) !important;
+  color: var(--my-orange) !important;
 }
 
 #footer .icon-angle-double-up {

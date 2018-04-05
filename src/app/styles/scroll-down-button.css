@@ -38,7 +38,7 @@
   top: 0;
   height: 100%;
   width: 51%;
-  background: var(--second);
+  background: var(--my-orange);
 }
 
 .chevron:before {

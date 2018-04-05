@@ -8,11 +8,11 @@
   margin-right: 5px;
   position: relative;
   bottom: 3px;
-  color: var(--second);
+  color: var(--my-orange);
 }
 
 .timeline-job {
-  color: var(--second);
+  color: var(--my-orange);
 }
 
 .timeline:before {
@@ -21,7 +21,7 @@
   position: absolute;
   content: " ";
   width: 3px;
-  background-color: var(--gray);
+  background-color: var(--my-gray);
   left: 50%;
   margin-left: -1.5px;
 }
@@ -68,7 +68,7 @@
   top: 32px;
   left: 50%;
   margin-left: -7.5px;
-  background-color: var(--second);
+  background-color: var(--my-orange);
   z-index: 100;
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;

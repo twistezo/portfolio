@@ -5,6 +5,7 @@ import Parsley from 'parsleyjs';
 import 'bootstrap/dist/js/bootstrap.js';
 import '../scripts/text-scramble';
 import '../scripts/viewport';
+import '../scripts/projects';
 
 import aboutMeHTML from '../components/about-me.html';
 import navbarHTML from '../components/navbar.html';
