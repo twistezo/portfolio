@@ -1,7 +1,3 @@
-#projects .btn:active {
-  background-color: var(--my-white);
-}
-
 .card {
   background-color: var(--background);
   border-color: var(--my-blue);

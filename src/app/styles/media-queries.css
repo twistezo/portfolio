@@ -1,0 +1,149 @@
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575px) {}
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) and (max-width: 767px) {}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  body {
+    font-size: 13px;
+  }
+  #about-me .text-scramble {
+    font-size: 30px;
+  }
+  #skills .star-text {
+    font-size: 11px;
+    letter-spacing: normal;
+  }
+  h3 {
+    font-size: 26px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  .btn {
+    font-size: 12px;
+  }
+  #about-me .parallax-skill-svg {
+    width: 80px;
+  }
+  #about-me .parallax-me {
+    width: 600px;
+    left: 80px;
+    top: 1515px;
+  }
+  #about-me .rust {
+    left: 710px;
+    top: 1790px;
+  }
+  #about-me .java {
+    left: 750px;
+    top: 1755px;
+  }
+  #about-me .js {
+    left: 790px;
+    top: 1785px;
+  }
+  #about-me .android {
+    left: 830px;
+    top: 1760px;
+  }
+  #about-me .ps {
+    left: 870px;
+    top: 1770px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1400px) {
+  body {
+    font-size: 16px;
+  }
+  #about-me .text-scramble {
+    font-size: 38px;
+  }
+  #skills .star-text {
+    font-size: 14px;
+    letter-spacing: normal;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  h4 {
+    font-size: 22px;
+  }
+  .btn {
+    font-size: 15px;
+  }
+  #about-me .parallax-skill-svg {
+    width: 120px;
+  }
+  #about-me .parallax-me {
+    width: 800px;
+    left: 50px;
+    top: 1360px;
+  }
+  #about-me .rust {
+    left: 770px;
+    top: 1750px;
+  }
+  #about-me .java {
+    left: 810px;
+    top: 1720px;
+  }
+  #about-me .js {
+    left: 850px;
+    top: 1720px;
+  }
+  #about-me .android {
+    left: 890px;
+    top: 1750px;
+  }
+  #about-me .ps {
+    left: 930px;
+    top: 1760px;
+  }
+}
+
+@media (max-width: 1199px) {
+  body {
+    font-size: 30px;
+  }
+  #about-me .text-scramble {
+    font-size: 60px;
+  }
+  #skills .star-text {
+    font-size: 20px;
+    letter-spacing: normal;
+  }
+  h3 {
+    font-size: 50px;
+  }
+  h4 {
+    font-size: 40px;
+  }
+  #about-me .parallax-skill-svg {
+    display: none;
+  }
+  #about-me .parallax-me {
+    width: 500px;
+    left: 5px;
+    top: 1595px;
+  }
+  #about-me {
+    background-color: var(--my-black);
+  }
+}

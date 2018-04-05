@@ -2,6 +2,11 @@
   padding-right: 15px;
 }
 
+#contact .btn {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 #contact .parsley-success {
   background-color: #DFF0D8;
 }

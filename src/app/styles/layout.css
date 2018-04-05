@@ -13,6 +13,32 @@ html {
   background-color: var(--navbar);
 }
 
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+  font-weight: 400 !important;
+  letter-spacing: 5px !important;
+}
+
+h4 {
+  font-weight: 400 !important;
+  letter-spacing: 1px !important;
+}
+
+.btn-primary, .btn-primary:active, .btn-primary:focus, .btn-primary:visited {
+  background-color: var(--my-orange) !important;
+  border-color: var(--my-orange) !important;
+  color: black;
+  border-radius: 3px;
+}
+
+.btn-primary:hover {
+  box-shadow: 2px 2px 0px 1px var(--my-blue);
+  color: black;
+}
+
 #about-me, #skills, #experience, #projects, #contact {
   padding-top: 120px;
   max-width: 100%;

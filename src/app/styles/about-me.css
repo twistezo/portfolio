@@ -20,31 +20,16 @@
 }
 
 .parallax-background {
-  position: relative;
   left: -160px;
 }
 
-.parallax-skill-svg {
+.parallax-skill-svg, .parallax-me, .parallax-ground, .parallax-background {
   position: relative;
-  /* max-height: 15vh; */
-  width: 120px;
 }
 
 .parallax-ground {
-  position: relative;
   left: -160px;
-  top: 1400px;
-}
-
-.parallax-me {
-  position: relative;
-  width: 800px;
-  left: 50px;
-  top: 960px;
-}
-
-.text-scramble {
-  font-size: 36px;
+  top: 1800px;
 }
 
 .blinker {
