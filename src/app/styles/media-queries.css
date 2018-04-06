@@ -32,7 +32,7 @@
 
 @media (min-width: 992px) and (max-width: 1199px) {
   body {
-    font-size: 15px;
+    font-size: 10px !important;
   }
   #about-me .text-scramble {
     font-size: 32px;
@@ -61,7 +61,7 @@
 
 @media (min-width: 1200px) and (max-width: 1399px) {
   body {
-    font-size: 16px;
+    font-size: 16px !important;
     letter-spacing: 0.5px;
   }
   #about-me .text-scramble {
@@ -120,7 +120,7 @@
 
 @media (min-width: 1400px) {
   body {
-    font-size: 15px;
+    font-size: 15px !important;
   }
   #about-me .text-scramble {
     font-size: 38px;
