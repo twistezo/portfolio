@@ -1,4 +1,4 @@
-@media (min-width: 576px) {
+@media (min-width: 576px) and (max-width: 991px) {
   body {
     font-size: 30px;
   }
@@ -30,7 +30,7 @@
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   body {
     font-size: 15px;
   }
@@ -57,12 +57,9 @@
     left: 5px;
     top: 1595px;
   }
-  #footer .go-up {
-    bottom: 115px;
-  }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1399px) {
   body {
     font-size: 16px;
     letter-spacing: 0.5px;
@@ -116,26 +113,29 @@
   #footer {
     font-size: 18px;
   }
+  .card-columns {
+    column-count: 4;
+  }
 }
 
 @media (min-width: 1400px) {
   body {
-    font-size: 16px;
+    font-size: 15px;
   }
   #about-me .text-scramble {
     font-size: 38px;
   }
   #skills .star-text {
-    font-size: 14px;
+    font-size: 12px;
   }
   h3 {
-    font-size: 30px;
+    font-size: 26px;
   }
   h4 {
-    font-size: 22px;
+    font-size: 20px;
   }
   .btn {
-    font-size: 15px;
+    font-size: 14px;
   }
   .square-bracket {
     font-size: 20px;
@@ -170,5 +170,11 @@
   }
   .card-columns {
     column-count: 4;
+  }
+  #contact #contact-form input {
+    font-size: 15px;
+  }
+  #footer {
+    font-size: 16px;
   }
 }
