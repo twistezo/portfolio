@@ -9037,7 +9037,7 @@ a.text-dark:hover, a.text-dark:focus {
 .icon-github-2:before { content: '\F113'; } /* '' */
 .icon-terminal:before { content: '\F120'; } /* '' */
 .icon-linkedin-squared:before { content: '\F30C'; } /* '' */
-/* @media (min-width: 576px) and (max-width: 991px) {
+@media (min-width: 576px) and (max-width: 991px) {
   body {
     font-size: 30px;
   }
@@ -9071,7 +9071,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media (min-width: 992px) and (max-width: 1199px) {
   body {
-    font-size: 10px !important;
+    font-size: 15px;
   }
   #about-me .text-scramble {
     font-size: 32px;
@@ -9096,11 +9096,11 @@ a.text-dark:hover, a.text-dark:focus {
     left: 5px;
     top: 1595px;
   }
-} */
+}
 
 @media (min-width: 1200px) and (max-width: 1399px) {
   body {
-    font-size: 20px !important;
+    font-size: 16px;
     letter-spacing: 0.5px;
   }
   #about-me .text-scramble {
@@ -9159,7 +9159,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media (min-width: 1400px) {
   body {
-    font-size: 10px !important;
+    font-size: 15px;
   }
   #about-me .text-scramble {
     font-size: 38px;
