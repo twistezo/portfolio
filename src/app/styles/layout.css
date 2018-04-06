@@ -20,13 +20,13 @@ body {
 }
 
 h3 {
-  font-weight: 400 !important;
-  letter-spacing: 5px !important;
+  font-weight: 400;
+  letter-spacing: 5px;
 }
 
 h4 {
-  font-weight: 400 !important;
-  letter-spacing: 1px !important;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
 .btn-primary, .btn-primary:active, .btn-primary:focus, .btn-primary:visited {
