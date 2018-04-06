@@ -66,26 +66,27 @@
 
 @media (min-width: 1200px) {
   body {
-    font-size: 13px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
   }
   #about-me .text-scramble {
-    font-size: 30px;
+    font-size: 36px;
   }
   #skills .star-text {
     font-size: 11px;
     letter-spacing: normal;
   }
   h3 {
-    font-size: 26px;
+    font-size: 30px;
   }
   h4 {
-    font-size: 18px;
+    font-size: 22px;
   }
-  .btn {
+  /* .btn {
     font-size: 12px;
-  }
+  } */
   .square-bracket {
-    font-size: 18px;
+    font-size: 24px;
   }
   #about-me .parallax-skill-svg {
     width: 80px;
