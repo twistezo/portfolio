@@ -14,6 +14,8 @@ html {
 }
 
 body {
+  background: var(--background);
+  color: var(--my-white);
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -43,11 +45,6 @@ h4 {
   padding-top: 120px;
   max-width: 100%;
   overflow: hidden;
-}
-
-#skills, #experience, #projects, #contact {
-  background: var(--background);
-  color: var(--my-white);
 }
 
 #contact {

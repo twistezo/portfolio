@@ -7,7 +7,7 @@
   color: var(--my-orange) !important;
 }
 
-.parallax-container {
+#about-me .parallax-container {
   position: absolute;
   top: 0;
   left: 0;
@@ -19,20 +19,20 @@
   justify-content: flex-end;
 }
 
-.parallax-background {
+#about-me .parallax-background {
   left: -160px;
 }
 
-.parallax-skill-svg, .parallax-me, .parallax-ground, .parallax-background {
+#about-me .parallax-skill-svg, .parallax-me, .parallax-ground, .parallax-background {
   position: relative;
 }
 
-.parallax-ground {
+#about-me .parallax-ground {
   left: -160px;
-  top: 1800px;
+  top: 1810px;
 }
 
-.blinker {
+#about-me .blinker {
   animation: blinker 0.5s cubic-bezier(.5, 0, 1, 1) infinite alternate;
   color: var(--my-orange);
 }

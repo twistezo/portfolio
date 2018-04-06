@@ -1,16 +1,4 @@
-@media (max-width: 575px) {}
-
-@media (min-width: 576px) and (max-width: 767px) {}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .card-columns {
-    column-count: 2;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {}
-
-@media (max-width: 1199px) {
+@media (min-width: 576px) {
   body {
     font-size: 30px;
   }
@@ -38,9 +26,45 @@
     left: 5px;
     top: 1595px;
   }
+  #footer .go-up {
+    bottom: 125px;
+  }
 }
 
-@media (min-width: 1200px) and (max-width: 1399px) {
+@media (min-width: 992px) {
+  body {
+    font-size: 15px;
+  }
+  #about-me .text-scramble {
+    font-size: 32px;
+  }
+  #skills .star-text {
+    font-size: 12px;
+    letter-spacing: normal;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  .square-bracket {
+    font-size: 22px;
+  }
+  #about-me .parallax-skill-svg {
+    display: none;
+  }
+  #about-me .parallax-me {
+    width: 500px;
+    left: 5px;
+    top: 1595px;
+  }
+  #footer .go-up {
+    bottom: 115px;
+  }
+}
+
+@media (min-width: 1200px) {
   body {
     font-size: 13px;
   }
@@ -126,23 +150,23 @@
   }
   #about-me .rust {
     left: 770px;
-    top: 1750px;
+    top: 1760px;
   }
   #about-me .java {
     left: 810px;
-    top: 1720px;
+    top: 1730px;
   }
   #about-me .js {
     left: 850px;
-    top: 1720px;
+    top: 1730px;
   }
   #about-me .android {
     left: 890px;
-    top: 1750px;
+    top: 1760px;
   }
   #about-me .ps {
     left: 930px;
-    top: 1760px;
+    top: 1770px;
   }
   .card-columns {
     column-count: 4;
