@@ -14,6 +14,7 @@ module.exports = merge(common, {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
-      template: './src/index-template.html'
+      template: './src/index-template.html',
+      favicon: './src/favicon-32x32.png'
     })]
 });
