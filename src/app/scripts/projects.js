@@ -10,7 +10,7 @@
 
       // add animation on button click
       $('.card').addClass('swing-in-top-fwd');
-      setTimeout(() => $('.card').removeClass('swing-in-top-fwd'), 500);
+      setTimeout(() => $('.card').removeClass('swing-in-top-fwd') , 500);
 
 
       if (value == 'all') {
@@ -28,6 +28,11 @@
         $('#my-cards').removeClass().addClass('card-deck');
       } else {
         $('#my-cards').removeClass().addClass('card-columns');
+      }
+      if (cardsCounter == 6) {
+        $('#my-cards').css('column-count', '').css('column-count', '3');
+      } else {
+        $('#my-cards').css('column-count', '').css('column-count', '4');
       }
 
       // force active state on button
