@@ -86,12 +86,12 @@
     width: 80px;
   }
   #about-me {
-    padding-top: 80px !important;
+    padding-top: 60px !important;
   }
   #about-me .parallax-me {
     width: 600px;
     left: 80px;
-    top: 1515px;
+    top: 1525px;
   }
   #about-me .rust {
     left: 710px;
@@ -99,19 +99,19 @@
   }
   #about-me .java {
     left: 750px;
-    top: 1775px;
+    top: 1770px;
   }
   #about-me .js {
     left: 790px;
-    top: 1805px;
+    top: 1800px;
   }
   #about-me .android {
     left: 830px;
-    top: 1780px;
+    top: 1770px;
   }
   #about-me .ps {
     left: 870px;
-    top: 1790px;
+    top: 1785px;
   }
   .card-columns {
     column-count: 4;
@@ -122,7 +122,10 @@
 }
 
 @media (min-width: 1400px) {
-  body {
+  body, #contact-form input, #contact-form textarea {
+    font-size: 14px;
+  }
+  #footer {
     font-size: 15px;
   }
   #about-me .text-scramble {
@@ -132,13 +135,13 @@
     font-size: 12px;
   }
   h3 {
-    font-size: 26px;
+    font-size: 30px;
   }
   h4 {
     font-size: 20px;
   }
   .btn {
-    font-size: 14px;
+    font-size: 13px;
   }
   .square-bracket {
     font-size: 20px;
@@ -173,12 +176,6 @@
   }
   .card-columns {
     column-count: 4;
-  }
-  #contact #contact-form input textarea {
-    font-size: 15px;
-  }
-  #footer {
-    font-size: 16px;
   }
   #about-me .go-down-fake-container, #about-me .go-down {
     zoom: 1.25;

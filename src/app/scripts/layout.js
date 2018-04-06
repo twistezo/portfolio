@@ -19,7 +19,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import '../../../node_modules/aos/dist/aos.css';
 import '../styles/fontello/css/fontello.css'
 import '../styles/media-queries.css';
-import '../styles/scroll-down-button.css';
+import '../styles/buttons.css';
 import '../styles/scrollbar.css';
 import '../styles/layout.css';
 import '../styles/about-me.css';
