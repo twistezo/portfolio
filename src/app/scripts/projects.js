@@ -1,32 +1,40 @@
 (function () {
   $(document).ready(function () {
 
-    let cardsCounter = 0;
-    $(".filter-button").click(function () {
-      var value = $(this).attr('data-filter');
+    // force active `all` button on start
+    $('.filter-button').filter("[data-filter=all]").addClass('active');
 
-      if (value == "all") {
+    let cardsCounter = 0;
+    $('.filter-button').click(function () {
+      let value = $(this).attr('data-filter');
+
+      // add animation on button click
+      $('.card').addClass('swing-in-top-fwd');
+      setTimeout(() => $('.card').removeClass('swing-in-top-fwd'), 500);
+
+
+      if (value == 'all') {
         $('.filter').show();
         cardsCounter = $('.filter').length;
       }
       else {
-        $(".filter").not('.' + value).hide();
+        $('.filter').not('.' + value).hide();
         $('.filter').filter('.' + value).show();
         cardsCounter = $('.filter').filter('.' + value).length;
       }
 
       // change bootstrap cards layout according to cards quantity
       if (cardsCounter <= 3) {
-        $("#my-cards").removeClass().addClass("card-deck");
+        $('#my-cards').removeClass().addClass('card-deck');
       } else {
-        $("#my-cards").removeClass().addClass("card-columns");
+        $('#my-cards').removeClass().addClass('card-columns');
       }
 
       // force active state on button
-      if ($(".filter-button").removeClass("active")) {
-        $(this).removeClass("active");
+      if ($('.filter-button').removeClass('active')) {
+        $(this).removeClass('active');
       }
-      $(this).addClass("active");
+      $(this).addClass('active');
     });
 
   });
