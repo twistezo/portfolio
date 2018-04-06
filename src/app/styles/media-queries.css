@@ -61,26 +61,32 @@
 
 @media (min-width: 1200px) and (max-width: 1399px) {
   body {
-    font-size: 16px;
+    font-size: 12px;
     letter-spacing: 0.5px;
   }
   #about-me .text-scramble {
-    font-size: 36px;
-  }
-  #skills .star-text {
-    font-size: 11px;
-  }
-  h3 {
     font-size: 30px;
   }
-  h4 {
+  #skills .star-text {
+    font-size: 10px;
+  }
+  h3 {
     font-size: 22px;
   }
+  h4 {
+    font-size: 16px;
+  }
+  .btn {
+    font-size: 11px;
+  }
   .square-bracket {
-    font-size: 24px;
+    font-size: 18px;
   }
   #about-me .parallax-skill-svg {
     width: 80px;
+  }
+  #about-me {
+    padding-top: 80px !important;
   }
   #about-me .parallax-me {
     width: 600px;
@@ -89,32 +95,29 @@
   }
   #about-me .rust {
     left: 710px;
-    top: 1790px;
+    top: 1810px;
   }
   #about-me .java {
     left: 750px;
-    top: 1755px;
+    top: 1775px;
   }
   #about-me .js {
     left: 790px;
-    top: 1785px;
+    top: 1805px;
   }
   #about-me .android {
     left: 830px;
-    top: 1760px;
+    top: 1780px;
   }
   #about-me .ps {
     left: 870px;
-    top: 1770px;
-  }
-  #about-me .go-down-fake-container, #about-me .go-down {
-    zoom: 1.5;
-  }
-  #footer {
-    font-size: 18px;
+    top: 1790px;
   }
   .card-columns {
     column-count: 4;
+  }
+  #contact-form input, #contact-form textarea {
+    font-size: 12px;
   }
 }
 
@@ -171,10 +174,13 @@
   .card-columns {
     column-count: 4;
   }
-  #contact #contact-form input {
+  #contact #contact-form input textarea {
     font-size: 15px;
   }
   #footer {
     font-size: 16px;
+  }
+  #about-me .go-down-fake-container, #about-me .go-down {
+    zoom: 1.25;
   }
 }
