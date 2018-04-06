@@ -1,4 +1,4 @@
-@media (min-width: 576px) and (max-width: 991px) {
+/* @media (min-width: 576px) and (max-width: 991px) {
   body {
     font-size: 30px;
   }
@@ -57,11 +57,11 @@
     left: 5px;
     top: 1595px;
   }
-}
+} */
 
 @media (min-width: 1200px) and (max-width: 1399px) {
   body {
-    font-size: 16px !important;
+    font-size: 20px !important;
     letter-spacing: 0.5px;
   }
   #about-me .text-scramble {
@@ -120,7 +120,7 @@
 
 @media (min-width: 1400px) {
   body {
-    font-size: 15px !important;
+    font-size: 10px !important;
   }
   #about-me .text-scramble {
     font-size: 38px;
