@@ -57,6 +57,7 @@
   position: absolute;
   bottom: 10px;
   left: 50%;
+  margin-left: -14px;
 }
 
 #about-me .chevron {
