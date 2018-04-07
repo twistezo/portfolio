@@ -1,61 +1,115 @@
-@media (min-width: 576px) and (max-width: 991px) {
+@media (max-width: 991px) {
   body {
-    font-size: 30px;
-  }
-  #about-me .text-scramble {
-    font-size: 64px;
-  }
-  #skills .star-text {
-    font-size: 24px;
+    font-size: 14px;
   }
   h3 {
-    font-size: 50px;
+    font-size: 24px;
   }
   h4 {
-    font-size: 40px;
+    font-size: 18px;
+  }
+  .btn {
+    font-size: 14px;
   }
   .square-bracket {
-    font-size: 32px;
+    font-size: 20px;
+  }
+  #about-me {
+    padding-top: 20px !important;
+  }
+  #about-me .text-scramble {
+    font-size: 24px;
   }
   #about-me .parallax-skill-svg {
     display: none;
   }
   #about-me .parallax-me {
-    width: 500px;
-    left: 5px;
-    top: 1595px;
+    width: 300px;
+    top: 1760px;
+  }
+  #skills .star-text {
+    font-size: 12px;
+  }
+  #projects .card-columns {
+    /* column-count: 3; */
+  }
+  #contact-form input, #contact-form textarea {
+    font-size: 14px;
   }
   #footer .go-up {
-    bottom: 125px;
+    font-size: 50px;
+    bottom: 115px;
+  }
+  #footer .icon-angle-double-up {
+    margin-left: 17.5px;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   body {
-    font-size: 15px;
-  }
-  #about-me .text-scramble {
-    font-size: 32px;
-  }
-  #skills .star-text {
-    font-size: 12px;
+    font-size: 14px;
   }
   h3 {
-    font-size: 28px;
+    font-size: 26px;
   }
   h4 {
     font-size: 20px;
   }
+  .btn {
+    font-size: 13px;
+  }
   .square-bracket {
-    font-size: 22px;
+    font-size: 20px;
+  }
+  #about-me {
+    padding-top: 50px !important;
+  }
+  #about-me .text-scramble {
+    font-size: 28px;
   }
   #about-me .parallax-skill-svg {
-    display: none;
+    width: 70px;
+  }
+  #about-me .rust {
+    left: 490px;
+    top: 1820px;
+  }
+  #about-me .java {
+    left: 510px;
+    top: 1790px;
+  }
+  #about-me .js {
+    left: 550px;
+    top: 1815px;
+  }
+  #about-me .android {
+    left: 590px;
+    top: 1795px;
+  }
+  #about-me .ps {
+    left: 630px;
+    top: 1815px;
   }
   #about-me .parallax-me {
     width: 500px;
     left: 5px;
     top: 1595px;
+  }
+  #skills .star-text {
+    font-size: 12px;
+  }
+  #projects .card-columns {
+    column-count: 4;
+  }
+  #contact-form input, #contact-form textarea {
+    font-size: 14px;
+  }
+  #footer .go-up {
+    font-size: 50px;
+    bottom: 115px;
+  }
+  #footer .icon-angle-double-up {
+    margin-left: 17.5px;
   }
 }
 
@@ -63,12 +117,6 @@
   body {
     font-size: 12px;
     letter-spacing: 0.5px;
-  }
-  #about-me .text-scramble {
-    font-size: 30px;
-  }
-  #skills .star-text {
-    font-size: 10px;
   }
   h3 {
     font-size: 22px;
@@ -82,11 +130,14 @@
   .square-bracket {
     font-size: 18px;
   }
+  #about-me .text-scramble {
+    font-size: 30px;
+  }
   #about-me .parallax-skill-svg {
     width: 80px;
   }
   #about-me {
-    padding-top: 60px !important;
+    padding-top: 80px !important;
   }
   #about-me .parallax-me {
     width: 600px;
@@ -113,26 +164,27 @@
     left: 870px;
     top: 1785px;
   }
-  .card-columns {
+  #skills .star-text {
+    font-size: 10px;
+  }
+  #projects .card-columns {
     column-count: 4;
   }
   #contact-form input, #contact-form textarea {
     font-size: 12px;
+  }
+  #footer .go-up {
+    font-size: 50px;
+    bottom: 115px;
+  }
+  #footer .icon-angle-double-up {
+    margin-left: 17.5px;
   }
 }
 
 @media (min-width: 1400px) {
   body, #contact-form input, #contact-form textarea {
     font-size: 15px;
-  }
-  #footer {
-    font-size: 15px;
-  }
-  #about-me .text-scramble {
-    font-size: 38px;
-  }
-  #skills .star-text {
-    font-size: 12px;
   }
   h3 {
     font-size: 30px;
@@ -145,6 +197,9 @@
   }
   .square-bracket {
     font-size: 20px;
+  }
+  #about-me .text-scramble {
+    font-size: 38px;
   }
   #about-me .parallax-skill-svg {
     width: 120px;
@@ -174,10 +229,23 @@
     left: 930px;
     top: 1770px;
   }
-  .card-columns {
+  #skills .star-text {
+    font-size: 12px;
+  }
+  #projects .card-columns {
     column-count: 4;
   }
   #about-me .go-down-fake-container, #about-me .go-down {
     zoom: 1.25;
+  }
+  #footer {
+    font-size: 15px;
+  }
+  #footer .go-up {
+    font-size: 64px;
+    bottom: 110px;
+  }
+  #footer .icon-angle-double-up {
+    margin-left: 10px;
   }
 }

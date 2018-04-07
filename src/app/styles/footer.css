@@ -38,14 +38,8 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 110px;
   margin-left: auto;
   margin-right: auto;
   width: 100px;
-  font-size: 64px;
   color: var(--my-orange) !important;
-}
-
-#footer .icon-angle-double-up {
-  margin-left: 10px;
 }
