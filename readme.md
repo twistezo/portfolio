@@ -1,7 +1,7 @@
-## Portfolio v2`
+## Portfolio v2
 
 ### Description
-Second version of my programming portfolio website. Rewritten from Angular to clean JS (ES6).
+Second version of my programming portfolio website. Rewritten from Angular to pure JS
 
 ### Features
 - without frameworks (clean, fast, lightweight and maintainability)
@@ -9,7 +9,7 @@ Second version of my programming portfolio website. Rewritten from Angular to cl
 - minimal webpack configuration with hot-reload in development mode and with minify and uglify HTML/CSS/JS for production build
 
 ### Tools
-JavaScript ES6, Bootstrap 4, Webpack 4
+JavaScript ES6 (babel, eslint), Bootstrap 4, Webpack 4, lit-html
 
 ### Requirements
 npm

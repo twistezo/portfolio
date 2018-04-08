@@ -14,6 +14,9 @@
   .square-bracket {
     font-size: 16px;
   }
+  .cookie-warning {
+    width: 280px;
+  }
   #about-me {
     padding-top: 20px !important;
   }
@@ -57,6 +60,9 @@
   }
   .square-bracket {
     font-size: 20px;
+  }
+  .cookie-warning {
+    width: 300px;
   }
   #about-me {
     padding-top: 50px !important;
@@ -127,6 +133,9 @@
   .square-bracket {
     font-size: 18px;
   }
+  .cookie-warning {
+    width: 280px;
+  }
   #about-me .text-scramble {
     font-size: 30px;
   }
@@ -194,6 +203,9 @@
   }
   .square-bracket {
     font-size: 20px;
+  }
+  .cookie-warning {
+    width: 320px;
   }
   #about-me .text-scramble {
     font-size: 38px;

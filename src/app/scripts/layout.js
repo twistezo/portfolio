@@ -2,9 +2,11 @@ import { html, render } from 'lit-html';
 import AOS from 'aos';
 import Parallax from 'parallax-js';
 import Parsley from 'parsleyjs';
+import { jarallax } from 'jarallax';
 import 'bootstrap/dist/js/bootstrap.js';
 import '../scripts/text-scramble';
 import '../scripts/projects';
+import '../scripts/cookie-warning';
 
 import aboutMeHTML from '../components/about-me.html';
 import navbarHTML from '../components/navbar.html';
@@ -13,6 +15,7 @@ import experienceHTML from '../components/experience.html';
 import projectsHTML from '../components/projects.html';
 import contactHTML from '../components/contact.html';
 import footerHTML from '../components/footer.html';
+import cookieWarningHTML from '../components/cookie-warning.html';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import '../../../node_modules/aos/dist/aos.css';
@@ -28,6 +31,7 @@ import '../styles/skills.css';
 import '../styles/projects.css';
 import '../styles/contact.css';
 import '../styles/footer.css';
+import '../styles/cookie-warning.css';
 
 const AboutMe = html([aboutMeHTML]);
 const Navbar = html([navbarHTML]);
@@ -36,6 +40,7 @@ const Experience = html([experienceHTML]);
 const Projects = html([projectsHTML]);
 const Contact = html([contactHTML]);
 const Footer = html([footerHTML]);
+const cookieWarning = html([cookieWarningHTML]);
 
 export default class App {
   constructor() {
@@ -45,6 +50,7 @@ export default class App {
     let parallax = new Parallax(document.getElementById('scene'));
     this.disableParallaxWhenScrollDown(parallax);
     this.contactFormOnSubmit();
+    this.initJarallaxScrolling();
   }
 
   smoothScroll() {
@@ -78,9 +84,16 @@ export default class App {
     });
   }
 
+  initJarallaxScrolling() {
+    jarallax(document.querySelectorAll('.jarallax'), {
+      speed: 0.5
+    });
+  }
+
   Layout = () => {
     return html`
     <div>
+      ${cookieWarning}
       <div id="about-me">
         ${AboutMe}
       </div>

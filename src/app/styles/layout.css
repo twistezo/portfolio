@@ -29,8 +29,15 @@ h4 {
   letter-spacing: 2px;
 }
 
+#about-me {
+  padding-top: 100px;
+}
+
+#skills, #experience, #projects, #contact {
+  padding-top: 80px;
+}
+
 #about-me, #skills, #experience, #projects, #contact {
-  padding-top: 120px;
   max-width: 100%;
   overflow: hidden;
 }
@@ -53,4 +60,22 @@ h4 {
 
 .icon {
   font-family: "fontello";
+}
+
+.jarallax {
+  position: relative;
+  z-index: 0;
+  min-height: 300px;
+  margin-top: 80px;
+}
+
+.jarallax>.jarallax-img {
+  position: absolute;
+  object-fit: cover;
+  font-family: 'object-fit: cover;';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
