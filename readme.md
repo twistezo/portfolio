@@ -1,4 +1,5 @@
 ## Portfolio v2
+[![Build Status](https://travis-ci.org/twistezo/portfolio.svg?branch=master)](https://travis-ci.org/twistezo/portfolio)
 
 ### Description
 Second (actual) version of my programming portfolio website. Rewritten from Angular to pure JS.
