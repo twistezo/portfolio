@@ -1,7 +1,7 @@
 ## Portfolio v2
 
 ### Description
-Second version of my programming portfolio website. Rewritten from Angular to pure JS
+Second (actual) version of my programming portfolio website. Rewritten from Angular to pure JS.
 
 ### Features
 - without frameworks (clean, fast, lightweight and maintainability)
@@ -21,6 +21,5 @@ Build for production: `npm run prod`
 
 Output from above is in `docs/` for fastest deploy on github page
 
-
 ### Latest version
-https://twistezo.github.io/portfolio-v2
+https://twistezo.github.io/portfolio
