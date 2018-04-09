@@ -1,5 +1,5 @@
 ## Portfolio
-[![Build Status](https://travis-ci.org/twistezo/portfolio.svg?branch=master)](https://travis-ci.org/twistezo/portfolio)
+[![Build Status](https://travis-ci.org/twistezo/portfolio-v1.svg?branch=master)](https://travis-ci.org/twistezo/portfolio-v1)
 
 #### Important: This is old, not maintained version. For actual information about me see https://github.com/twistezo/portfolio
 
