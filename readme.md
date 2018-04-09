@@ -1,8 +1,10 @@
 ## Portfolio
 [![Build Status](https://travis-ci.org/twistezo/portfolio.svg?branch=master)](https://travis-ci.org/twistezo/portfolio)
 
+#### Important: This is old, not maintained version. For actual information about me see https://github.com/twistezo/portfolio
+
 ### Description
-My personal portfolio with management dashboard and blog (both are hidden for unregistered users)
+My programming portfolio with management dashboard and blog (both are hidden for unregistered users).
 
 ### Tools
 Angular 4 (JS + TypeScript), Bootstrap 4, Firebase
@@ -30,4 +32,4 @@ firebase deploy
 ```
 
 ### Latest version
-https://twistezo.github.io/portfolio
+https://twistezo.github.io/portfolio-v1
