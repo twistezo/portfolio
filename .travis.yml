@@ -1,0 +1,6 @@
+language: node.js
+sudo: false
+before_script:
+ - npm install
+script:
+ - npm run prod
