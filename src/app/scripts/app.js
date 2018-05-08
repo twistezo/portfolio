@@ -3,6 +3,7 @@ import Layout from '../scripts/layout';
 import Parallax from 'parallax-js';
 import Parsley from 'parsleyjs';
 import { jarallax } from 'jarallax';
+import I18n from '../scripts/languages';
 import ProjectsCards from '../scripts/projects-cards';
 import CookieWarning from '../scripts/cookie-warning';
 import 'bootstrap/dist/js/bootstrap.js';
@@ -32,6 +33,7 @@ export default class App {
     this.initParallax();
     this.initParsley();
     this.initJarallax();
+    new I18n().init();
     new ProjectsCards().init();
     new CookieWarning().init();
   }

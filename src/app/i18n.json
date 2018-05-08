@@ -1,0 +1,38 @@
+{
+  "pl": {
+    "i18nAboutMe0": "Znajdziesz tutaj krótkie podsumowanie moich umiejętności, używanych przeze mnie narzędzi, wybrane projekty oraz przebieg edukacji i kariery zawodowej.",
+    "i18nAboutMe1": "Każdy projekt posiada odnośnik do GitHuba, gdzie znajdziesz szczegółowy opis oraz kod źródłowy.",
+    "i18nAboutMe2": "W technikum oraz na studiach miałem styczność z Asemblerem, C, C++, MATLAB, JavaScript, HTML, CSS, programowaniem mikrokontrolerów oraz sterowników PLC. Później pracując przez cztery lata jako projektant maszyn i urządzeń w między czasie hobbystycznie programowałem. Wszedłem w świat Javy, Springa, OOP i zaraziłem się tym na tyle mocno, że postanowiłem się przebranżowić.",
+    "i18nAboutMe3": "Obecnie zawodowo używam głównie technologii związanych z językiem Rust (symulacje, AI, game dev), a w wolnych chwilach siedzę w Web devie - technologiach związanych z JavaScript oraz w Javie.",
+    "i18nAboutMe4": "Staram się doykać wielu języków i technologii oraz być na bieżąco z nowinkami w świecie IT.",
+    "i18nNavbar0": "O mnie",
+    "i18nNavbar1": "Umiejętności",
+    "i18nNavbar2": "Doświadczenie",
+    "i18nNavbar3": "Projekty",
+    "i18nNavbar4": "Kontakt",
+    "i18nSkills0": "umiejętności",
+    "i18nSkills1": "*kolor wg. częstotliwości używania",
+    "i18nSkills2": "Bazy danych",
+    "i18nSkills3": "Testy",
+    "i18nSkills4": "Grafika",
+    "i18nSkills5": "Ulubione narzędzia"
+  },
+  "en": {
+    "i18nAboutMe0": "a",
+    "i18nAboutMe1": "b",
+    "i18nAboutMe2": "c",
+    "i18nAboutMe3": "d",
+    "i18nAboutMe4": "e",
+    "i18nNavbar0": "About me",
+    "i18nNavbar1": "Skills",
+    "i18nNavbar2": "Experience",
+    "i18nNavbar3": "Projects",
+    "i18nNavbar4": "Contact",
+    "i18nSkills0": "skills",
+    "i18nSkills1": "*color according to the frequency of use",
+    "i18nSkills2": "Databases",
+    "i18nSkills3": "Tests",
+    "i18nSkills4": "Graphics",
+    "i18nSkills5": "Favorite tools"
+  }
+}
