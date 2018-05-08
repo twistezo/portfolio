@@ -3,7 +3,7 @@ import Layout from '../scripts/layout';
 import Parallax from 'parallax-js';
 import Parsley from 'parsleyjs';
 import { jarallax } from 'jarallax';
-import I18n from '../scripts/languages';
+import I18n from '../scripts/i18n';
 import ProjectsCards from '../scripts/projects-cards';
 import CookieWarning from '../scripts/cookie-warning';
 import 'bootstrap/dist/js/bootstrap.js';
