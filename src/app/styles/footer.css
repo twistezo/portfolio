@@ -37,3 +37,7 @@
   width: 100px;
   color: var(--my-orange) !important;
 }
+
+#footer .hovered {
+  color: var(--my-orange);
+}
