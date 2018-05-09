@@ -57,7 +57,10 @@
     "i18nContact0": "kontakt",
     "i18nContact1": "Nr telefonu",
     "i18nContact2": "Treśc wiadomości",
-    "i18nContact3": "Wyślij"
+    "i18nContact3": "Wyślij",
+    "i18nCookieWarning0": "Strona wykorzystuje pliki cookies oraz podobne technologie m.in. w celach statystycznych.",
+    "i18nCookieWarning1": "Dowiedz się więcej",
+    "i18nCookieWarning2": "Zrozumiałem"
   },
   "en": {
     "i18nAboutMe0": "Znajdziesz tutaj krótkie podsumowanie moich umiejętności, używanych przeze mnie narzędzi, wybrane projekty oraz przebieg edukacji i kariery zawodowej.",
@@ -117,6 +120,9 @@
     "i18nContact0": "contact",
     "i18nContact1": "Phone number",
     "i18nContact2": "Message",
-    "i18nContact3": "Send"
+    "i18nContact3": "Send",
+    "i18nCookieWarning0": "This site uses cookies and similar technologies among others for statistical purposes.",
+    "i18nCookieWarning1": "More info",
+    "i18nCookieWarning2": "Got it"
   }
 }
