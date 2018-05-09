@@ -2,17 +2,43 @@ import i18nJSON from '../i18n.json';
 
 class I18n {
   constructor() {
-    this.Lang = Object.freeze({
+    this.Language = Object.freeze({
       PL: "pl",
       EN: "en",
     });
   }
 
   init() {
-    let chosenLang = this.Lang.EN;
+    let chosenLanguage = this.Language.EN;
+    let browserLanguage = this.getBrowserLanguage();
+    if (browserLanguage === this.Language.PL) {
+      chosenLanguage = this.Language.PL;
+    }
+    this.setLanguage(chosenLanguage);
+    this.buttonsBehaviour();
+  }
 
-    $.getJSON(i18nJSON, function (jsonObj) {
-      let i18n = jsonObj[chosenLang];
+  getBrowserLanguage() {
+    if (navigator.languages != undefined)
+      return navigator.languages[0];
+    else
+      return navigator.language;
+  }
+
+  buttonsBehaviour() {
+    $('.i18n-button-pl').click(() => {
+      this.setLanguage("pl");
+      $(this).addClass('active');
+    });
+    $('.i18n-button-en').click(() => {
+      this.setLanguage("en");
+      $(this).addClass('active');
+    });
+  }
+
+  setLanguage(chosenLanguage) {
+    $.getJSON(i18nJSON, (jsonObj) => {
+      let i18n = jsonObj[chosenLanguage];
 
       for (let key in i18n) {
         let value = i18n[key];
