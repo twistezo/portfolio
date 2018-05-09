@@ -38,27 +38,6 @@
   color: var(--my-orange) !important;
 }
 
-#footer .i18n-wrapper {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#footer .i18n-img {
-  top: -145px;
-  position: absolute;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: 32px;
-}
-
-#footer .i18n-button-pl {
-  left: -120px;
-}
-
-#footer .i18n-button-en {
-  left: 120px;
+#footer .hovered {
+  color: var(--my-orange);
 }

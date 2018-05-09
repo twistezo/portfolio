@@ -15,7 +15,7 @@ class I18n {
       chosenLanguage = this.Language.PL;
     }
     this.setLanguage(chosenLanguage);
-    this.buttonsBehaviour();
+    this.initButtonsBehaviour();
   }
 
   getBrowserLanguage() {
@@ -25,18 +25,13 @@ class I18n {
       return navigator.language;
   }
 
-  buttonsBehaviour() {
-    $('.i18n-button-pl').click(() => {
-      this.setLanguage("pl");
-      $(this).addClass('active');
-    });
-    $('.i18n-button-en').click(() => {
-      this.setLanguage("en");
-      $(this).addClass('active');
-    });
-  }
-
   setLanguage(chosenLanguage) {
+    if (chosenLanguage === "pl") {
+      this.hoverPl();
+    } else {
+      this.hoverEn();
+    }
+
     $.getJSON(i18nJSON, (jsonObj) => {
       let i18n = jsonObj[chosenLanguage];
 
@@ -53,6 +48,28 @@ class I18n {
       }
     });
   }
+
+  hoverPl() {
+    $('.i18n-button-en').removeClass('hovered');
+    $('.i18n-button-pl').addClass('hovered');
+  }
+
+  hoverEn() {
+    $('.i18n-button-pl').removeClass('hovered');
+    $('.i18n-button-en').addClass('hovered');
+  }
+
+  initButtonsBehaviour() {
+    $('.i18n-button-pl').click(() => {
+      this.setLanguage("pl");
+      this.hoverPl();
+    });
+    $('.i18n-button-en').click(() => {
+      this.setLanguage("en");
+      this.hoverEn();
+    });
+  }
+
 }
 
 export { I18n as default }
