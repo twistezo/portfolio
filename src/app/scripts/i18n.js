@@ -4,6 +4,7 @@ class I18n {
   constructor() {
     this.Language = Object.freeze({
       PL: "pl",
+      PL_2: "pl-PL",
       EN: "en",
     });
   }
@@ -11,7 +12,7 @@ class I18n {
   init() {
     let chosenLanguage = this.Language.EN;
     let browserLanguage = this.getBrowserLanguage();
-    if (browserLanguage === this.Language.PL) {
+    if (browserLanguage === this.Language.PL || browserLanguage === this.Language.PL_2) {
       chosenLanguage = this.Language.PL;
     }
     this.setLanguage(chosenLanguage);
