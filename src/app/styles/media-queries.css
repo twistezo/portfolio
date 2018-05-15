@@ -36,6 +36,9 @@
   #contact-form input, #contact-form textarea {
     font-size: 14px;
   }
+  #projects .card {
+    max-width: 300px;
+  }
   #footer .go-up {
     font-size: 50px;
     bottom: 143px;
@@ -101,11 +104,11 @@
   #skills .star-text {
     font-size: 12px;
   }
-  #projects .card-columns {
-    column-count: 4;
-  }
   #contact-form input, #contact-form textarea {
     font-size: 14px;
+  }
+  #projects .card {
+    max-width: 210px;
   }
   #footer .go-up {
     font-size: 50px;
@@ -173,11 +176,11 @@
   #skills .star-text {
     font-size: 10px;
   }
-  #projects .card-columns {
-    column-count: 4;
-  }
   #contact-form input, #contact-form textarea {
     font-size: 12px;
+  }
+  #projects .card {
+    max-width: 210px;
   }
   #footer .go-up {
     font-size: 50px;
@@ -241,11 +244,11 @@
   #skills .star-text {
     font-size: 12px;
   }
-  #projects .card-columns {
-    column-count: 4;
-  }
   #about-me .go-down-fake-container, #about-me .go-down {
     zoom: 1.25;
+  }
+  #projects .card {
+    max-width: 300px;
   }
   #footer {
     font-size: 15px;

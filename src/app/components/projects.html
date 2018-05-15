@@ -6,19 +6,19 @@
       <span class="square-bracket">/&gt;</span>
     </h3>
   </div>
-  <div class="container-fluid pt-5">
+  <div class="container-fluid pt-5" data-aos="fade-up" data-aos-delay="150">
     <div class="row">
       <div class="col-12 col-sm-10 col-lg-11 col-xl-8 mx-auto">
-        <div class="pb-5" data-aos="fade-down" data-aos-delay="150">
-          <button class="btn btn-primary filter-button" data-filter="all">
+        <div class="pb-5 button-group filters-button-group" data-aos="fade-down" data-aos-delay="150">
+          <button class="btn btn-primary active" data-filter="*">
             <span class="i18nProjects1"></span>
           </button>
-          <button class="btn btn-primary filter-button" data-filter="j">Java</button>
-          <button class="btn btn-primary filter-button" data-filter="js">JavaScript</button>
-          <button class="btn btn-primary filter-button" data-filter="r">Rust</button>
+          <button class="btn btn-primary" data-filter=".java">Java</button>
+          <button class="btn btn-primary" data-filter=".js">JavaScript</button>
+          <button class="btn btn-primary" data-filter=".rust">Rust</button>
         </div>
-        <div id="my-cards" class="card-columns">
-          <div class="card filter mx-auto j">
+        <div class="grid">
+          <div class="card element-item java">
             <img class="card-img-top" src="../images/p1.png">
             <div class="card-body ">
               <h4 class="card-title">Sticky Notes</h4>
@@ -30,7 +30,7 @@
               <a target="_blank" rel="noopener" href="https://github.com/twistezo/sticky-notes-android-client" class="btn btn-primary">Android</a>
             </div>
           </div>
-          <div class="card filter mx-auto j">
+          <div class="card element-item java">
             <img class="card-img-top" src="../images/p2.png">
             <div class="card-body">
               <h4 class="card-title">Car Rental</h4>
@@ -40,7 +40,7 @@
               <a target="_blank" rel="noopener" href="https://github.com/twistezo/car-rental" class="btn btn-primary i18nProjects12"></a>
             </div>
           </div>
-          <div class="card filter mx-auto j">
+          <div class="card element-item java">
             <img class="card-img-top" src="../images/p3.png">
             <div class="card-body">
               <h4 class="card-title">Ninja vs Zombie</h4>
@@ -50,7 +50,7 @@
               <a target="_blank" rel="noopener" href="https://github.com/twistezo/ninja-vs-zombie" class="btn btn-primary i18nProjects12"></a>
             </div>
           </div>
-          <div class="card filter mx-auto js">
+          <div class="card element-item js">
             <img class="card-img-top" src="../images/p7.jpg">
             <div class="card-body">
               <h4 class="card-title">Little Big Web Service</h4>
@@ -60,7 +60,7 @@
               <a target="_blank" rel="noopener" href="https://github.com/twistezo/little-big-web-service" class="btn btn-primary i18nProjects12"></a>
             </div>
           </div>
-          <div class="card filter mx-auto r">
+          <div class="card element-item rust">
             <img class="card-img-top" src="../images/p4.jpg">
             <div class="card-body">
               <h4 class="card-title">Traffic AI&trade;</h4>
@@ -70,7 +70,7 @@
               <a target="_blank" rel="noopener" href="http://simteract.com/" class="btn btn-primary i18nProjects12"></a>
             </div>
           </div>
-          <div class="card filter mx-auto j">
+          <div class="card element-item java">
             <img class="card-img-top" src="../images/p8.jpg">
             <div class="card-body">
               <h4 class="card-title">My Blockchain</h4>
@@ -80,7 +80,7 @@
               <a target="_blank" rel="noopener" href="https://github.com/twistezo/my-blockchain" class="btn btn-primary i18nProjects12"></a>
             </div>
           </div>
-          <div class="card filter mx-auto j">
+          <div class="card element-item java">
             <img class="card-img-top" src="../images/p6.png">
             <div class="card-body">
               <h4 class="card-title">Java Learning Notes</h4>
@@ -90,7 +90,7 @@
               <a target="_blank" rel="noopener" href="https://github.com/twistezo/java-learning-notes" class="btn btn-primary i18nProjects12"></a>
             </div>
           </div>
-          <div class="card filter mx-auto j">
+          <div class="card element-item java">
             <img class="card-img-top" src="../images/p5.png">
             <div class="card-body">
               <h4 class="card-title">Book Downloader</h4>
@@ -100,7 +100,7 @@
               <a target="_blank" rel="noopener" href="https://github.com/twistezo/book-downloader" class="btn btn-primary i18nProjects12"></a>
             </div>
           </div>
-          <div class="card filter mx-auto js">
+          <div class="card element-item js">
             <img class="card-img-top" src="../images/p9.jpg">
             <div class="card-body">
               <h4 class="card-title">Portfolio v1</h4>
@@ -110,7 +110,7 @@
               <a target="_blank" rel="noopener" href="https://github.com/twistezo/portfolio" class="btn btn-primary i18nProjects12"></a>
             </div>
           </div>
-          <div class="card filter mx-auto js">
+          <div class="card element-item js">
             <img class="card-img-top" src="../images/p10.jpg">
             <div class="card-body">
               <h4 class="card-title">Portfolio v2</h4>
