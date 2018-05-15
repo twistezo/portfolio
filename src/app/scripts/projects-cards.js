@@ -1,19 +1,24 @@
 import jQueryBridget from 'jquery-bridget';
 import Isotope from 'isotope-layout';
+import imagesLoaded from 'imagesloaded';
 
 class ProjectsCards {
   init() {
-    // make Isotope a jQuery plugin
+    // make Isotope and imagesLoaded a jQuery plugins
     jQueryBridget('isotope', Isotope, $);
+    jQueryBridget('imagesLoaded', imagesLoaded, $);
 
     $(document).ready(function () {
-      var $grid = $('.grid').isotope({
-        itemSelector: '.element-item',
-        layoutMode: 'masonry',
-        masonry: {
-          fitWidth: true,
-          gutter: 10,
-        },
+      var $grid = $('.grid').imagesLoaded(function () {
+        $grid.isotope({
+          itemSelector: '.element-item',
+          layoutMode: 'masonry',
+          masonry: {
+            horizontalOrder: true,
+            fitWidth: true,
+            gutter: 10,
+          },
+        })
       });
 
       $('.filters-button-group').on('click', 'button', function () {

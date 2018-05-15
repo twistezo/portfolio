@@ -37,7 +37,7 @@
     font-size: 14px;
   }
   #projects .card {
-    max-width: 300px;
+    width: 300px;
   }
   #footer .go-up {
     font-size: 50px;
@@ -108,7 +108,7 @@
     font-size: 14px;
   }
   #projects .card {
-    max-width: 210px;
+    width: 210px;
   }
   #footer .go-up {
     font-size: 50px;
@@ -180,7 +180,7 @@
     font-size: 12px;
   }
   #projects .card {
-    max-width: 210px;
+    width: 210px;
   }
   #footer .go-up {
     font-size: 50px;
@@ -248,7 +248,7 @@
     zoom: 1.25;
   }
   #projects .card {
-    max-width: 300px;
+    width: 300px;
   }
   #footer {
     font-size: 15px;

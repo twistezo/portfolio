@@ -32,3 +32,10 @@
 .card:hover {
   border-color: var(--my-orange);
 }
+
+/* clearfix */
+.grid:after {
+  content: ' ';
+  display: block;
+  clear: both;
+}
