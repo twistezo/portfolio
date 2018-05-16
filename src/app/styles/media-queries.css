@@ -30,9 +30,6 @@
     width: 300px;
     top: 1760px;
   }
-  #skills .star-text {
-    font-size: 9px;
-  }
   #contact-form input, #contact-form textarea {
     font-size: 14px;
   }
@@ -100,9 +97,6 @@
     width: 500px;
     left: 5px;
     top: 1595px;
-  }
-  #skills .star-text {
-    font-size: 12px;
   }
   #contact-form input, #contact-form textarea {
     font-size: 14px;
@@ -173,9 +167,6 @@
     left: 870px;
     top: 1785px;
   }
-  #skills .star-text {
-    font-size: 10px;
-  }
   #contact-form input, #contact-form textarea {
     font-size: 12px;
   }
@@ -240,9 +231,6 @@
   #about-me .ps {
     left: 930px;
     top: 1770px;
-  }
-  #skills .star-text {
-    font-size: 12px;
   }
   #about-me .go-down-fake-container, #about-me .go-down {
     zoom: 1.25;
