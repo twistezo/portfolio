@@ -32,4 +32,4 @@ firebase deploy
 ```
 
 ### Latest version
-https://twistezo.github.io/portfolio-v1
+https://twistezo.github.io/portfolio-old
