@@ -16,11 +16,13 @@ JavaScript ES6 (babel, eslint), Bootstrap 4, Webpack 4, lit-html
 npm
 
 ### Build, run
-Run in development mode: `npm run dev`
+To build: `npm install`
 
-Build for production: `npm run prod`
+To run in development mode: `npm run dev`
 
-Output from above is in `docs/` for fastest deploy on github page
+To build for production: `npm run prod`
+
+Note thath output from above is in `docs/` for fastest deploy on github page
 
 ### Latest version
 https://twistezo.github.io/portfolio

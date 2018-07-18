@@ -1,0 +1,30 @@
+#references .reference-field-quote-background {
+  background-color: var(--timeline-item);
+  border-radius: 5px;
+}
+
+#references .icon-quote-left, .icon-quote-right, .reference-author {
+  color: var(--my-orange);
+}
+
+#references .icon-quote-left, .icon-quote-right {
+  position: relative;
+  font-size: 15px;
+}
+
+#references .reference-field-quote {
+  padding: 10px 10px 10px 10px;
+  text-indent: 10px;
+}
+
+#references .icon-quote-left {
+  float: left;
+  top: -10px;
+  right: 10px;
+}
+
+#references .icon-quote-right {
+  float: right;
+  bottom: 12px;
+  right: -8px;
+}

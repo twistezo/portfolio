@@ -21,6 +21,7 @@ import '../styles/navbar.css';
 import '../styles/experience.css';
 import '../styles/skills.css';
 import '../styles/projects.css';
+import '../styles/references.css';
 import '../styles/contact.css';
 import '../styles/footer.css';
 import '../styles/cookie-warning.css';

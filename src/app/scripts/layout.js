@@ -5,6 +5,7 @@ import navbarHTML from '../components/navbar.html';
 import skillsHTML from '../components/skills.html';
 import experienceHTML from '../components/experience.html';
 import projectsHTML from '../components/projects.html';
+import referencesHTML from '../components/references.html';
 import contactHTML from '../components/contact.html';
 import footerHTML from '../components/footer.html';
 import cookieWarningHTML from '../components/cookie-warning.html';
@@ -16,6 +17,7 @@ class Layout {
     this.Skills = html([skillsHTML]);
     this.Experience = html([experienceHTML]);
     this.Projects = html([projectsHTML]);
+    this.References = html([referencesHTML]);
     this.Contact = html([contactHTML]);
     this.Footer = html([footerHTML]);
     this.cookieWarning = html([cookieWarningHTML]);
@@ -37,6 +39,9 @@ class Layout {
       </div>
       <div id="projects">
         ${this.Projects}
+      </div>
+      <div id="references">
+        ${this.References}
       </div>
       <div id="contact">
         ${this.Contact}
