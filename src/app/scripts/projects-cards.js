@@ -18,6 +18,7 @@ class ProjectsCards {
             fitWidth: true,
             gutter: 10,
           },
+          filter: '.java',
         })
       });
 
