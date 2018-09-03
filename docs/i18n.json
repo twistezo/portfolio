@@ -1,148 +1,282 @@
 {
-  "pl": {
-    "i18nAboutMe0": "Znajdziesz tutaj krótkie podsumowanie moich umiejętności, używanych przeze mnie narzędzi, wybrane projekty, referencje oraz przebieg edukacji i kariery zawodowej.",
-    "i18nAboutMe1": "Każdy projekt posiada odnośnik do GitHuba, gdzie znajdziesz szczegółowy opis oraz kod źródłowy.",
-    "i18nAboutMe2": "W technikum oraz na studiach miałem styczność z Asemblerem, C, C++, MATLAB, JavaScript, HTML, CSS, programowaniem mikrokontrolerów oraz sterowników PLC. Później pracując przez cztery lata jako projektant maszyn i urządzeń w między czasie hobbystycznie programowałem, co szybko przerodziło się z pasji w pracę.",
-    "i18nAboutMe3": "Obecnie już drugi rok zawodowo używam głównie technologii związanych z językiem Rust (symulacje, AI, game dev), a w wolnych chwilach siedzę w Web devie - technologiach związanych z JavaScript oraz w Javie.",
-    "i18nAboutMe4": "Staram się być elastyczny jeśli chodzi o techonologie oraz być na bieżąco z nowinkami w świecie IT.",
-    "i18nNavbar0": "O mnie",
-    "i18nNavbar1": "Umiejętności",
-    "i18nNavbar2": "Doświadczenie",
-    "i18nNavbar3": "Próbki kodu",
-    "i18nNavbar4": "Referencje",
-    "i18nNavbar5": "Kontakt",
-    "i18nSkills0": "umiejętności",
-    "i18nSkills1": "odcień wg. częstotliwości używania",
-    "i18nSkills2": "Bazy danych",
-    "i18nSkills3": "Testy",
-    "i18nSkills4": "Grafika",
-    "i18nSkills5": "Ulubione narzędzia",
-    "i18nExperience": "doświadczenie",
-    "i18nExperience1a": "07.2017 - present",
-    "i18nExperience1b": "Software Developer",
-    "i18nExperience1c": " at Simteract - Rzeszów",
-    "i18nExperience1d": "Długoterminowy projekt symulacji rzeczywistego ruchu drogowego oparty na sztucznej inteligencji i prawdziwych mapach.",
-    "i18nExperience1e": "Co tworzę?",
-    "i18nExperience1f": "algorytmy sztucznej inteligencji",
-    "i18nExperience1g": "algorytmy do przetwarzania danych geograficznych",
-    "i18nExperience1h": "grafikę 3D czasu rzeczywistego",
-    "i18nExperience1i": "i wiele więcej około projektowych rzeczy takich jak testy, SDKs, build tools, CLIs itp.",
-    "i18nExperience1j": "Czego używam?",
-    "i18nExperience1k": "głównie języka Rust",
-    "i18nExperience1l": "czasami C# (Unity) oraz C",
-    "i18nExperience6": "projektowanie maszyn i urządzeń dla klientów indywidualnych oraz firm",
-    "i18nExperience7": "w Red Rooster - Kraków",
-    "i18nExperience8": "projektowanie maszyn i urządzeń dla branży Offshore",
-    "i18nExperience9": "modelowanie 3D w Inventor",
-    "i18nExperience10": "obliczenia wytrzymałościowe + MES",
-    "i18nExperience11": "wizualizacje 3D produktów w Autodesk Showcase i Adobe Photoshop",
-    "i18nExperience12": "animacje produktów w Adobe Premiere",
-    "i18nExperience13": " w T. Wędzony Firma Inż. - Kraków",
-    "i18nExperience14": "projektowanie maszyn przemysłowych opartych o systemy wizyjne",
-    "i18nExperience15": "modelowanie 3D w SolidWorks",
-    "i18nExperience16": "obliczenia wytrzymałościowe",
-    "i18nExperience17": "Politechnika Krakowska -",
-    "i18nExperience18": "mgr inż.",
-    "i18nExperience19": "kier. Automatyka i robotyka",
-    "i18nExperience20": "spec. Technologie informacyjne w systemach produkcyjnych",
-    "i18nExperience21": "Politechnika Rzeszowska -",
-    "i18nExperience22": "inż.",
-    "i18nExperience23": "kier. Mechatronika",
-    "i18nExperience24": "spec. Informatyka i robotyka",
-    "i18nProjects0": "próbki kodu",
-    "i18nProjects0a": "więcej na moim profilu",
-    "i18nProjects0b": "",
-    "i18nProjects2": "RESTfulowy web serwis do zarządzania notatkami i ich użytkownikami + klient na Androida",
-    "i18nProjects3": "Web serwis dla wypożyczalni samochodów",
-    "i18nProjects4": "Animowana gra 2D - Android/Desktop",
-    "i18nProjects5": "Zarys web serwisu opartego o serwer (Node.js + MongoDB RESTful API) i klienta w React + Firebase",
-    "i18nProjects6": "Symulator ruchu drogowego rzeczywistych miast",
-    "i18nProjects7": "Implementacja blockchaina w Javie",
-    "i18nProjects8": "Przyklejane na pulpit notatki do nauki Javy",
-    "i18nProjects9": "Narzędzie do automatycznego pobierania codziennych darmowych książek z packtub.com - PDF, ePub",
-    "i18nProjects10": "Strona typu portfolio napisana w Angular",
-    "i18nProjects11": "Kod źródłowy strony, którą właśnie przeglądasz",
-    "i18nProjects12": "Więcej",
-    "i18nReferences0": "referencje",
-    "i18nContact0": "kontakt",
-    "i18nContact1": "Nr telefonu",
-    "i18nContact2": "Treśc wiadomości",
-    "i18nContact3": "Wyślij",
-    "i18nCookieWarning0": "Strona wykorzystuje pliki cookies oraz podobne technologie m.in. w celach statystycznych.",
-    "i18nCookieWarning1": "Dowiedz się więcej",
-    "i18nCookieWarning2": "Zrozumiałem"
+  "i18nAboutMe0": {
+    "pl": "Znajdziesz tutaj krótkie podsumowanie moich umiejętności, używanych przeze mnie narzędzi, wybrane projekty, referencje oraz przebieg edukacji i kariery zawodowej.",
+    "en": "You will find here a short summary of my skills, tools used by me, selected projects, references and the course of my education and career."
   },
-  "en": {
-    "i18nAboutMe0": "You will find here a short summary of my skills, tools used by me, selected projects, references and the course of my education and career.",
-    "i18nAboutMe1": "Each project has a link to GitHub where you will find a detailed description and source code.",
-    "i18nAboutMe2": "In technical high school and college I had contact with Assembler, C, C ++, MATLAB, JavaScript, HTML, CSS, programming of microcontrollers and PLC controllers. Later working for four years as a Mechanical Design Engineer I programmed hobbyistically and its quickly turned from passion into work.",
-    "i18nAboutMe3": "Currently already up a two year I professionally use mainly technologies related to the Rust programming language (simulations, AI, game dev), and in my free time I dig in Web development - technologies related to JavaScript and Java.",
-    "i18nAboutMe4": "I'm trying to be flexible in technologies and keep up with the latest updates from the IT world.",
-    "i18nNavbar0": "About me",
-    "i18nNavbar1": "Skills",
-    "i18nNavbar2": "Experience",
-    "i18nNavbar3": "Code samples",
-    "i18nNavbar4": "References",
-    "i18nNavbar5": "Contact",
-    "i18nSkills0": "skills",
-    "i18nSkills1": "color according to the frequency of usage",
-    "i18nSkills2": "Databases",
-    "i18nSkills3": "Tests",
-    "i18nSkills4": "Graphics",
-    "i18nSkills5": "Favorite tools",
-    "i18nExperience": "experience",
-    "i18nExperience1a": "07.2017 - obecnie",
-    "i18nExperience1b": "Software Developer",
-    "i18nExperience1c": " w Simteract - Rzeszów",
-    "i18nExperience1d": "Long-term project of real traffic simulator based on artificial intelligence and real maps.",
-    "i18nExperience1e": "What am I writing?",
-    "i18nExperience1f": "AI algorithms",
-    "i18nExperience1g": "algorithms for geographic data processing",
-    "i18nExperience1h": "realtime 3D graphics",
-    "i18nExperience1i": "and many more software development oriented things like tests, SDKs, build tools, CLIs, etc.",
-    "i18nExperience1j": "What am I using?",
-    "i18nExperience1k": "mostly Rust language",
-    "i18nExperience1l": "sometimes C# (Unity) and C",
-    "i18nExperience6": "designing various equipments for individuals and companies",
-    "i18nExperience7": "at Red Rooster - Kraków",
-    "i18nExperience8": "designing lifting & measuring equipments for oil industry",
-    "i18nExperience9": "drawing, 3D modeling in Inventor",
-    "i18nExperience10": "manual strength calculating + FEA",
-    "i18nExperience11": "making 3D product visualizations in Showcase, Photoshop",
-    "i18nExperience12": "making product animation in Premiere",
-    "i18nExperience13": " at T. Wędzony Firma Inż. - Kraków",
-    "i18nExperience14": "designing industrial machines based on optical systems",
-    "i18nExperience15": "drawing, 3D modeling in SolidWorks",
-    "i18nExperience16": "manual strength calculating",
-    "i18nExperience17": "Cracow University of Technology -",
-    "i18nExperience18": "MEng",
-    "i18nExperience19": "major: Automatics and Robotics",
-    "i18nExperience20": "specialty: Information technologies in production",
-    "i18nExperience21": "Rzeszow University of Technology -",
-    "i18nExperience22": "BEng",
-    "i18nExperience23": "major: Mechatronics",
-    "i18nExperience24": "specialty: Informatics and Robotics",
-    "i18nProjects0": "code samples",
-    "i18nProjects0a": "more on my",
-    "i18nProjects0b": "profile",
-    "i18nProjects2": "RESTful secured web service for manage to-do notes and users + Android client",
-    "i18nProjects3": "Web service for car rental company",
-    "i18nProjects4": "Android/Desktop 2D platform fully animated game",
-    "i18nProjects5": "Draft of web service (Node.js + MongoDB server and React client)",
-    "i18nProjects6": "Traffic simulator based on real cities",
-    "i18nProjects7": "Implementation of blockchain in Java",
-    "i18nProjects8": "Sticky notes with Java questions for learning",
-    "i18nProjects9": "Automatic tool for downloading packtpub.com daily free e-book - PDF, ePub",
-    "i18nProjects10": "First version of my portfolio website in Angular",
-    "i18nProjects11": "Source code of this website",
-    "i18nProjects12": "More",
-    "i18nReferences0": "references",
-    "i18nContact0": "contact",
-    "i18nContact1": "Phone number",
-    "i18nContact2": "Message",
-    "i18nContact3": "Send",
-    "i18nCookieWarning0": "This site uses cookies and similar technologies among others for statistical purposes.",
-    "i18nCookieWarning1": "More info",
-    "i18nCookieWarning2": "Got it"
+  "i18nAboutMe1": {
+    "pl": "Każdy projekt posiada odnośnik do GitHuba, gdzie znajdziesz szczegółowy opis oraz kod źródłowy.",
+    "en": "Each project has a link to GitHub where you will find a detailed description and source code."
+  },
+  "i18nAboutMe2": {
+    "pl": "W technikum oraz na studiach miałem styczność z Asemblerem, C, C++, MATLAB, JavaScript, HTML, CSS, programowaniem mikrokontrolerów oraz sterowników PLC. Później pracując przez cztery lata jako projektant maszyn i urządzeń w między czasie hobbystycznie programowałem, co szybko przerodziło się z pasji w pracę.",
+    "en": "In technical high school and college I had contact with Assembler, C, C ++, MATLAB, JavaScript, HTML, CSS, programming of microcontrollers and PLC controllers. Later working for four years as a Mechanical Design Engineer I programmed hobbyistically and its quickly turned from passion into work."
+  },
+  "i18nAboutMe3": {
+    "pl": "Obecnie już drugi rok zawodowo używam głównie technologii związanych z językiem Rust (symulacje, AI, game dev), a w wolnych chwilach siedzę w Web devie - technologiach związanych z JavaScript oraz w Javie.",
+    "en": "Currently already up a two year I professionally use mainly technologies related to the Rust programming language (simulations, AI, game dev), and in my free time I dig in Web development - technologies related to JavaScript and Java."
+  },
+  "i18nAboutMe4": {
+    "pl": "Staram się być elastyczny jeśli chodzi o techonologie oraz być na bieżąco z nowinkami w świecie IT.",
+    "en": "I'm trying to be flexible in technologies and keep up with the latest updates from the IT world."
+  },
+  "i18nNavbar0": {
+    "pl": "O mnie",
+    "en": "About me"
+  },
+  "i18nNavbar1": {
+    "pl": "Umiejętności",
+    "en": "Skills"
+  },
+  "i18nNavbar2": {
+    "pl": "Doświadczenie",
+    "en": "Experience"
+  },
+  "i18nNavbar3": {
+    "pl": "Próbki kodu",
+    "en": "Code samples"
+  },
+  "i18nNavbar4": {
+    "pl": "Referencje",
+    "en": "References"
+  },
+  "i18nNavbar5": {
+    "pl": "Kontakt",
+    "en": "Contact"
+  },
+  "i18nSkills0": {
+    "pl": "umiejętności",
+    "en": "skills"
+  },
+  "i18nSkills1": {
+    "pl": "odcień wg. częstotliwości używania",
+    "en": "color according to the frequency of usage"
+  },
+  "i18nSkills2": {
+    "pl": "Bazy danych",
+    "en": "Databases"
+  },
+  "i18nSkills3": {
+    "pl": "Testy",
+    "en": "Tests"
+  },
+  "i18nSkills4": {
+    "pl": "Grafika",
+    "en": "Graphics"
+  },
+  "i18nSkills5": {
+    "pl": "Ulubione narzędzia",
+    "en": "Favorite tools"
+  },
+  "i18nExperience": {
+    "pl": "doświadczenie",
+    "en": "experience"
+  },
+  "i18nExperience1a": {
+    "pl": "07.2017 - obecnie",
+    "en": "07.2017 - present"
+  },
+  "i18nExperience1b": {
+    "pl": "Software Developer",
+    "en": "Software Developer"
+  },
+  "i18nExperience1c": {
+    "pl": " w Simteract - Rzeszów",
+    "en": " at Simteract - Rzeszów"
+  },
+  "i18nExperience1d": {
+    "pl": "Długoterminowy projekt symulacji rzeczywistego ruchu drogowego oparty na sztucznej inteligencji i prawdziwych mapach.",
+    "en": "Long-term project of real traffic simulator based on artificial intelligence and real maps."
+  },
+  "i18nExperience1e": {
+    "pl": "Co tworzę?",
+    "en": "What am I writing?"
+  },
+  "i18nExperience1f": {
+    "pl": "algorytmy sztucznej inteligencji",
+    "en": "AI algorithms"
+  },
+  "i18nExperience1g": {
+    "pl": "algorytmy do przetwarzania danych geograficznych",
+    "en": "algorithms for geographic data processing"
+  },
+  "i18nExperience1h": {
+    "pl": "grafikę 3D czasu rzeczywistego",
+    "en": "realtime 3D graphics"
+  },
+  "i18nExperience1j": {
+    "pl": "Czego używam?",
+    "en": "What am I using?"
+  },
+  "i18nExperience1k": {
+    "pl": "głównie języka Rust",
+    "en": "mostly Rust language"
+  },
+  "i18nExperience1l": {
+    "pl": "czasami C# (Unity) oraz C",
+    "en": "sometimes C# (Unity) and C"
+  },
+  "i18nExperience6": {
+    "pl": "projektowanie maszyn i urządzeń dla klientów indywidualnych oraz firm",
+    "en": "designing various equipments for individuals and companies"
+  },
+  "i18nExperience7": {
+    "pl": "w Red Rooster - Kraków",
+    "en": "at Red Rooster - Kraków"
+  },
+  "i18nExperience8": {
+    "pl": "projektowanie maszyn i urządzeń dla branży Offshore",
+    "en": "designing lifting & measuring equipments for oil industry"
+  },
+  "i18nExperience9": {
+    "pl": "modelowanie 3D w Inventor",
+    "en": "drawing, 3D modeling in Inventor"
+  },
+  "i18nExperience10": {
+    "pl": "obliczenia wytrzymałościowe + MES",
+    "en": "manual strength calculating + FEA"
+  },
+  "i18nExperience11": {
+    "pl": "wizualizacje 3D produktów w Autodesk Showcase i Adobe Photoshop",
+    "en": "making 3D product visualizations in Showcase, Photoshop"
+  },
+  "i18nExperience12": {
+    "pl": "animacje produktów w Adobe Premiere",
+    "en": "making product animation in Premiere"
+  },
+  "i18nExperience13": {
+    "pl": " w T. Wędzony Firma Inż. - Kraków",
+    "en": " at T. Wędzony Firma Inż. - Kraków"
+  },
+  "i18nExperience14": {
+    "pl": "projektowanie maszyn przemysłowych opartych o systemy wizyjne",
+    "en": "designing industrial machines based on optical systems"
+  },
+  "i18nExperience15": {
+    "pl": "modelowanie 3D w SolidWorks",
+    "en": "drawing, 3D modeling in SolidWorks"
+  },
+  "i18nExperience16": {
+    "pl": "obliczenia wytrzymałościowe",
+    "en": "manual strength calculating"
+  },
+  "i18nExperience17": {
+    "pl": "Politechnika Krakowska -",
+    "en": "Cracow University of Technology -"
+  },
+  "i18nExperience18": {
+    "pl": "mgr inż.",
+    "en": "MEng"
+  },
+  "i18nExperience19": {
+    "pl": "kier. Automatyka i robotyka",
+    "en": "major: Automatics and Robotics"
+  },
+  "i18nExperience20": {
+    "pl": "spec. Technologie informacyjne w systemach produkcyjnych",
+    "en": "specialty: Information technologies in production"
+  },
+  "i18nExperience21": {
+    "pl": "Politechnika Rzeszowska -",
+    "en": "Rzeszow University of Technology -"
+  },
+  "i18nExperience22": {
+    "pl": "inż.",
+    "en": "BEng"
+  },
+  "i18nExperience23": {
+    "pl": "kier. Mechatronika",
+    "en": "major: Mechatronics"
+  },
+  "i18nExperience24": {
+    "pl": "spec. Informatyka i robotyka",
+    "en": "specialty: Informatics and Robotics"
+  },
+  "i18nProjects0": {
+    "pl": "próbki kodu",
+    "en": "code samples"
+  },
+  "i18nProjects0a": {
+    "pl": "więcej na moim profilu",
+    "en": "more on my"
+  },
+  "i18nProjects0b": {
+    "pl": "",
+    "en": "profile"
+  },
+  "i18nProjects2": {
+    "pl": "RESTfulowy web serwis do zarządzania notatkami i ich użytkownikami + klient na Androida",
+    "en": "RESTful secured web service for manage to-do notes and users + Android client"
+  },
+  "i18nProjects3": {
+    "pl": "Web serwis dla wypożyczalni samochodów",
+    "en": "Web service for car rental company"
+  },
+  "i18nProjects4": {
+    "pl": "Animowana gra 2D - Android/Desktop",
+    "en": "Android/Desktop 2D platform fully animated game"
+  },
+  "i18nProjects5": {
+    "pl": "Zarys web serwisu opartego o serwer (Node.js + MongoDB RESTful API) i klienta w React + Firebase",
+    "en": "Draft of web service (Node.js + MongoDB server and React client)"
+  },
+  "i18nProjects6": {
+    "pl": "Symulator ruchu drogowego rzeczywistych miast",
+    "en": "Traffic simulator based on real cities"
+  },
+  "i18nProjects7": {
+    "pl": "Implementacja blockchaina w Javie",
+    "en": "Implementation of blockchain in Java"
+  },
+  "i18nProjects8": {
+    "pl": "Przyklejane na pulpit notatki do nauki Javy",
+    "en": "Sticky notes with Java questions for learning"
+  },
+  "i18nProjects9": {
+    "pl": "Narzędzie do automatycznego pobierania codziennych darmowych książek z packtub.com - PDF, ePub",
+    "en": "Automatic tool for downloading packtpub.com daily free e-book - PDF, ePub"
+  },
+  "i18nProjects10": {
+    "pl": "Strona typu portfolio napisana w Angular",
+    "en": "First version of my portfolio website in Angular"
+  },
+  "i18nProjects11": {
+    "pl": "Kod źródłowy strony, którą właśnie przeglądasz",
+    "en": "Source code of this website"
+  },
+  "i18nProjects12": {
+    "pl": "Więcej",
+    "en": "More"
+  },
+  "i18nReferences0": {
+    "pl": "referencje",
+    "en": "references"
+  },
+  "i18nContact0": {
+    "pl": "kontakt",
+    "en": "contact"
+  },
+  "i18nContact1": {
+    "pl": "Nr telefonu",
+    "en": "Phone number"
+  },
+  "i18nContact2": {
+    "pl": "Treśc wiadomości",
+    "en": "Message"
+  },
+  "i18nContact3": {
+    "pl": "Wyślij",
+    "en": "Send"
+  },
+  "i18nCookieWarning0": {
+    "pl": "Strona wykorzystuje pliki cookies oraz podobne technologie m.in. w celach statystycznych.",
+    "en": "This site uses cookies and similar technologies among others for statistical purposes."
+  },
+  "i18nCookieWarning1": {
+    "pl": "Dowiedz się więcej",
+    "en": "More info"
+  },
+  "i18nCookieWarning2": {
+    "pl": "Zrozumiałem",
+    "en": "Got it"
   }
 }
