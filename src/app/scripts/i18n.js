@@ -34,20 +34,20 @@ class I18n {
     }
 
     $.getJSON(i18nJSON, (jsonObj) => {
-      let i18n = jsonObj[chosenLanguage];
+      for (let obj in jsonObj) {
+        let fieldName = obj;
+        let fieldValue = jsonObj[obj][chosenLanguage];
 
-      for (let key in i18n) {
-        let value = i18n[key];
-        // contact form
-        if (key === "i18nContact1") {
-          $("input[name='phone']").attr('placeholder', value);
-        } else if (key == "i18nContact2") {
-          $("textarea[name='contents']").attr('placeholder', value);
+        if (fieldName === "i18nContact1") {
+          $("input[name='phone']").attr('placeholder', fieldValue);
+        } else if (fieldName == "i18nContact2") {
+          $("textarea[name='contents']").attr('placeholder', fieldValue);
         } else {
-          $('.' + key).text(value);
+          $('.' + fieldName).text(fieldValue);
         }
       }
     });
+
   }
 
   hoverPl() {
