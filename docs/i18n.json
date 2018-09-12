@@ -67,7 +67,7 @@
     "pl": "Ulubione narzędzia",
     "en": "Favorite tools"
   },
-  "i18nExperience": {
+  "i18nExperience0": {
     "pl": "doświadczenie",
     "en": "experience"
   },
@@ -87,10 +87,6 @@
     "pl": "Długoterminowy projekt symulacji rzeczywistego ruchu drogowego oparty na sztucznej inteligencji i prawdziwych mapach.",
     "en": "Long-term project of real traffic simulator based on artificial intelligence and real maps."
   },
-  "i18nExperience1e": {
-    "pl": "Co tworzę?",
-    "en": "What am I writing?"
-  },
   "i18nExperience1f": {
     "pl": "algorytmy sztucznej inteligencji",
     "en": "AI algorithms"
@@ -100,24 +96,28 @@
     "en": "algorithms for geographic data processing"
   },
   "i18nExperience1h": {
-    "pl": "grafikę 3D czasu rzeczywistego",
+    "pl": "grafika 3D czasu rzeczywistego",
     "en": "realtime 3D graphics"
   },
-  "i18nExperience1j": {
-    "pl": "Czego używam?",
-    "en": "What am I using?"
-  },
   "i18nExperience1k": {
-    "pl": "głównie języka Rust",
+    "pl": "głównie język Rust",
     "en": "mostly Rust language"
   },
   "i18nExperience1l": {
     "pl": "czasami C# (Unity) oraz C",
     "en": "sometimes C# (Unity) and C"
   },
-  "i18nExperience6": {
-    "pl": "projektowanie maszyn i urządzeń dla klientów indywidualnych oraz firm",
-    "en": "designing various equipments for individuals and companies"
+  "i18nExperience2a": {
+    "pl": "Tworzenie poprawek i ulepszeń do różnych projektów webowych.",
+    "en": "Making fixes and improvements for various web projects."
+  },
+  "i18nExperience2c": {
+    "pl": "głównie JavaScript, HTML oraz CSS",
+    "en": "mostly JavaScript, HTML and CSS"
+  },
+  "i18nExperience2d": {
+    "pl": "czasami React oraz Angular",
+    "en": " sometimes React and Angular"
   },
   "i18nExperience7": {
     "pl": "w Red Rooster - Kraków",
