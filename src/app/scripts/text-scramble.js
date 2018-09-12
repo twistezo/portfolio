@@ -82,7 +82,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       return TextScramble;
     }();
 
-    var phrases = ['Łukasz Kółko', 'Software developer', 'Web designer', 'Mobile apps creator'];
+    var phrases = ['Łukasz Kółko', 'Software developer', 'Web designer', 'Rust developer'];
 
     var el = document.querySelector('.textScramble');
     var fx = new TextScramble(el);
