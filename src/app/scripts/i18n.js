@@ -1,21 +1,22 @@
 import i18nJSON from '../i18n.json';
 
 class I18n {
-  constructor() {
+  constructor(dateCalculator) {
+    this.dateCalculator = dateCalculator;
     this.Language = Object.freeze({
       PL: "pl",
       PL_2: "pl-PL",
       EN: "en",
     });
+    this.currentLanguage = this.Language.EN;
   }
 
   init() {
-    let chosenLanguage = this.Language.EN;
     let browserLanguage = this.getBrowserLanguage();
     if (browserLanguage === this.Language.PL || browserLanguage === this.Language.PL_2) {
-      chosenLanguage = this.Language.PL;
+      this.currentLanguage = this.Language.PL;
     }
-    this.setLanguage(chosenLanguage);
+    this.setLanguage(this.currentLanguage);
     this.initButtonsBehaviour();
   }
 
@@ -29,9 +30,12 @@ class I18n {
   setLanguage(chosenLanguage) {
     if (chosenLanguage === "pl") {
       this.hoverPl();
+      this.currentLanguage = this.Language.PL;
     } else {
       this.hoverEn();
+      this.currentLanguage = this.Language.EN;
     }
+    this.dateCalculator.setLocale(this.currentLanguage);
 
     $.getJSON(i18nJSON, (jsonObj) => {
       for (let obj in jsonObj) {
@@ -69,6 +73,10 @@ class I18n {
       this.setLanguage("en");
       this.hoverEn();
     });
+  }
+
+  getCurrentLanguage() {
+    return this.currentLanguage;
   }
 
 }

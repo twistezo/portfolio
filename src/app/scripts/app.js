@@ -3,6 +3,7 @@ import Layout from '../scripts/layout';
 import Parallax from 'parallax-js';
 import Parsley from 'parsleyjs';
 import { jarallax } from 'jarallax';
+import DateCalculator from '../scripts/date-calculator';
 import I18n from '../scripts/i18n';
 import ProjectsCards from '../scripts/projects-cards';
 import CookieWarning from '../scripts/cookie-warning';
@@ -34,7 +35,9 @@ export default class App {
     this.initParallax();
     this.initParsley();
     this.initJarallax();
-    new I18n().init();
+    let dateCalculator = new DateCalculator();
+    dateCalculator.init();
+    new I18n(dateCalculator).init();
     new ProjectsCards().init();
     new CookieWarning().init();
   }
