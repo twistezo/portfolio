@@ -67,9 +67,17 @@
     "pl": "Ulubione narzędzia",
     "en": "Favorite tools"
   },
-  "i18nExperience0": {
+  "i18nExperience0a": {
     "pl": "doświadczenie",
     "en": "experience"
+  },
+  "i18nExperience0b": {
+    "pl": "Suma IT",
+    "en": "Total IT"
+  },
+  "i18nExperience0c": {
+    "pl": "Suma CAD",
+    "en": "Total CAD"
   },
   "i18nExperience1a": {
     "pl": "Od 07.2017",

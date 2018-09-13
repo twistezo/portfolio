@@ -1,12 +1,14 @@
 class DateCalculator {
   constructor() {
+    this.todayDate = new Date();
+    this.todayDate.setMonth(this.todayDate.getMonth() - 1); // for better calculations
     this.Simteract = {
       from: new Date(2017, 6),
-      to: new Date(),
+      to: this.todayDate,
     };
     this.Freelancer = {
       from: new Date(2017, 0),
-      to: new Date(2017, 6),
+      to: new Date(2017, 5),
     };
     this.RedRooster = {
       from: new Date(2014, 6),
@@ -14,7 +16,7 @@ class DateCalculator {
     };
     this.Wedzony = {
       from: new Date(2014, 0),
-      to: new Date(2014, 6),
+      to: new Date(2014, 5),
     };
     this.Locale = {
       Pl: ['miesiąc', 'miesiące', 'miesięcy', 'rok', 'lata', 'lat'],
@@ -45,14 +47,17 @@ class DateCalculator {
       this.generateDiffWithLang(this.RedRooster.from, this.RedRooster.to, currentLang);
     document.getElementById('exp-wedzony-diff').innerHTML =
       this.generateDiffWithLang(this.Wedzony.from, this.Wedzony.to, currentLang);
+    document.getElementById('total-exp-it').innerHTML =
+      this.generateDiffWithLang(this.Freelancer.from, this.Simteract.to, currentLang);
+    document.getElementById('total-exp-cad').innerHTML =
+      this.generateDiffWithLang(this.Wedzony.from, this.RedRooster.to, currentLang);
   }
 
   generateDiffWithLang(date1, date2, locale) {
     let diff = Math.floor(date2.getTime() - date1.getTime());
     let day = 1000 * 60 * 60 * 24;
-
     let days = Math.floor(diff / day);
-    let months = Math.floor(days / 31) + 1; // +1 for adding current month
+    let months = Math.floor(days / 31) + 2; // +2 for adding current month
 
     let message = '(';
     if (months <= 12) {

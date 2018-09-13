@@ -1,102 +1,71 @@
 @font-face {
   font-family: 'fontello';
-  src: url('../font/fontello.eot?63404132');
-  src: url('../font/fontello.eot?63404132#iefix') format('embedded-opentype'), url('../font/fontello.woff2?63404132') format('woff2'), url('../font/fontello.woff?63404132') format('woff'), url('../font/fontello.ttf?63404132') format('truetype'), url('../font/fontello.svg?63404132#fontello') format('svg');
+  src: url('../font/fontello.eot?1681734');
+  src: url('../font/fontello.eot?1681734#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?1681734') format('woff2'),
+       url('../font/fontello.woff?1681734') format('woff'),
+       url('../font/fontello.ttf?1681734') format('truetype'),
+       url('../font/fontello.svg?1681734#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
-
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-
 /*
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?63404132#fontello') format('svg');
+    src: url('../font/fontello.svg?1681734#fontello') format('svg');
   }
 }
 */
-
-[class^="icon-"]:before, [class*=" icon-"]:before {
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
   speak: none;
+ 
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
   margin-right: .2em;
   text-align: center;
   /* opacity: .8; */
+ 
   /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
   text-transform: none;
+ 
   /* fix buttons height, for twitter bootstrap */
   line-height: 1em;
+ 
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
   margin-left: .2em;
+ 
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
+ 
   /* Font smoothing. That was taken from TWBS */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+ 
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
-
-.icon-mail:before {
-  content: '\e800';
-}
-
-/* '' */
-
-.icon-up-open:before {
-  content: '\e801';
-}
-
-/* '' */
-
-.icon-quote-left:before {
-  content: '\e802';
-}
-
-/* '' */
-
-.icon-quote-right:before {
-  content: '\e803';
-}
-
-/* '' */
-
-.icon-angle-double-up:before {
-  content: '\f102';
-}
-
-/* '' */
-
-.icon-circle:before {
-  content: '\f111';
-}
-
-/* '' */
-
-.icon-github-2:before {
-  content: '\f113';
-}
-
-/* '' */
-
-.icon-terminal:before {
-  content: '\f120';
-}
-
-/* '' */
-
-.icon-linkedin-squared:before {
-  content: '\f30c';
-}
-
-/* '' */
+ 
+.icon-mail:before { content: '\e800'; } /* '' */
+.icon-up-open:before { content: '\e801'; } /* '' */
+.icon-quote-left:before { content: '\e802'; } /* '' */
+.icon-quote-right:before { content: '\e803'; } /* '' */
+.icon-cog-alt:before { content: '\e804'; } /* '' */
+.icon-terminal-1:before { content: '\e805'; } /* '' */
+.icon-doc-text:before { content: '\f0f6'; } /* '' */
+.icon-angle-double-up:before { content: '\f102'; } /* '' */
+.icon-laptop:before { content: '\f109'; } /* '' */
+.icon-circle:before { content: '\f111'; } /* '' */
+.icon-github-2:before { content: '\f113'; } /* '' */
+.icon-terminal:before { content: '\f120'; } /* '' */
+.icon-code:before { content: '\f121'; } /* '' */
+.icon-linkedin-squared:before { content: '\f30c'; } /* '' */
