@@ -225,15 +225,15 @@
   },
   "i18nProjects5": {
     "pl": "Zarys web serwisu opartego o serwer (Node.js + MongoDB RESTful API) i klienta w React + Firebase",
-    "en": "Draft of web service (Node.js + MongoDB server and React client)"
+    "en": "Playground/draft of web service (Node.js + MongoDB server and React client)"
   },
   "i18nProjects6": {
-    "pl": "Symulator ruchu drogowego rzeczywistych miast",
-    "en": "Traffic simulator based on real cities"
+    "pl": "Symulator ruchu drogowego oparty na sztucznej inteligencji i prawdziwych mapach",
+    "en": "Traffic simulator based on artificial intelligence and real cities"
   },
   "i18nProjects7": {
-    "pl": "Implementacja blockchaina w Javie",
-    "en": "Implementation of blockchain in Java"
+    "pl": "Moja implementacja blockchaina w Javie",
+    "en": "My implementation of blockchain in Java"
   },
   "i18nProjects8": {
     "pl": "Przyklejane na pulpit notatki do nauki Javy",
@@ -252,6 +252,10 @@
     "en": "Source code of this website"
   },
   "i18nProjects12": {
+    "pl": "Licznik czasu pracy zdalnej ze statystykami - Electron",
+    "en": "Remote work timer with statistics - Electron"
+  },
+  "i18nProjects13": {
     "pl": "Więcej",
     "en": "More"
   },
