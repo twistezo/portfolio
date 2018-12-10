@@ -35,7 +35,7 @@
     "webpack-merge": "^4.1.2"
   },
   "dependencies": {
-    "aos": "^2.2.0",
+    "aos": "^3.0.0-beta.6",
     "babel-preset-env": "^1.6.1",
     "bootstrap": "^4.0.0-beta.2",
     "font-awesome": "^4.7.0",
