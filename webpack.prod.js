@@ -6,7 +6,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = merge(common, {
-  devtool: 'source-map',
+  devtool: 'none',
   plugins: [
     new CleanWebpackPlugin(['docs']),
     new HtmlWebpackPlugin({
