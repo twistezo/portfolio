@@ -9,6 +9,7 @@ Second (actual) version of my programming portfolio website. Rewritten from Angu
 - uses `lit-html` for templating HTML pages in JS
 - minimal webpack configuration with hot-reload in development mode and with minify and uglify HTML/CSS/JS for production build
 - custom implementation of i18n (internationalization) which uses JSON file
+- 6 pinned repositories in projects section fetched from GitHub GraphQL API
 
 ### Tools
 JavaScript ES6 (babel, eslint), Bootstrap 4, Webpack 4, lit-html
