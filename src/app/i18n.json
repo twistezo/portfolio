@@ -8,8 +8,8 @@
     "en": "Each project has a link to GitHub where you will find a detailed description and source code."
   },
   "i18nAboutMe2": {
-    "pl": "W technikum oraz na studiach miałem styczność z Asemblerem, C, C++, MATLAB, JavaScript, HTML, CSS, programowaniem mikrokontrolerów oraz sterowników PLC. Później pracując przez cztery lata jako projektant maszyn i urządzeń w między czasie hobbystycznie programowałem, co szybko przerodziło się z pasji w pracę.",
-    "en": "In technical high school and college I had contact with Assembler, C, C ++, MATLAB, JavaScript, HTML, CSS, programming of microcontrollers and PLC controllers. Later working for four years as a Mechanical Design Engineer I programmed hobbyistically and its quickly turned from passion into work."
+    "pl": "W technikum oraz na studiach miałem styczność z Asemblerem, C, C++, MATLAB, JavaScript, HTML, CSS, programowaniem mikrokontrolerów oraz sterowników PLC. Później pracując przez trzy lata jako projektant maszyn i urządzeń w między czasie hobbystycznie programowałem, co szybko przerodziło się z pasji w pracę.",
+    "en": "In technical high school and college I had contact with Assembler, C, C ++, MATLAB, JavaScript, HTML, CSS, programming of microcontrollers and PLC controllers. Later working for three years as a Mechanical Design Engineer I programmed hobbyistically and its quickly turned from passion into work."
   },
   "i18nAboutMe3": {
     "pl": "Obecnie już drugi rok zawodowo używam głównie technologii związanych z językiem Rust (symulacje, AI, game dev), a w wolnych chwilach siedzę w Web devie - technologiach związanych z JavaScript oraz w Javie.",
@@ -210,50 +210,6 @@
   "i18nProjects0b": {
     "pl": "",
     "en": "profile"
-  },
-  "i18nProjects2": {
-    "pl": "RESTfulowy web serwis do zarządzania notatkami i ich użytkownikami + klient na Androida",
-    "en": "RESTful secured web service for manage to-do notes and users + Android client"
-  },
-  "i18nProjects3": {
-    "pl": "Web serwis dla wypożyczalni samochodów",
-    "en": "Web service for car rental company"
-  },
-  "i18nProjects4": {
-    "pl": "Animowana gra 2D - Android/Desktop",
-    "en": "Android/Desktop 2D platform fully animated game"
-  },
-  "i18nProjects5": {
-    "pl": "Zarys web serwisu opartego o serwer (Node.js + MongoDB RESTful API) i klienta w React + Firebase",
-    "en": "Playground/draft of web service (Node.js + MongoDB server and React client)"
-  },
-  "i18nProjects6": {
-    "pl": "Symulator ruchu drogowego oparty na sztucznej inteligencji i prawdziwych mapach",
-    "en": "Traffic simulator based on artificial intelligence and real cities"
-  },
-  "i18nProjects7": {
-    "pl": "Moja implementacja blockchaina w Javie",
-    "en": "My implementation of blockchain in Java"
-  },
-  "i18nProjects8": {
-    "pl": "Przyklejane na pulpit notatki do nauki Javy",
-    "en": "Sticky notes with Java questions for learning"
-  },
-  "i18nProjects9": {
-    "pl": "Narzędzie do automatycznego pobierania codziennych darmowych książek z packtub.com - PDF, ePub",
-    "en": "Automatic tool for downloading packtpub.com daily free e-book - PDF, ePub"
-  },
-  "i18nProjects10": {
-    "pl": "Strona typu portfolio napisana w Angular",
-    "en": "First version of my portfolio website in Angular"
-  },
-  "i18nProjects11": {
-    "pl": "Kod źródłowy strony, którą właśnie przeglądasz",
-    "en": "Source code of this website"
-  },
-  "i18nProjects12": {
-    "pl": "Licznik czasu pracy zdalnej ze statystykami - Electron",
-    "en": "Remote work timer with statistics - Electron"
   },
   "i18nProjects13": {
     "pl": "Więcej",

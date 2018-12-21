@@ -5,7 +5,7 @@ import Parsley from 'parsleyjs';
 import { jarallax } from 'jarallax';
 import DateCalculator from '../scripts/date-calculator';
 import I18n from '../scripts/i18n';
-import ProjectsCards from '../scripts/projects-cards';
+import Projects from '../scripts/projects';
 import CookieWarning from '../scripts/cookie-warning';
 import 'bootstrap/dist/js/bootstrap.js';
 import '../scripts/text-scramble';
@@ -38,7 +38,7 @@ export default class App {
     let dateCalculator = new DateCalculator();
     dateCalculator.init();
     new I18n(dateCalculator).init();
-    new ProjectsCards().init();
+    new Projects().init();
     new CookieWarning().init();
   }
 
