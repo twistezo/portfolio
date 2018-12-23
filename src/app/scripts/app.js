@@ -35,6 +35,7 @@ export default class App {
     this.initParallax();
     this.initParsley();
     this.initJarallax();
+    this.initHideNavMenuOnCLickOnMobile();
     let dateCalculator = new DateCalculator();
     dateCalculator.init();
     new I18n(dateCalculator).init();
@@ -45,9 +46,15 @@ export default class App {
   initSmoothScrolling() {
     $(document).on('click', 'a[href^="#"]', function (event) {
       event.preventDefault();
-      $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
-      }, 500);
+      if (App.isMobileView()) {
+        $('html, body').animate({
+          scrollTop: $($.attr(this, 'href')).offset().top - 220
+        }, 500);
+      } else {
+        $('html, body').animate({
+          scrollTop: $($.attr(this, 'href')).offset().top
+        }, 500);
+      }
     });
   }
 
@@ -75,6 +82,36 @@ export default class App {
     jarallax(document.querySelectorAll('.jarallax'), {
       speed: 0.5
     });
+  }
+
+  initHideNavMenuOnCLickOnMobile() {
+    $('body').on('click', () => {
+      if (App.isMobileView()) {
+        $('.navbar-collapse').collapse('hide');
+      }
+    });
+  }
+
+  static isMobileView() {
+    return App.findBootstrapEnvironment() == 'xs'
+      || App.findBootstrapEnvironment() == 'sm'
+      || App.findBootstrapEnvironment() == 'md'
+  }
+
+  static findBootstrapEnvironment() {
+    let envs = ['xs', 'sm', 'md', 'lg', 'xl'];
+    let el = document.createElement('div');
+    document.body.appendChild(el);
+    let curEnv = envs.shift();
+    for (let env of envs.reverse()) {
+      el.classList.add(`d-${env}-none`);
+      if (window.getComputedStyle(el).display === 'none') {
+        curEnv = env;
+        break;
+      }
+    }
+    document.body.removeChild(el);
+    return curEnv;
   }
 }
 

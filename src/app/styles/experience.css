@@ -84,7 +84,6 @@
   left: 50%;
   margin-left: -7.5px;
   background-color: var(--my-orange);
-  z-index: 100;
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;
   border-bottom-right-radius: 50%;
