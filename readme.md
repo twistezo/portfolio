@@ -4,7 +4,11 @@
 #### Important: This is old, not maintained version. For actual information about me see https://github.com/twistezo/portfolio
 
 ### Description
-My programming portfolio with management dashboard and blog (both are hidden for unregistered users).
+My programming portfolio with management dashboard and blog (both are hidden for unregistered users and unfinished).
+
+Account for test Dashboard and Blog sections:\
+Email - test@test.com\
+Password - qwerty
 
 ### Tools
 Angular 4 (JS + TypeScript), Bootstrap 4, Firebase
