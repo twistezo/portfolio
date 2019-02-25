@@ -34,8 +34,8 @@ class Projects {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Accept': 'application/json',
-        'Authorization': 'bearer ' + this._githubReadOnlyToken
+        Accept: 'application/json',
+        Authorization: 'bearer ' + this._githubReadOnlyToken
       },
       body: JSON.stringify({
         query: this._queryPinnedRepos
@@ -50,15 +50,16 @@ class Projects {
     let unwrappedData = []
     const repositoriesArray = data.data.repositoryOwner.pinnedRepositories.edges
     repositoriesArray.forEach(repository => {
-      unwrappedData.push(
-        {
-          name: repository.node.name,
-          description: repository.node.description,
-          tools: this.cleanRawData(repository.node.object.text),
-          url: repository.node.url
-        }
-      )
-    });
+      const repositoryNodeObject = repository.node.object
+      const parsedTools =
+        repositoryNodeObject === null ? '' : this.cleanRawData(repository.node.object.text)
+      unwrappedData.push({
+        name: repository.node.name,
+        description: repository.node.description,
+        tools: parsedTools,
+        url: repository.node.url
+      })
+    })
     return unwrappedData
   }
 
