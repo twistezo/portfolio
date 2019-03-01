@@ -1,12 +1,12 @@
 import AOS from 'aos'
 import Layout from '../scripts/layout'
 import Parallax from 'parallax-js'
-import Parsley from 'parsleyjs'
 import { jarallax } from 'jarallax'
 import DateCalculator from '../scripts/date-calculator'
 import I18n from '../scripts/i18n'
 import Projects from '../scripts/projects'
 import CookieWarning from '../scripts/cookie-warning'
+import 'parsleyjs'
 import 'bootstrap/dist/js/bootstrap.js'
 import '../scripts/text-scramble'
 
