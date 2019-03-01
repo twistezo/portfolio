@@ -4,19 +4,19 @@
 
 ### Description
 
-Second (actual) version of my programming portfolio website. Rewritten from Angular to pure JS.
+Second, actual version of my programming portfolio website. Rewritten from Angular to pure JS.
 
 ### Features
 
 - without frameworks (clean, fast, lightweight and maintainability)
 - uses `lit-html` for templating HTML pages in JS
-- minimal webpack configuration with hot-reload in development mode and with minify and uglify HTML/CSS/JS for production build
+- minimal webpack configuration with hot-reload in development mode, with minify and uglify HTML/CSS/JS for production build
 - custom implementation of i18n (internationalization) which uses JSON file
 - 6 pinned repositories in projects section fetched from GitHub GraphQL API
 
 ### Tools
 
-JavaScript ES6 (babel, eslint), Bootstrap 4, Webpack 4, lit-html
+JavaScript ES6, Bootstrap 4, Webpack 4, lit-html
 
 ### Requirements
 

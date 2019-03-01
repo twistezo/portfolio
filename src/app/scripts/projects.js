@@ -51,12 +51,15 @@ class Projects {
     const repositoriesArray = data.data.repositoryOwner.pinnedRepositories.edges
     repositoriesArray.forEach(repository => {
       const repositoryNodeObject = repository.node.object
-      const parsedTools =
-        repositoryNodeObject === null ? '' : this.cleanRawData(repository.node.object.text)
+      const parsedTools = this.parseTools(repository.node.object.text)
+      const tools =
+        repositoryNodeObject === null || parsedTools === null
+          ? ''
+          : this.parseTools(repository.node.object.text)
       unwrappedData.push({
         name: repository.node.name,
         description: repository.node.description,
-        tools: parsedTools,
+        tools,
         url: repository.node.url
       })
     })
@@ -64,8 +67,9 @@ class Projects {
   }
 
   // Match and return only one line after 'Tools' from 'readme.md' files
-  cleanRawData(rawData) {
-    return new RegExp('Tools\n(.*)').exec(rawData)[1]
+  parseTools = rawData => {
+    const data = new RegExp('Tools\n\n(.*)').exec(rawData)
+    return data !== null ? data[1] : null
   }
 
   insertDataToDOM(data) {
@@ -84,7 +88,8 @@ class Projects {
     let updatedCards = document.getElementsByClassName('card')
     for (let i = 0; i < data.length; i++) {
       updatedCards[i].querySelector('.card-title').innerHTML = data[i].name
-      updatedCards[i].querySelector('.card-text').innerHTML = data[i].description
+      updatedCards[i].querySelector('.card-text').innerHTML =
+        data[i].description
       updatedCards[i].querySelector('.stack').innerHTML = data[i].tools
       updatedCards[i].querySelector('a').setAttribute('href', data[i].url)
     }

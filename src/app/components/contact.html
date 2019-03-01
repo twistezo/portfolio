@@ -9,20 +9,50 @@
   <div data-aos="fade-up" data-aos-delay="150" class="container-fluid pt-5">
     <div class="row">
       <div class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-5 mx-auto">
-        <form id="contact-form" method="POST" action="https://formspree.io/kolkolukasz@gmail.com">
+        <form
+          id="contact-form"
+          method="POST"
+          action="https://formspree.io/kolkolukasz@gmail.com"
+        >
           <div class="form-row">
             <div class="form-group col-xl-6">
-              <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email" data-parsley-trigger="input" required=""
-                data-parsley-error-message="Poprawny format: example@gmail.com">
+              <input
+                type="email"
+                name="email"
+                class="form-control"
+                id="inputEmail"
+                placeholder="Email"
+                data-parsley-trigger="input"
+                required=""
+                data-parsley-error-message="Poprawny format: example@gmail.com"
+              />
             </div>
             <div class="form-group col-xl-6">
-              <input type="phone" name="phone" class="form-control" id="inputPassword" placeholder="" data-parsley-trigger="input" data-parsley-pattern="^[\d\+\-\.\(\)\/\s]*$"
-                data-parsley-error-message="Wpisz poprawny numer telefonu">
+              <input
+                type="phone"
+                name="phone"
+                class="form-control"
+                id="inputPassword"
+                placeholder=""
+                data-parsley-trigger="input"
+                data-parsley-pattern="^[\d\+\-\.\(\)\/\s]*$"
+                data-parsley-error-message="Wpisz poprawny numer telefonu"
+              />
             </div>
           </div>
           <div class="form-group">
-            <textarea class="form-control" name="contents" id="inputContents" placeholder="" rows="7" data-parsley-minlength="10" data-parsley-maxlength="500"
-              data-parsley-trigger="input" required="" data-parsley-error-message="Wymagana ilość znaków pom. 10-500"></textarea>
+            <textarea
+              class="form-control"
+              name="contents"
+              id="inputContents"
+              placeholder=""
+              rows="7"
+              data-parsley-minlength="10"
+              data-parsley-maxlength="500"
+              data-parsley-trigger="input"
+              required=""
+              data-parsley-error-message="Wymagana ilość znaków pom. 10-500"
+            ></textarea>
           </div>
           <div class="row justify-content-end submit-button">
             <button type="submit" class="btn btn-primary" value="validate">
