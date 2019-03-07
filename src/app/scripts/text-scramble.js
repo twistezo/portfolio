@@ -104,9 +104,9 @@ $(document).ready(() => {
 
   const phrases = [
     'Łukasz Kółko',
-    'Software developer',
-    'Web designer',
-    'Rust developer'
+    'Rust developer',
+    'JavaScript developer',
+    'Software developer'
   ]
 
   const el = document.querySelector('.textScramble')

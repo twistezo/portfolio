@@ -5,15 +5,15 @@
   },
   "i18nAboutMe1": {
     "pl": "Każdy projekt posiada odnośnik do GitHuba, gdzie znajdziesz szczegółowy opis oraz kod źródłowy.",
-    "en": "Each project has a link to GitHub where you will find a detailed description and source code."
+    "en": "Each project has a link to my GitHub profile where you will find a detailed description and source code."
   },
   "i18nAboutMe2": {
-    "pl": "W technikum oraz na studiach miałem styczność z Asemblerem, C, C++, MATLAB, JavaScript, HTML, CSS, programowaniem mikrokontrolerów oraz sterowników PLC. Później pracując przez trzy lata jako projektant maszyn i urządzeń w między czasie hobbystycznie programowałem, co szybko przerodziło się z pasji w pracę.",
+    "pl": "W technikum oraz na studiach miałem styczność z Asemblerem, C, C++, MATLAB, JavaScript, HTML, CSS, programowaniem mikrokontrolerów oraz sterowników PLC. Później pracując przez trzy lata jako projektant maszyn i urządzeń hobbystycznie programowałem, co szybko przerodziło się z pasji w pracę.",
     "en": "In technical high school and college I had contact with Assembler, C, C ++, MATLAB, JavaScript, HTML, CSS, programming of microcontrollers and PLC controllers. Later working for three years as a Mechanical Design Engineer I programmed hobbyistically and its quickly turned from passion into work."
   },
   "i18nAboutMe3": {
-    "pl": "Obecnie już drugi rok zawodowo używam głównie technologii związanych z językiem Rust (symulacje, AI, game dev), a w wolnych chwilach siedzę w Web devie - technologiach związanych z JavaScript oraz w Javie.",
-    "en": "Currently already up a two year I professionally use mainly technologies related to the Rust programming language (simulations, AI, game dev), and in my free time I dig in Web development - technologies related to JavaScript and Java."
+    "pl": "Obecnie zawodowo używam głównie technologii związanych z językiem Rust, a w wolnych chwilach siedzę w Web devie i technologiach związanych z JavaScript.",
+    "en": "At present I professionally use mainly technologies related to the Rust programming language and in my free time I dig in Web development and technologies related to JavaScript."
   },
   "i18nAboutMe4": {
     "pl": "Staram się być elastyczny jeśli chodzi o techonologie oraz być na bieżąco z nowinkami w świecie IT.",
