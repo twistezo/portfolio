@@ -42,9 +42,11 @@
     "jarallax": "^1.10.7",
     "jquery": "^3.3.1",
     "lit-html": "^1.0.0",
+    "node-sass": "^4.11.0",
     "parallax-js": "^3.1.0",
     "parsleyjs": "^2.8.1",
     "popper.js": "^1.14.7",
+    "sass-loader": "^7.1.0",
     "terser-webpack-plugin": "^1.2.3"
   },
   "browserslist": [

@@ -1,0 +1,48 @@
+#references {
+  .reference {
+    margin: 0px 0px 100px 0px;
+  }
+
+  .reference-background {
+    background-color: $medium-gray;
+    border-radius: 0px;
+    margin-bottom: 15px;
+    border: 1px solid $medium-gray;
+    &:hover {
+      border-color: $orange;
+    }
+  }
+
+  .fa-quote-left,
+  .fa-quote-right,
+  .reference-author {
+    color: $orange;
+  }
+
+  .reference-author > a {
+    color: $orange;
+  }
+
+  .fa-quote-left,
+  .fa-quote-right {
+    position: relative;
+    font-size: 15px;
+  }
+
+  .reference-field-quote {
+    padding: 10px 10px 10px 10px;
+    text-indent: 10px;
+  }
+
+  .fa-quote-left {
+    float: left;
+    top: -6px;
+    right: 8px;
+  }
+
+  .fa-quote-right {
+    float: right;
+    bottom: 8px;
+    right: -6px;
+  }
+}

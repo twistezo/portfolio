@@ -1,0 +1,129 @@
+#experience {
+  .exp {
+    padding-bottom: 8px;
+  }
+
+  .container-fluid {
+    padding-top: 32px;
+
+    .date,
+    .role,
+    .description {
+      padding-bottom: 16px;
+    }
+
+    .row {
+      padding-bottom: 24px;
+    }
+  }
+
+  .fa-square-full {
+    font-size: 6px;
+    margin-right: 5px;
+    position: relative;
+    bottom: 3px;
+    color: $orange;
+  }
+
+  .fa-cogs,
+  .fa-laptop {
+    color: $orange;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  .timeline {
+    list-style: none;
+    padding: 24px 0 0px;
+
+    &:before {
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      content: ' ';
+      width: 3px;
+      background-color: $light-gray;
+      left: 50%;
+      margin-left: -1.5px;
+    }
+
+    & > li {
+      margin-bottom: 20px;
+    }
+
+    & > li:before,
+    & > li:after {
+      content: ' ';
+      display: table;
+    }
+
+    & > li:after {
+      clear: both;
+    }
+
+    & > li > .timeline-panel {
+      width: 46%;
+      float: left;
+      border: 0.5px solid $medium-gray;
+      border-radius: 0px;
+      padding: 15px;
+      background-color: $medium-gray;
+      &:hover {
+        border-color: $orange;
+      }
+    }
+
+    & > li > .timeline-badge {
+      width: 15px;
+      height: 6px;
+      line-height: 50px;
+      position: relative;
+      top: 32px;
+      left: 50%;
+      margin-left: -7.5px;
+      background-color: $orange;
+    }
+
+    & > li.timeline-inverted > .timeline-panel {
+      float: right;
+    }
+
+    & > li.timeline-inverted > .timeline-panel:after {
+      border-left-width: 0;
+      border-right-width: 14px;
+      left: -14px;
+      right: auto;
+    }
+  }
+
+  @media (max-width: 767px) {
+    ul.timeline:before {
+      left: 40px;
+    }
+    ul.timeline > li > .timeline-panel {
+      width: calc(100% - 50px);
+      width: -moz-calc(100% - 50px);
+      width: -webkit-calc(100% - 45px);
+    }
+    ul.timeline > li > .timeline-badge {
+      left: 1px;
+      margin-left: 17px;
+      top: 32px;
+    }
+    ul.timeline > li > .timeline-panel {
+      float: right;
+    }
+    ul.timeline > li > .timeline-panel:before {
+      border-left-width: 0;
+      border-right-width: 15px;
+      left: -15px;
+      right: auto;
+    }
+    ul.timeline > li > .timeline-panel:after {
+      border-left-width: 0;
+      border-right-width: 14px;
+      left: -14px;
+      right: auto;
+    }
+  }
+}

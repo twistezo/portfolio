@@ -20,52 +20,48 @@
     "en": "I'm trying to be flexible in technologies and keep up with the latest updates from the IT world."
   },
   "i18nNavbar0": {
-    "pl": "O mnie",
-    "en": "About me"
+    "pl": "o mnie",
+    "en": "about me"
   },
   "i18nNavbar1": {
-    "pl": "Umiejętności",
-    "en": "Skills"
+    "pl": "umiejętności",
+    "en": "skills"
   },
   "i18nNavbar2": {
-    "pl": "Doświadczenie",
-    "en": "Experience"
+    "pl": "doświadczenie",
+    "en": "experience"
   },
   "i18nNavbar3": {
-    "pl": "Próbki kodu",
-    "en": "Code samples"
+    "pl": "próbki kodu",
+    "en": "code samples"
   },
   "i18nNavbar4": {
-    "pl": "Referencje",
-    "en": "References"
+    "pl": "referencje",
+    "en": "references"
   },
   "i18nNavbar5": {
-    "pl": "Kontakt",
-    "en": "Contact"
+    "pl": "kontakt",
+    "en": "contact"
   },
   "i18nSkills0": {
     "pl": "umiejętności",
     "en": "skills"
   },
-  "i18nSkills1": {
-    "pl": "odcień wg. częstotliwości używania",
-    "en": "color according to the frequency of usage"
-  },
   "i18nSkills2": {
-    "pl": "Bazy danych",
-    "en": "Databases"
+    "pl": "bazy danych",
+    "en": "databases"
   },
   "i18nSkills3": {
-    "pl": "Testy",
-    "en": "Tests"
+    "pl": "testy",
+    "en": "tests"
   },
   "i18nSkills4": {
-    "pl": "Grafika",
-    "en": "Graphics"
+    "pl": "grafika",
+    "en": "graphics"
   },
   "i18nSkills5": {
-    "pl": "Ulubione narzędzia",
-    "en": "Favorite tools"
+    "pl": "ulubione narzędzia",
+    "en": "favorite tools"
   },
   "i18nExperience0a": {
     "pl": "doświadczenie",
@@ -203,14 +199,6 @@
     "pl": "próbki kodu",
     "en": "code samples"
   },
-  "i18nProjects0a": {
-    "pl": "więcej na moim profilu",
-    "en": "more on my"
-  },
-  "i18nProjects0b": {
-    "pl": "",
-    "en": "profile"
-  },
   "i18nProjects13": {
     "pl": "Więcej",
     "en": "More"
@@ -228,16 +216,16 @@
     "en": "contact"
   },
   "i18nContact1": {
-    "pl": "Nr telefonu",
-    "en": "Phone number"
+    "pl": "nr telefonu",
+    "en": "phone number"
   },
   "i18nContact2": {
-    "pl": "Treśc wiadomości",
-    "en": "Message"
+    "pl": "treśc wiadomości",
+    "en": "message"
   },
   "i18nContact3": {
-    "pl": "Wyślij",
-    "en": "Send"
+    "pl": "wyślij",
+    "en": "send"
   },
   "i18nCookieWarning0": {
     "pl": "Strona wykorzystuje pliki cookies oraz podobne technologie m.in. w celach statystycznych.",

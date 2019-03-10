@@ -26,7 +26,9 @@ class Layout {
   PageLayout = () => {
     return html`
       <div>
-        ${this.cookieWarning}
+        <div id="cookie">
+          ${this.cookieWarning}
+        </div>
         <div id="about-me">
           ${this.AboutMe}
         </div>

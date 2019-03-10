@@ -55,13 +55,13 @@ class I18n {
   }
 
   hoverPl() {
-    $('.i18n-button-en').removeClass('hovered')
-    $('.i18n-button-pl').addClass('hovered')
+    $('.i18n-button-en').removeClass('highlighted')
+    $('.i18n-button-pl').addClass('highlighted')
   }
 
   hoverEn() {
-    $('.i18n-button-pl').removeClass('hovered')
-    $('.i18n-button-en').addClass('hovered')
+    $('.i18n-button-pl').removeClass('highlighted')
+    $('.i18n-button-en').addClass('highlighted')
   }
 
   initButtonsBehaviour() {

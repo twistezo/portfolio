@@ -1,0 +1,35 @@
+#projects {
+  .cards {
+    padding-top: 24px;
+  }
+
+  .card,
+  .card-footer {
+    background-color: $medium-gray;
+  }
+
+  .card {
+    margin-bottom: 20px;
+    border-radius: 0px;
+
+    .card-title {
+      color: $orange;
+      padding-bottom: 5px;
+    }
+
+    .card-body {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+
+    .card-footer {
+      border-width: 0px;
+      padding-top: 0px;
+      margin-bottom: 8px;
+    }
+
+    &:hover {
+      border-color: $orange;
+    }
+  }
+}

@@ -1,10 +1,8 @@
-const webpack = require('webpack');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const webpack = require('webpack')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
-  entry: [
-    './src/index.js'
-  ],
+  entry: ['./src/index.js'],
   output: {
     path: __dirname + '/docs',
     publicPath: './',
@@ -18,11 +16,12 @@ module.exports = {
         use: ['babel-loader', 'eslint-loader']
       },
       {
-        test: /\.css$/,
+        test: /\.(css|scss)$/,
         use: [
           'css-hot-loader',
           MiniCssExtractPlugin.loader,
           'css-loader',
+          'sass-loader'
         ]
       },
       {
@@ -34,8 +33,8 @@ module.exports = {
               name: '[name].[ext]',
               outputPath: 'img/'
             }
-          },
-        ],
+          }
+        ]
       },
       {
         test: /\.(html)$/,
@@ -50,7 +49,7 @@ module.exports = {
               name: '[name].[ext]',
               outputPath: 'fonts/'
             }
-          },
+          }
         ]
       },
       {
@@ -60,7 +59,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: "[name].[ext]",
+              name: '[name].[ext]',
               outputPath: './'
             }
           }
@@ -79,8 +78,8 @@ module.exports = {
       Popper: ['popper.js', 'default']
     }),
     new MiniCssExtractPlugin({
-      filename: "[name].css",
-      chunkFilename: "[id].css"
+      filename: '[name].css',
+      chunkFilename: '[id].css'
     })
-  ],
-};
+  ]
+}

@@ -1,0 +1,68 @@
+#contact {
+  padding-bottom: 100px;
+
+  input {
+    margin-bottom: 6px;
+  }
+
+  input,
+  textarea {
+    color: $white;
+    font-weight: 300;
+    border-radius: 0px;
+    background-color: $medium-gray;
+    border-color: $medium-gray;
+
+    &::placeholder {
+      color: inherit;
+    }
+
+    &:focus,
+    &:hover {
+      border-color: $orange;
+      box-shadow: 0 0 0 0.1px $orange;
+    }
+  }
+
+  .submit-button {
+    padding: 6px 15px 0px 0px;
+  }
+
+  .parsley-errors-list {
+    list-style-type: none;
+    padding-left: 0px;
+  }
+
+  .parsley-errors-list li {
+    margin-top: 10px;
+    padding: 3px 0px 5px 0px;
+    background-color: $orange;
+    color: $true-black;
+    font-weight: 400;
+  }
+
+  .vibrate {
+    animation: vibrate 0.3s linear infinite both;
+  }
+
+  @keyframes vibrate {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(-2px, 2px);
+    }
+    40% {
+      transform: translate(-2px, -2px);
+    }
+    60% {
+      transform: translate(2px, 2px);
+    }
+    80% {
+      transform: translate(2px, -2px);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
+}

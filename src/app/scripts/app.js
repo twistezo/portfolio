@@ -9,23 +9,7 @@ import CookieWarning from '../scripts/cookie-warning'
 import 'parsleyjs'
 import 'bootstrap/dist/js/bootstrap.js'
 import '../scripts/text-scramble'
-
-import 'bootstrap/dist/css/bootstrap.css'
-import '../../../node_modules/aos/dist/aos.css'
-import '../styles/fontello/css/fontello.css'
-import '../styles/media-queries.css'
-import '../styles/buttons.css'
-import '../styles/scrollbar.css'
-import '../styles/layout.css'
-import '../styles/about-me.css'
-import '../styles/navbar.css'
-import '../styles/experience.css'
-import '../styles/skills.css'
-import '../styles/projects.css'
-import '../styles/references.css'
-import '../styles/contact.css'
-import '../styles/footer.css'
-import '../styles/cookie-warning.css'
+import '../styles/_layout.scss'
 
 export default class App {
   run() {
@@ -81,11 +65,8 @@ export default class App {
       .parsley()
       .on('field:validated', () => {
         var ok = $('.parsley-error').length === 0
-        $('.parsley-errors-list').toggleClass('vibrate-1', !ok)
-        setTimeout(
-          () => $('.parsley-errors-list').removeClass('vibrate-1'),
-          500
-        )
+        $('.parsley-errors-list').toggleClass('vibrate', !ok)
+        setTimeout(() => $('.parsley-errors-list').removeClass('vibrate'), 500)
       })
   }
 
