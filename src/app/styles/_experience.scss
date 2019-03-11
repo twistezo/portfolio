@@ -22,12 +22,10 @@
     margin-right: 5px;
     position: relative;
     bottom: 3px;
-    color: $orange;
   }
 
   .fa-cogs,
   .fa-laptop {
-    color: $orange;
     margin-left: 3px;
     margin-right: 3px;
   }
@@ -42,7 +40,6 @@
       position: absolute;
       content: ' ';
       width: 3px;
-      background-color: $light-gray;
       left: 50%;
       margin-left: -1.5px;
     }
@@ -64,13 +61,8 @@
     & > li > .timeline-panel {
       width: 46%;
       float: left;
-      border: 0.5px solid $medium-gray;
       border-radius: 0px;
       padding: 15px;
-      background-color: $medium-gray;
-      &:hover {
-        border-color: $orange;
-      }
     }
 
     & > li > .timeline-badge {
@@ -81,7 +73,6 @@
       top: 32px;
       left: 50%;
       margin-left: -7.5px;
-      background-color: $orange;
     }
 
     & > li.timeline-inverted > .timeline-panel {

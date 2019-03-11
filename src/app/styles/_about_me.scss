@@ -1,4 +1,8 @@
 #about-me {
+  .btn {
+    z-index: 9999;
+  }
+
   height: 100vh;
   padding-top: 80px;
 
@@ -16,7 +20,6 @@
 
     .blinker {
       animation: blinker 0.5s cubic-bezier(0.5, 0, 1, 1) infinite alternate;
-      color: $orange;
 
       @keyframes blinker {
         to {
@@ -141,84 +144,91 @@
     }
   }
 
-  .go-down-clicable-area,
-  .go-down {
+  .go-down-container {
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+    right: 0;
+    margin: auto;
+    @media (max-width: 991px) {
+      bottom: 30px;
+      img {
+        height: 50px;
+      }
+    }
+    @media (min-width: 992px) and (max-width: 1399px) {
+      bottom: 50px;
+      img {
+        height: 50px;
+      }
+    }
     @media (min-width: 1400px) {
-      zoom: 1.25;
+      bottom: 80px;
+      img {
+        height: 70px;
+      }
+    }
+
+    .side {
+      padding-bottom: 16px;
+    }
+    img {
+      padding: 10px 10px 10px 0px;
+    }
+    a {
+      margin: 0px 16px 0px 16px;
     }
   }
-
-  .go-down-clicable-area {
-    position: absolute;
-    bottom: 30px;
-    width: 70px;
-    left: 26px;
-    right: 0;
-    height: 100px;
-    margin: auto;
+  
+  .vibrate {
+    -webkit-animation: vibrate 0.6s linear both;
+    animation: vibrate 0.6s linear both;
   }
 
-  .go-down {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    margin-left: -14px;
-
-    .chevron {
-      position: absolute;
-      width: 28px;
-      height: 8px;
-      bottom: 100px;
-      opacity: 0;
-      transform: scale3d(0.5, 0.5, 0.5);
-      animation: move 3s ease-out infinite;
-
-      &:first-child {
-        animation: move 3s ease-out 1s infinite;
-      }
-
-      &:nth-child(2) {
-        animation: move 3s ease-out 2s infinite;
-      }
-
-      &:before,
-      &:after {
-        content: ' ';
-        position: absolute;
-        top: 0;
-        height: 100%;
-        width: 51%;
-        background: $orange;
-      }
-
-      &:before {
-        left: 0;
-        transform: skew(0deg, 30deg);
-      }
-
-      &:after {
-        right: 0;
-        width: 50%;
-        transform: skew(0deg, -30deg);
-      }
-
-      @keyframes move {
-        25% {
-          opacity: 1;
-        }
-        33% {
-          opacity: 1;
-          transform: translateY(30px);
-        }
-        67% {
-          opacity: 1;
-          transform: translateY(40px);
-        }
-        100% {
-          opacity: 0;
-          transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
-        }
-      }
+  @keyframes vibrate {
+    0% {
+      -webkit-transform: translate(0);
+      transform: translate(0);
+    }
+    10% {
+      -webkit-transform: translate(-2px, -2px);
+      transform: translate(-2px, -2px);
+    }
+    20% {
+      -webkit-transform: translate(2px, -2px);
+      transform: translate(2px, -2px);
+    }
+    30% {
+      -webkit-transform: translate(-2px, 2px);
+      transform: translate(-2px, 2px);
+    }
+    40% {
+      -webkit-transform: translate(2px, 2px);
+      transform: translate(2px, 2px);
+    }
+    50% {
+      -webkit-transform: translate(-2px, -2px);
+      transform: translate(-2px, -2px);
+    }
+    60% {
+      -webkit-transform: translate(2px, -2px);
+      transform: translate(2px, -2px);
+    }
+    70% {
+      -webkit-transform: translate(-2px, 2px);
+      transform: translate(-2px, 2px);
+    }
+    80% {
+      -webkit-transform: translate(-2px, -2px);
+      transform: translate(-2px, -2px);
+    }
+    90% {
+      -webkit-transform: translate(2px, -2px);
+      transform: translate(2px, -2px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+      transform: translate(0);
     }
   }
 }

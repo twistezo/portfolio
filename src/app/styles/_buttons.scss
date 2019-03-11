@@ -1,7 +1,4 @@
 .btn-primary {
-  background-color: $light-gray;
-  border-color: $light-gray;
-  color: $white;
   border-radius: 0px;
   letter-spacing: 1px;
   padding-left: 30px;
@@ -10,9 +7,6 @@
   &:hover,
   &:focus,
   &:active {
-    background-color: $orange !important;
-    border-color: $orange !important;
-    color: $true-black !important;
     box-shadow: none !important;
   }
 }

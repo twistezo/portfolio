@@ -4,23 +4,8 @@
   }
 
   .reference-background {
-    background-color: $medium-gray;
     border-radius: 0px;
     margin-bottom: 15px;
-    border: 1px solid $medium-gray;
-    &:hover {
-      border-color: $orange;
-    }
-  }
-
-  .fa-quote-left,
-  .fa-quote-right,
-  .reference-author {
-    color: $orange;
-  }
-
-  .reference-author > a {
-    color: $orange;
   }
 
   .fa-quote-left,

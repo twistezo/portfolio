@@ -8,6 +8,8 @@
 
   &::-webkit-scrollbar-thumb {
     border-radius: 0px;
-    background-color: $light-gray;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #777;
   }
 }

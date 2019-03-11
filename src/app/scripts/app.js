@@ -14,17 +14,18 @@ export default class App {
   run() {
     AOS.init()
     new Layout().render()
-    this.initSmoothScrolling()
-    this.initParallax()
-    this.initParsley()
-    this.initJarallax()
-    this.initHideNavMenuOnCLickOnMobile()
+    this._initSmoothScrolling()
+    this._initParallax()
+    this._initParsley()
+    this._initJarallax()
+    this._initHideNavMenuOnCLickOnMobile()
+    this._initThemeSwitcher()
     new I18n().init()
     new Projects().fetchData()
     new CookieWarning().init()
   }
 
-  initSmoothScrolling() {
+  _initSmoothScrolling = () => {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
         e.preventDefault()
@@ -40,7 +41,7 @@ export default class App {
     })
   }
 
-  initParallax = () => {
+  _initParallax = () => {
     let parallax = new Parallax(document.getElementById('scene'))
     document.querySelector('a[href="#skills"]').addEventListener('click', e => {
       // disable parallax when scrolling down for performance reason
@@ -51,7 +52,7 @@ export default class App {
   }
 
   // doesn't work without jquery
-  initParsley = () => {
+  _initParsley = () => {
     // eslint-disable-next-line no-undef
     $('#contact-form')
       .parsley()
@@ -59,24 +60,60 @@ export default class App {
         // eslint-disable-next-line no-undef
         var ok = $('.parsley-error').length === 0
         // eslint-disable-next-line no-undef
-        $('.parsley-errors-list').toggleClass('vibrate', !ok)
+        $('.parsley-errors-list').toggleClass('vibrate-button', !ok)
         // eslint-disable-next-line no-undef
         setTimeout(() => $('.parsley-errors-list').removeClass('vibrate'), 500)
       })
   }
 
-  initJarallax = () => {
+  _initJarallax = () => {
     jarallax(document.querySelectorAll('.jarallax'), {
       speed: 0.5
     })
   }
 
-  initHideNavMenuOnCLickOnMobile = () => {
+  _initHideNavMenuOnCLickOnMobile = () => {
     document.querySelectorAll('.nav-link').forEach(link => {
       link.addEventListener('click', e => {
         e.preventDefault()
         document.querySelector('#navbarNav').classList.replace('show', 'hide')
       })
+    })
+  }
+
+  _initThemeSwitcher = () => {
+    const lightBtn = document.getElementById('light-mode-btn')
+    const darkBtn = document.getElementById('dark-mode-btn')
+    const body = document.querySelector('body')
+
+    const vibrateLightBtn = () => {
+      lightBtn.classList.toggle('vibrate')
+    }
+    vibrateLightBtn()
+    let interval = setInterval(() => {
+      vibrateLightBtn()
+      darkBtn.classList.toggle('vibrate')
+    }, 2000)
+    window.addEventListener(
+      'load',
+      () => {
+        interval
+      },
+      false
+    )
+
+    body.classList.add('dark-mode')
+    lightBtn.addEventListener('click', e => {
+      e.preventDefault()
+      clearInterval(interval)
+      body.classList.remove('dark-mode')
+      body.classList.add('light-mode')
+    })
+    darkBtn.addEventListener('click', e => {
+      e.preventDefault()
+      clearInterval(interval)
+      body.classList.remove('light-mode')
+      body.classList.add('dark-mode')
     })
   }
 }

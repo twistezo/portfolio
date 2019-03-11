@@ -19,6 +19,18 @@
     "pl": "Staram się być elastyczny jeśli chodzi o techonologie oraz być na bieżąco z nowinkami w świecie IT.",
     "en": "I'm trying to be flexible in technologies and keep up with the latest updates from the IT world."
   },
+  "i18nAboutMe5": {
+    "pl": "wybierz swoją stronę...",
+    "en": "choose your side..."
+  },
+  "i18nAboutMe6": {
+    "pl": "jasna",
+    "en": "light"
+  },
+  "i18nAboutMe7": {
+    "pl": "ciemna",
+    "en": "dark"
+  },
   "i18nNavbar0": {
     "pl": "o mnie",
     "en": "about me"
