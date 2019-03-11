@@ -1,83 +1,98 @@
 import i18nJSON from '../i18n.json'
+import DateCalculator from './date-calculator'
 
 class I18n {
-  constructor(dateCalculator) {
-    this.dateCalculator = dateCalculator
-    this.Language = Object.freeze({
+  constructor() {
+    this._dateCalculator = new DateCalculator()
+    this._Language = Object.freeze({
       PL: 'pl',
       PL_2: 'pl-PL',
       EN: 'en'
     })
-    this.currentLanguage = this.Language.EN
+    this._currentLanguage = this._Language.EN
   }
 
-  init() {
-    let browserLanguage = this.getBrowserLanguage()
+  init = () => {
+    let browserLanguage = this._getBrowserLanguage()
     if (
-      browserLanguage === this.Language.PL ||
-      browserLanguage === this.Language.PL_2
+      browserLanguage === this._Language.PL ||
+      browserLanguage === this._Language.PL_2
     ) {
-      this.currentLanguage = this.Language.PL
+      this._currentLanguage = this._Language.PL
     }
-    this.setLanguage(this.currentLanguage)
-    this.initButtonsBehaviour()
+    this._setLanguageAndRender(this._currentLanguage)
+    this._initButtonsBehaviour()
   }
 
-  getBrowserLanguage() {
-    if (navigator.languages != undefined) return navigator.languages[0]
-    else return navigator.language
-  }
+  _getBrowserLanguage = () =>
+    navigator.languages != undefined
+      ? navigator.languages[0]
+      : navigator.language
 
-  setLanguage(chosenLanguage) {
+  _setLanguageAndRender = chosenLanguage => {
     if (chosenLanguage === 'pl') {
-      this.hoverPl()
-      this.currentLanguage = this.Language.PL
+      this._hoverPl()
+      this._currentLanguage = this._Language.PL
     } else {
-      this.hoverEn()
-      this.currentLanguage = this.Language.EN
+      this._hoverEn()
+      this._currentLanguage = this._Language.EN
     }
-    this.dateCalculator.setLocale(this.currentLanguage)
+    this._dateCalculator.renderWithLocale(this._currentLanguage)
 
-    $.getJSON(i18nJSON, jsonObj => {
-      for (let obj in jsonObj) {
-        let fieldName = obj
-        let fieldValue = jsonObj[obj][chosenLanguage]
+    fetch(i18nJSON)
+      .then(response => response.json())
+      .then(jsonObj => {
+        for (const obj in jsonObj) {
+          const fieldName = obj
+          const fieldValue = jsonObj[obj][chosenLanguage]
 
-        if (fieldName === 'i18nContact1') {
-          $("input[name='phone']").attr('placeholder', fieldValue)
-        } else if (fieldName == 'i18nContact2') {
-          $("textarea[name='contents']").attr('placeholder', fieldValue)
-        } else {
-          $('.' + fieldName).text(fieldValue)
+          switch (fieldName) {
+            case 'i18nContact1':
+              {
+                document
+                  .querySelector("input[name='phone']")
+                  .setAttribute('placeholder', fieldValue)
+              }
+              break
+            case 'i18nContact2':
+              {
+                document
+                  .querySelector("textarea[name='contents']")
+                  .setAttribute('placeholder', fieldValue)
+              }
+              break
+            default: {
+              const a = document.querySelector('.' + fieldName)
+              a.textContent = ''
+              a.textContent += fieldValue
+            }
+          }
         }
-      }
+      })
+  }
+
+  _hoverPl = () => {
+    document.querySelector('.i18n-button-en').classList.remove('highlighted')
+    document.querySelector('.i18n-button-pl').classList.add('highlighted')
+  }
+
+  _hoverEn = () => {
+    document.querySelector('.i18n-button-pl').classList.remove('highlighted')
+    document.querySelector('.i18n-button-en').classList.add('highlighted')
+  }
+
+  _initButtonsBehaviour = () => {
+    document.querySelector('.i18n-button-pl').addEventListener('click', e => {
+      e.preventDefault()
+      this._setLanguageAndRender('pl')
+      this._hoverPl()
     })
-  }
-
-  hoverPl() {
-    $('.i18n-button-en').removeClass('highlighted')
-    $('.i18n-button-pl').addClass('highlighted')
-  }
-
-  hoverEn() {
-    $('.i18n-button-pl').removeClass('highlighted')
-    $('.i18n-button-en').addClass('highlighted')
-  }
-
-  initButtonsBehaviour() {
-    $('.i18n-button-pl').click(() => {
-      this.setLanguage('pl')
-      this.hoverPl()
+    document.querySelector('.i18n-button-en').addEventListener('click', e => {
+      e.preventDefault()
+      this._setLanguageAndRender('en')
+      this._hoverEn()
     })
-    $('.i18n-button-en').click(() => {
-      this.setLanguage('en')
-      this.hoverEn()
-    })
-  }
-
-  getCurrentLanguage() {
-    return this.currentLanguage
   }
 }
 
-export { I18n as default }
+export default I18n

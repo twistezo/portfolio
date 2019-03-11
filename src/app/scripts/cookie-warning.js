@@ -1,16 +1,16 @@
 class CookieWarning {
   constructor() {
-    this.cookieWarningName = 'cookie-warning'
+    this._cookieWarningName = 'cookie-warning'
   }
 
-  init() {
-    if (this.readCookie(this.cookieWarningName) != 1) {
-      this.showCookieWarning()
-      this.hideOnClickCookieWarning()
+  init = () => {
+    if (this._readCookie(this._cookieWarningName) != 1) {
+      this._showCookieWarning()
+      this._hideOnClickCookieWarning()
     }
   }
 
-  readCookie(name) {
+  _readCookie = name => {
     var nameEQ = name + '='
     var ca = document.cookie.split(';')
     for (var i = 0; i < ca.length; i++) {
@@ -21,18 +21,23 @@ class CookieWarning {
     return null
   }
 
-  showCookieWarning() {
-    $('.cookie-warning').removeClass('hidden')
+  _showCookieWarning = () => {
+    document.querySelector('.cookie-warning').classList.remove('hidden')
   }
 
-  hideOnClickCookieWarning() {
-    $('.btn-cookie-warning').on('click', () => {
-      $('.cookie-warning').addClass('roll-out-right')
-      this.createCookie(this.cookieWarningName, 1, 30)
-    })
+  _hideOnClickCookieWarning = () => {
+    document
+      .querySelector('.btn-cookie-warning')
+      .addEventListener('click', e => {
+        e.preventDefault()
+        document
+          .querySelector('.cookie-warning')
+          .classList.add('roll-out-right')
+        this._createCookie(this._cookieWarningName, 1, 30)
+      })
   }
 
-  createCookie(name, value, days) {
+  _createCookie = (name, value, days) => {
     var expires = ''
     if (days) {
       var date = new Date()
@@ -43,4 +48,4 @@ class CookieWarning {
   }
 }
 
-export { CookieWarning as default }
+export default CookieWarning

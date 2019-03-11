@@ -25,10 +25,6 @@ class Projects {
     `
   }
 
-  init() {
-    this.fetchData()
-  }
-
   fetchData() {
     fetch('https://api.github.com/graphql', {
       method: 'POST',
@@ -42,20 +38,20 @@ class Projects {
       })
     })
       .then(response => response.json())
-      .then(data => this.unwrapData(data))
-      .then(unwrappedData => this.insertDataToDOM(unwrappedData))
+      .then(data => this._unwrapData(data))
+      .then(unwrappedData => this._insertDataToDOM(unwrappedData))
   }
 
-  unwrapData(data) {
+  _unwrapData = data => {
     let unwrappedData = []
     const repositoriesArray = data.data.repositoryOwner.pinnedRepositories.edges
     repositoriesArray.forEach(repository => {
       const repositoryNodeObject = repository.node.object
-      const parsedTools = this.parseTools(repository.node.object.text)
+      const parsedTools = this._parseTools(repository.node.object.text)
       const tools =
         repositoryNodeObject === null || parsedTools === null
           ? ''
-          : this.parseTools(repository.node.object.text)
+          : this._parseTools(repository.node.object.text)
       unwrappedData.push({
         name: repository.node.name,
         description: repository.node.description,
@@ -67,12 +63,13 @@ class Projects {
   }
 
   // Match and return only one line after 'Tools' from 'readme.md' files
-  parseTools = rawData => {
+  _parseTools = rawData => {
+    // eslint-disable-next-line no-control-regex
     const data = new RegExp('Tools\n\n(.*)').exec(rawData)
     return data !== null ? data[1] : null
   }
 
-  insertDataToDOM(data) {
+  _insertDataToDOM = data => {
     // clone template card from card deck
     const cardDeck = document.getElementsByClassName('card-deck')[0]
     let clonedCard = cardDeck.querySelector('.card').cloneNode(true)
@@ -110,4 +107,4 @@ class Projects {
   }
 }
 
-export { Projects as default }
+export default Projects

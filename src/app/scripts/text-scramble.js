@@ -21,7 +21,7 @@ const _classCallCheck = (instance, Constructor) => {
   }
 }
 
-$(document).ready(() => {
+document.addEventListener('DOMContentLoaded', () => {
   const TextScramble = (() => {
     function TextScramble(el) {
       _classCallCheck(this, TextScramble)
@@ -108,17 +108,15 @@ $(document).ready(() => {
     'JavaScript developer',
     'Software developer'
   ]
-
   const el = document.querySelector('.textScramble')
   const fx = new TextScramble(el)
 
   let counter = 0
-  const next = function next() {
+  const next = () => {
     fx.setText(phrases[counter]).then(() => {
       setTimeout(next, 2000)
     })
     counter = (counter + 1) % phrases.length
   }
-
   next()
 })

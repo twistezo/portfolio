@@ -1,5 +1,4 @@
 import { html, render } from 'lit-html'
-
 import aboutMeHTML from '../components/about-me.html'
 import navbarHTML from '../components/navbar.html'
 import skillsHTML from '../components/skills.html'
@@ -11,45 +10,33 @@ import footerHTML from '../components/footer.html'
 import cookieWarningHTML from '../components/cookie-warning.html'
 
 class Layout {
-  constructor() {
-    this.AboutMe = html([aboutMeHTML])
-    this.Navbar = html([navbarHTML])
-    this.Skills = html([skillsHTML])
-    this.Experience = html([experienceHTML])
-    this.Projects = html([projectsHTML])
-    this.References = html([referencesHTML])
-    this.Contact = html([contactHTML])
-    this.Footer = html([footerHTML])
-    this.cookieWarning = html([cookieWarningHTML])
-  }
-
   PageLayout = () => {
     return html`
       <div>
         <div id="cookie">
-          ${this.cookieWarning}
+          ${html([cookieWarningHTML])}
         </div>
         <div id="about-me">
-          ${this.AboutMe}
+          ${html([aboutMeHTML])}
         </div>
-        ${this.Navbar}
+        ${html([navbarHTML])}
         <div id="skills">
-          ${this.Skills}
+          ${html([skillsHTML])}
         </div>
         <div id="experience">
-          ${this.Experience}
+          ${html([experienceHTML])}
         </div>
         <div id="projects">
-          ${this.Projects}
+          ${html([projectsHTML])}
         </div>
         <div id="references">
-          ${this.References}
+          ${html([referencesHTML])}
         </div>
         <div id="contact">
-          ${this.Contact}
+          ${html([contactHTML])}
         </div>
         <div id="footer">
-          ${this.Footer}
+          ${html([footerHTML])}
         </div>
       </div>
     `
@@ -60,4 +47,4 @@ class Layout {
   }
 }
 
-export { Layout as default }
+export default Layout
