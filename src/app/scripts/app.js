@@ -6,9 +6,12 @@ import I18n from '../scripts/i18n'
 import Projects from '../scripts/projects'
 import CookieWarning from '../scripts/cookie-warning'
 import 'parsleyjs'
-import 'bootstrap/dist/js/bootstrap.js'
+
+import 'bootstrap/js/dist/collapse'
+import 'bootstrap/js/dist/scrollspy'
+
 import '../scripts/text-scramble'
-import '../styles/_layout.scss'
+import '../styles/_index.scss'
 
 export default class App {
   run() {
@@ -62,7 +65,10 @@ export default class App {
         // eslint-disable-next-line no-undef
         $('.parsley-errors-list').toggleClass('vibrate-button', !ok)
         // eslint-disable-next-line no-undef
-        setTimeout(() => $('.parsley-errors-list').removeClass('vibrate'), 500)
+        setTimeout(
+          () => $('.parsley-errors-list').removeClass('vibrate-button'),
+          1000
+        )
       })
   }
 

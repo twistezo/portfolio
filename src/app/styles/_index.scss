@@ -1,9 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Quicksand:400');
 @import url('https://use.fontawesome.com/releases/v5.7.0/css/all.css');
-@import '~bootstrap/scss/bootstrap';
 @import '~aos/dist/aos.css';
 
-@import 'colors';
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/reboot';
+@import '~bootstrap/scss/buttons';
+@import '~bootstrap/scss/type';
+@import '~bootstrap/scss/grid';
+@import '~bootstrap/scss/forms';
+@import '~bootstrap/scss/nav';
+@import '~bootstrap/scss/navbar';
+@import '~bootstrap/scss/card';
+@import '~bootstrap/scss/utilities';
+@import '~bootstrap/scss/transitions';
+
+@import 'themes';
 @import 'about_me';
 @import 'skills';
 @import 'experience';

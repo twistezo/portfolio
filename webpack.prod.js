@@ -15,7 +15,6 @@ module.exports = merge(common, {
             comments: false
           }
         },
-        extractComments: true,
         test: /\.js(\?.*)?$/i,
         sourceMap: true
       })

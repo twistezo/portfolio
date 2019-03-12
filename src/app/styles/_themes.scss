@@ -1,56 +1,54 @@
-$colors: (
+$raw-black: #000000;
+$light-black: #222929;
+$raw-white: #ffffff;
+
+$theme-colors: (
   dark: (
-    black: #000000,
-    light-black: #222929,
-    gray: #343a40,
-    medium-gray: #434a54,
-    light-gray: #777,
-    white: #f5f5f5,
-    orange: #ffa500
+    background: #343a40,
+    body-object: #434a54,
+    body-object-light: #777,
+    font: #f5f5f5,
+    leading: #ffa500
   ),
   light: (
-    black: black,
-    light-black: #222929,
-    gray: white,
-    medium-gray: #eeeeee,
-    light-gray: #dadfe1,
-    white: #000000,
-    orange: #d91e18
+    background: $raw-white,
+    body-object: #eeeeee,
+    body-object-light: #dadfe1,
+    font: #000000,
+    leading: #d91e18
   )
 );
 
 @mixin theme($mode) {
-  $black: map-get(map-get($colors, $mode), black);
-  $light-black: map-get(map-get($colors, $mode), light-black);
-  $gray: map-get(map-get($colors, $mode), gray);
-  $medium-gray: map-get(map-get($colors, $mode), medium-gray);
-  $light-gray: map-get(map-get($colors, $mode), light-gray);
-  $white: map-get(map-get($colors, $mode), white);
-  $orange: map-get(map-get($colors, $mode), orange);
+  $background: map-get(map-get($theme-colors, $mode), background);
+  $body-object: map-get(map-get($theme-colors, $mode), body-object);
+  $body-object-light: map-get(map-get($theme-colors, $mode), body-object-light);
+  $font: map-get(map-get($theme-colors, $mode), font);
+  $leading: map-get(map-get($theme-colors, $mode), leading);
 
   & {
     @if $mode == light {
       font-weight: 400;
     }
-    background-color: $gray;
-    color: $white;
+    background-color: $background;
+    color: $font;
     a {
-      color: $white;
+      color: $font;
       &:hover {
-        color: $orange;
+        color: $leading;
       }
     }
     h3 {
       .square-bracket {
-        color: $orange;
+        color: $leading;
       }
     }
     h5 {
-      color: $orange;
+      color: $leading;
     }
 
     .highlighted {
-      color: $orange;
+      color: $leading;
     }
   }
 
@@ -60,18 +58,18 @@ $colors: (
     @if $mode == light {
       box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06),
         0 4px 5px 0 rgba(0, 0, 0, 0.06), 0 1px 10px 0 rgba(0, 0, 0, 0.08);
-      background-color: $gray;
+      background-color: $background;
       a {
-        color: $black !important;
+        color: $raw-black !important;
         &:hover,
         &:focus,
         &:active,
         &.active {
-          color: $orange !important;
+          color: $leading !important;
         }
       }
       .navbar-toggler {
-        border-color: $black !important;
+        border-color: $raw-black !important;
         &:hover,
         &:focus,
         &:active {
@@ -86,22 +84,22 @@ $colors: (
 
   #cookie {
     .cookie-warning {
-      background-color: $medium-gray;
+      background-color: $body-object;
     }
   }
 
   .btn-primary {
-    background-color: $light-gray;
-    border-color: $light-gray;
-    color: $white;
+    background-color: $body-object-light;
+    border-color: $body-object-light;
+    color: $font;
     &:hover,
     &:focus,
     &:active {
-      background-color: $orange !important;
-      border-color: $orange !important;
-      color: $black !important;
+      background-color: $leading !important;
+      border-color: $leading !important;
+      color: $raw-black !important;
       @if $mode == light {
-        color: $gray !important;
+        color: $background !important;
       }
     }
   }
@@ -117,23 +115,28 @@ $colors: (
 
   #about-me {
     @if $mode == light {
-      color: map-get(map-get($colors, dark), white);
+      color: map-get(map-get($theme-colors, dark), font);
       font-weight: 300;
     }
     .text-scramble {
       .blinker {
-        color: $orange;
+        color: $leading;
       }
     }
     .go-down-container {
       .side {
-        color: white;
+        color: $raw-white;
       }
       #light-mode-btn,
       #dark-mode-btn {
         background-color: transparent;
         border: none;
-        color: white;
+        color: $raw-white;
+        &:hover,
+        &:focus,
+        &:active {
+          box-shadow: none;
+        }
       }
       #light-mode-btn {
         border-bottom: 1px solid #ffa500 !important;
@@ -149,6 +152,10 @@ $colors: (
         &:focus,
         &:active {
           background-color: #d91e18 !important;
+          color: $raw-black;
+          img {
+            filter: invert(1);
+          }
         }
       }
     }
@@ -156,25 +163,25 @@ $colors: (
 
   #experience {
     .fa-square-full {
-      color: $orange;
+      color: $leading;
     }
     .fa-cogs,
     .fa-laptop {
-      color: $orange;
+      color: $leading;
     }
     .timeline {
       &:before {
-        background-color: $light-gray;
+        background-color: $body-object-light;
       }
       & > li > .timeline-panel {
-        border: 0.5px solid $medium-gray;
-        background-color: $medium-gray;
+        border: 0.5px solid $body-object;
+        background-color: $body-object;
         &:hover {
-          border-color: $orange;
+          border-color: $leading;
         }
       }
       & > li > .timeline-badge {
-        background-color: $orange;
+        background-color: $leading;
       }
     }
   }
@@ -182,57 +189,58 @@ $colors: (
   #projects {
     .card,
     .card-footer {
-      border: 1px solid $medium-gray;
-      background-color: $medium-gray;
+      border: 1px solid $body-object;
+      background-color: $body-object;
     }
     .card {
       .card-title {
-        color: $orange;
+        color: $leading;
       }
       &:hover {
-        border-color: $orange;
+        border-color: $leading;
       }
     }
   }
 
   #references {
     .reference-background {
-      background-color: $medium-gray;
-      border: 1px solid $medium-gray;
+      background-color: $body-object;
+      border: 1px solid $body-object;
       &:hover {
-        border-color: $orange;
+        border-color: $leading;
       }
     }
     .fa-quote-left,
     .fa-quote-right,
     .reference-author {
-      color: $orange;
+      color: $leading;
     }
     .reference-author > a {
-      color: $orange;
+      color: $leading;
     }
   }
 
   #contact {
     input,
     textarea {
-      color: $white;
-      background-color: $medium-gray;
-      border-color: $medium-gray;
+      color: $font;
+      background-color: $body-object;
+      border-color: $body-object;
       &:focus,
       &:hover {
-        border-color: $orange;
-        box-shadow: 0 0 0 0.1px $orange;
+        border-color: $leading;
+        box-shadow: 0 0 0 0.1px $leading;
       }
       &::placeholder {
         color: inherit;
       }
     }
     .parsley-errors-list li {
-      background-color: $orange;
+      background-color: $leading;
       color: $black;
+      font-weight: inherit;
       @if $mode == light {
-        color: $gray;
+        color: $background;
       }
     }
   }
@@ -240,11 +248,11 @@ $colors: (
   #footer {
     background-color: $light-black;
     @if $mode==light {
-      background-color: $medium-gray;
+      background-color: $body-object;
     }
     .wrapper {
       .go-up {
-        color: $orange;
+        color: $leading;
       }
     }
   }
