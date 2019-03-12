@@ -12,6 +12,10 @@
     margin-right: 20px;
     position: relative;
     top: 4px;
+    @media (max-width: 991px) {
+      font-size: 28px;
+      margin-right: 8px;
+    }
   }
 
   .wrapper {

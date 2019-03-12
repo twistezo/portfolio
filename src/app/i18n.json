@@ -15,13 +15,9 @@
     "pl": "Obecnie zawodowo używam głównie technologii związanych z językiem Rust, a w wolnych chwilach siedzę w Web devie i technologiach związanych z JavaScript.",
     "en": "At present I professionally use mainly technologies related to the Rust programming language and in my free time I dig in Web development and technologies related to JavaScript."
   },
-  "i18nAboutMe4": {
-    "pl": "Staram się być elastyczny jeśli chodzi o techonologie oraz być na bieżąco z nowinkami w świecie IT.",
-    "en": "I'm trying to be flexible in technologies and keep up with the latest updates from the IT world."
-  },
   "i18nAboutMe5": {
-    "pl": "wybierz swoją stronę...",
-    "en": "choose your side..."
+    "pl": "wybierz swoją stronę",
+    "en": "choose your side"
   },
   "i18nAboutMe6": {
     "pl": "jasna",
