@@ -46,9 +46,11 @@ $theme-colors: (
     h5 {
       color: $leading;
     }
-
     .highlighted {
       color: $leading;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $body-object-light;
     }
   }
 

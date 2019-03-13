@@ -8,15 +8,15 @@ Second, actual version of my programming portfolio website. Rewritten from Angul
 
 ### Features
 
-- without frameworks (clean, fast, lightweight and maintainability)
+- without frameworks (clean, fast, lightweight)
 - uses `lit-html` for templating HTML pages in JS
-- minimal webpack configuration with hot-reload in development mode, with minify and uglify HTML/CSS/JS for production build
+- webpack with hot-reload, babel, minify, gzip and uglify HTML/CSS/JS for production build
 - custom implementation of i18n (internationalization) which uses JSON file
 - 6 pinned repositories in projects section fetched from GitHub GraphQL API
 
 ### Tools
 
-JavaScript ES6, Bootstrap 4, Webpack 4, lit-html
+JavaScript ES6, Bootstrap 4, Webpack 4, lit-html, Sass
 
 ### Requirements
 
@@ -24,13 +24,13 @@ npm
 
 ### Build, run
 
-To build: `npm install`
+Build: `npm install`
 
-To run in development mode: `npm run dev`
+Run in development mode: `npm run dev`
 
-To build for production: `npm run prod`
+Build for production: `npm run prod`
 
-Note thath output from above is in `docs/` for fastest deploy on github page
+Production output is in `docs/` for fastest deploy on github page
 
 ### FAQ
 
@@ -39,7 +39,7 @@ Note thath output from above is in `docs/` for fastest deploy on github page
 ```
 Error message: `Failed to load file:///DRIVE:/.../portfolio/docs/i18n.json: Cross origin requests are only supported for protocol schemes: http, data, chrome, chrome-extension, https.`
 
-Note: Occurs only locally. After deploying page will be ok.
+Occurs only locally. After deploying page will be ok.
 ```
 
 ### Latest version
