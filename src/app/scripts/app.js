@@ -5,12 +5,12 @@ import { jarallax } from 'jarallax'
 import I18n from '../scripts/i18n'
 import Projects from '../scripts/projects'
 import CookieWarning from '../scripts/cookie-warning'
+import TextScramble from './scramble'
 import 'parsleyjs'
 
 import 'bootstrap/js/dist/collapse'
 import 'bootstrap/js/dist/scrollspy'
 
-import '../scripts/text-scramble'
 import '../styles/_index.scss'
 
 export default class App {
@@ -26,6 +26,18 @@ export default class App {
     new I18n().init()
     new Projects().fetchData()
     new CookieWarning().init()
+    new TextScramble(
+      'textScramble',
+      [
+        'Łukasz Kółko',
+        'Rust developer',
+        'JavaScript developer',
+        'Software developer'
+      ],
+      5,
+      100,
+      1500
+    )
   }
 
   _initSmoothScrolling = () => {
@@ -64,8 +76,8 @@ export default class App {
         var ok = $('.parsley-error').length === 0
         // eslint-disable-next-line no-undef
         $('.parsley-errors-list').toggleClass('vibrate-button', !ok)
-        // eslint-disable-next-line no-undef
         setTimeout(
+          // eslint-disable-next-line no-undef
           () => $('.parsley-errors-list').removeClass('vibrate-button'),
           1000
         )
