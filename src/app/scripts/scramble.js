@@ -76,9 +76,10 @@ class TextScramble {
   }
 
   _fillSpanWithSymbol = childs => {
-    this._randomArrayItem(childs).innerText = this._randomArrayItem(
-      this._symbols
-    )
+    if (childs.length > 0)
+      this._randomArrayItem(childs).innerText = this._randomArrayItem(
+        this._symbols
+      )
   }
 
   _randomArrayItem = array => array[Math.floor(Math.random() * array.length)]

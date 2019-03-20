@@ -37,12 +37,21 @@ class Projects {
         query: this._queryPinnedRepos
       })
     })
-      .then(response => response.json())
+      .then(response => {
+        if (response.status !== 200)
+          throw Error('Failed to connect GitHub. Status ' + response.status)
+        return response.json()
+      })
       .then(data => this._unwrapData(data))
       .then(unwrappedData => this._insertDataToDOM(unwrappedData))
+      .catch(error => this._insertErrorToDOM(error))
   }
 
   _unwrapData = data => {
+    if (data === undefined) {
+      throw Error('Failed to unwrap data from GitHub API.')
+    }
+
     let unwrappedData = []
     const repositoriesArray = data.data.repositoryOwner.pinnedRepositories.edges
     repositoriesArray.forEach(repository => {
@@ -66,21 +75,26 @@ class Projects {
   _parseTools = rawData => {
     // eslint-disable-next-line no-control-regex
     const data = new RegExp('Tools\n\n(.*)').exec(rawData)
-    return data !== null ? data[1] : null
+    if (data === null) {
+      throw Error('Failed to parse data from GitHub API.')
+    }
+    return data[1]
   }
 
   _insertDataToDOM = data => {
+    if (!Array.isArray(data)) {
+      throw Error('Failed to insert fetched data to DOM.')
+    }
+
     // clone template card from card deck
     const cardDeck = document.getElementsByClassName('card-deck')[0]
     let clonedCard = cardDeck.querySelector('.card').cloneNode(true)
     cardDeck.appendChild(clonedCard)
-
     // clone card decks (with two template cards)
     for (let i = 0; i <= data.length / (data.length / 3) - 2; i++) {
       let cardDeckClone = cardDeck.cloneNode(true)
       document.getElementsByClassName('cards')[0].appendChild(cardDeckClone)
     }
-
     // fill cards with fetched data
     let updatedCards = document.getElementsByClassName('card')
     for (let i = 0; i < data.length; i++) {
@@ -90,7 +104,6 @@ class Projects {
       updatedCards[i].querySelector('.stack').innerHTML = data[i].tools
       updatedCards[i].querySelector('a').setAttribute('href', data[i].url)
     }
-
     // add 'aos' to cards
     let aosDelay = 150
     let swap = false
@@ -104,6 +117,24 @@ class Projects {
       aosDelay += 50
       swap = !swap
     }
+  }
+
+  _insertErrorToDOM = error => {
+    const cards = document.getElementsByClassName('cards')[0]
+    // remove previously prepared `card` DOM element
+    while (cards.firstChild) {
+      cards.removeChild(cards.firstChild)
+    }
+
+    let p0 = document.createElement('p')
+    let p1 = document.createElement('p')
+    let p2 = document.createElement('p')
+    p0.innerText = 'Ups...'
+    p1.innerText = error
+    p2.innerText = 'Try to reload this page.'
+    cards.appendChild(p0)
+    cards.appendChild(p1)
+    cards.appendChild(p2)
   }
 }
 
