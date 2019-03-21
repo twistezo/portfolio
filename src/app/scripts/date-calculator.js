@@ -82,12 +82,11 @@ class DateCalculator {
   }
 
   generateDiffWithLang = (date1, date2, locale) => {
-    let diff = Math.floor(date2.getTime() - date1.getTime())
-    let day = 1000 * 60 * 60 * 24
-    let days = Math.floor(diff / day)
-    let months = Math.floor(days / 31) + 2 // +2 for adding current month
+    const diff = Math.ceil(date2.getTime() - date1.getTime())
+    const days = Math.ceil(diff / (1000 * 60 * 60 * 24))
+    let months = Math.ceil(days / 31) + 1
 
-    let message = '('
+    let message = ''
     if (months <= 12) {
       message += this._formatMonthsWithLocale(months, locale)
     } else {
@@ -95,21 +94,21 @@ class DateCalculator {
       let extraMonths = months - yearsFromMonths * 12
       if (yearsFromMonths == 1) {
         if (extraMonths == 0) {
-          message += yearsFromMonths + ' ' + locale[3] + ')'
+          message += yearsFromMonths + ' ' + locale[3]
         } else {
           message += yearsFromMonths + ' ' + locale[3]
           message += ', ' + this._formatMonthsWithLocale(extraMonths, locale)
         }
       } else if (yearsFromMonths > 1 && yearsFromMonths < 5) {
         if (extraMonths == 0) {
-          message += yearsFromMonths + ' ' + locale[4] + ')'
+          message += yearsFromMonths + ' ' + locale[4]
         } else {
           message += yearsFromMonths + ' ' + locale[4]
           message += ', ' + this._formatMonthsWithLocale(extraMonths, locale)
         }
       } else {
         if (extraMonths == 0) {
-          message += yearsFromMonths + ' ' + locale[5] + ')'
+          message += yearsFromMonths + ' ' + locale[5]
         } else {
           message += yearsFromMonths + ' ' + locale[5]
           message += ', ' + this._formatMonthsWithLocale(extraMonths, locale)
@@ -117,20 +116,20 @@ class DateCalculator {
       }
     }
 
-    return message
+    return '(' + message + ')'
   }
 
   _formatMonthsWithLocale = (months, locale) => {
     let message = ''
     if (months <= 12) {
-      if (months == 1) {
-        message += months + ' ' + locale[0] + ')'
+      if (months <= 1) {
+        message += '1 ' + locale[0]
       } else if (months > 1 && months < 5) {
-        message += months + ' ' + locale[1] + ')'
+        message += months + ' ' + locale[1]
       } else if (months >= 5 && months < 12) {
-        message += months + ' ' + locale[2] + ')'
+        message += months + ' ' + locale[2]
       } else if (months == 12) {
-        message += '1 ' + locale[3] + ')'
+        message += '1 ' + locale[3]
       }
     }
     return message

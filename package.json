@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack-dev-server --open --config webpack.dev.js --mode development",
     "prod": "webpack --config webpack.prod.js --mode production",
-    "test": "echo \"No test specified\" && exit 0"
+    "test": "jest"
   },
   "keywords": [],
   "author": "twistezo",
@@ -31,6 +31,7 @@
     "html-webpack-plugin": "^3.1.0",
     "image-webpack-loader": "^4.6.0",
     "jarallax": "^1.10.7",
+    "jest": "^24.5.0",
     "jquery": "^3.3.1",
     "lit-html": "^1.0.0",
     "mini-css-extract-plugin": "^0.5.0",
