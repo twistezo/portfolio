@@ -101,7 +101,24 @@ class Projects {
       updatedCards[i].querySelector('.card-title').innerHTML = data[i].name
       updatedCards[i].querySelector('.card-text').innerHTML =
         data[i].description
-      updatedCards[i].querySelector('.stack').innerHTML = data[i].tools
+
+      // convert string ex. `java, spring` to `#java #spring`
+      data[i].tools
+        .split(',')
+        .map(word => word.trim().toLowerCase())
+        .forEach(tool => {
+          let hashSpan = document.createElement('span')
+          hashSpan.classList.add('highlighted')
+          hashSpan.innerText = '#'
+          updatedCards[i].querySelector('.tools').appendChild(hashSpan)
+
+          let toolSpan = document.createElement('span')
+          toolSpan.classList.add('pr-2')
+          toolSpan.innerText = tool
+          updatedCards[i].querySelector('.tools').appendChild(toolSpan)
+        })
+
+      // updatedCards[i].querySelector('.stack').innerHTML = tools
       updatedCards[i].querySelector('a').setAttribute('href', data[i].url)
     }
     // add 'aos' to cards
