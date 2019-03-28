@@ -20,8 +20,10 @@ class I18n {
     ) {
       this._currentLanguage = this._Language.PL
     }
-    this._setLanguageAndRender(this._currentLanguage)
+    
     this._initButtonsBehaviour()
+    this._setLanguage(this._currentLanguage)
+    this.render()
   }
 
   _getBrowserLanguage = () =>
@@ -29,7 +31,7 @@ class I18n {
       ? navigator.languages[0]
       : navigator.language
 
-  _setLanguageAndRender = chosenLanguage => {
+  _setLanguage = chosenLanguage => {
     if (chosenLanguage === 'pl') {
       this._hoverPl()
       this._currentLanguage = this._Language.PL
@@ -37,6 +39,9 @@ class I18n {
       this._hoverEn()
       this._currentLanguage = this._Language.EN
     }
+  }
+
+  render = () => {
     this._dateCalculator.renderWithLocale(this._currentLanguage)
 
     fetch(i18nJSON)
@@ -44,7 +49,7 @@ class I18n {
       .then(jsonObj => {
         for (const obj in jsonObj) {
           const fieldName = obj
-          const fieldValue = jsonObj[obj][chosenLanguage]
+          const fieldValue = jsonObj[obj][this._currentLanguage]
 
           switch (fieldName) {
             case 'i18nContact1':
@@ -62,9 +67,10 @@ class I18n {
               }
               break
             default: {
-              const a = document.querySelector('.' + fieldName)
-              a.textContent = ''
-              a.textContent += fieldValue
+              for (let el of document.getElementsByClassName(fieldName)) {
+                el.textContent = ''
+                el.textContent += fieldValue
+              }
             }
           }
         }
@@ -84,12 +90,14 @@ class I18n {
   _initButtonsBehaviour = () => {
     document.querySelector('.i18n-button-pl').addEventListener('click', e => {
       e.preventDefault()
-      this._setLanguageAndRender('pl')
+      this._setLanguage(this._Language.PL)
+      this.render()
       this._hoverPl()
     })
     document.querySelector('.i18n-button-en').addEventListener('click', e => {
       e.preventDefault()
-      this._setLanguageAndRender('en')
+      this._setLanguage(this._Language.EN)
+      this.render()
       this._hoverEn()
     })
   }
