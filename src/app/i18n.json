@@ -12,8 +12,8 @@
     "en": "In high school and at university I had contact with Assembler, C, C ++, MATLAB, JavaScript, HTML, CSS, programming of microcontrollers and PLC controllers. Later working for three years as a Mechanical Design Engineer I programmed hobbyistically and its quickly turned from passion into work."
   },
   "i18nAboutMe3": {
-    "pl": "Obecnie zawodowo używam głównie technologii związanych z językiem Rust, a w wolnych chwilach siedzę w Web devie i technologiach związanych z JavaScript.",
-    "en": "At present I professionally use mainly technologies related to the Rust programming language and in my free time I dig in Web development and technologies related to JavaScript."
+    "pl": "Obecnie zawodowo używam głównie technologii związanych z językiem Rust i JavaScript.",
+    "en": "At present I professionally use mainly technologies related to the Rust and JavaScript programming languages."
   },
   "i18nAboutMe5": {
     "pl": "wybierz swoją stronę",
@@ -82,10 +82,6 @@
   "i18nExperience0c": {
     "pl": "Suma CAD",
     "en": "Total CAD"
-  },
-  "i18nExperience1a": {
-    "pl": "Od 07.2017",
-    "en": "From 07.2017"
   },
   "i18nExperience1b": {
     "pl": "Rust developer",
@@ -203,13 +199,29 @@
     "pl": "spec. Informatyka i robotyka",
     "en": "specialty: Informatics and Robotics"
   },
+  "i18nExpCodest0": {
+    "pl": "w Codest - Kraków",
+    "en": "at Codest - Kraków"
+  },
+  "i18nExpCodest1": {
+    "pl": "Od 04.2019",
+    "en": "From 04.2019"
+  },
+  "i18nExpCodest2": {
+    "pl": "Tworzenie aplikacji webowych dla firm z branży e-commerce, FinTech i AdTech.",
+    "en": "Creating Web applications for e-commerce, FinTech and AdTech companies."
+  },
+  "i18nExpCodest3": {
+    "pl": "czasami Ruby i Ruby on Rails",
+    "en": "sometimes Ruby and Ruby on Rails"
+  },
   "i18nProjects0": {
     "pl": "próbki kodu",
     "en": "code samples"
   },
   "i18nProjects13": {
-    "pl": "Więcej",
-    "en": "More"
+    "pl": "więcej",
+    "en": "more"
   },
   "i18nReferences0": {
     "pl": "referencje",

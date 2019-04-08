@@ -5,8 +5,10 @@ let dc = new DateCalculator()
 
 test('_formatMonthsWithLocale', () => {
   const plEnd = monthNum => {
-    let end = '1 miesiąc'
-    if (monthNum > 1 && monthNum < 5) {
+    let end = 'mniej niż 1 miesiąc'
+    if (monthNum === 1) {
+      end = '1 miesiąc'
+    } else if (monthNum > 1 && monthNum < 5) {
       end = monthNum + ' miesiące'
     } else if (monthNum >= 5) {
       end = monthNum + ' miesięcy'
@@ -18,8 +20,10 @@ test('_formatMonthsWithLocale', () => {
   }
 
   const enEnd = monthNum => {
-    let end = '1 month'
-    if (monthNum > 1) {
+    let end = 'less than 1 month'
+    if (monthNum === 1) {
+      end = '1 month'
+    } else if (monthNum > 1) {
       end = monthNum + ' months'
     }
     return end
@@ -32,7 +36,7 @@ test('_formatMonthsWithLocale', () => {
 test('generateDiffWithLang with real data', () => {
   expect(
     dc.generateDiffWithLang(dc._Simteract.from, dc._Simteract.to, dc._Locale.Pl)
-  ).toBe('(1 rok, 9 miesięcy)')
+  ).toBe('(1 rok, 10 miesięcy)')
   expect(
     dc.generateDiffWithLang(
       dc._Freelancer.from,

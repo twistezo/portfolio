@@ -3,14 +3,26 @@ class DateCalculator {
     this._todayDate = new Date()
     this._todayDate.setMonth(this._todayDate.getMonth() - 1) // for natural calculations
     this._Locale = {
-      Pl: ['miesiąc', 'miesiące', 'miesięcy', 'rok', 'lata', 'lat'],
-      En: ['month', 'months', 'months', 'year', 'years', 'years']
+      Pl: [
+        'miesiąc',
+        'miesiące',
+        'miesięcy',
+        'rok',
+        'lata',
+        'lat',
+        'mniej niż'
+      ],
+      En: ['month', 'months', 'months', 'year', 'years', 'years', 'less than']
     }
 
     // experience dates
+    this._Codest = {
+      from: new Date(2019, 4),
+      to: this._todayDate
+    }
     this._Simteract = {
       from: new Date(2017, 6),
-      to: this._todayDate
+      to: new Date(2019, 3)
     }
     this._Freelancer = {
       from: new Date(2017, 0),
@@ -37,6 +49,13 @@ class DateCalculator {
   }
 
   _render = currentLang => {
+    document.getElementById(
+      'exp-codest-diff'
+    ).innerHTML = this.generateDiffWithLang(
+      this._Codest.from,
+      this._Codest.to,
+      currentLang
+    )
     document.getElementById(
       'exp-simteract-diff'
     ).innerHTML = this.generateDiffWithLang(
@@ -122,7 +141,9 @@ class DateCalculator {
   _formatMonthsWithLocale = (months, locale) => {
     let message = ''
     if (months <= 12) {
-      if (months <= 1) {
+      if (months < 1) {
+        message += locale[6] + ' 1 ' + locale[0]
+      } else if (months == 1) {
         message += '1 ' + locale[0]
       } else if (months > 1 && months < 5) {
         message += months + ' ' + locale[1]
