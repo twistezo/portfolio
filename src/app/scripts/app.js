@@ -6,6 +6,7 @@ import I18n from '../scripts/i18n'
 import Projects from '../scripts/projects'
 import CookieWarning from '../scripts/cookie-warning'
 import TextScramble from './scramble'
+import { noBugsAsciiArt } from './no-bugs-ascii-art'
 import 'parsleyjs'
 
 import 'bootstrap/js/dist/collapse'
@@ -28,16 +29,12 @@ export default class App {
     new CookieWarning().init()
     new TextScramble(
       'textScramble',
-      [
-        'Łukasz Kółko',
-        'Rust developer',
-        'JavaScript developer',
-        'Software developer'
-      ],
+      ['Łukasz Kółko', 'Rust developer', 'JavaScript developer', 'Software developer'],
       5,
       100,
       1500
     )
+    console.log(noBugsAsciiArt) // eslint-disable-line no-console
   }
 
   _initSmoothScrolling = () => {
