@@ -36,14 +36,7 @@ test('_formatMonthsWithLocale', () => {
 test('generateDiffWithLang with real data', () => {
   expect(
     dc.generateDiffWithLang(dc._Simteract.from, dc._Simteract.to, dc._Locale.Pl)
-  ).toBe('(1 rok, 10 miesięcy)')
-  expect(
-    dc.generateDiffWithLang(
-      dc._Freelancer.from,
-      dc._Freelancer.to,
-      dc._Locale.Pl
-    )
-  ).toBe('(6 miesięcy)')
+  ).toBe('(2 lata, 4 miesiące)')
   expect(
     dc.generateDiffWithLang(
       dc._RedRooster.from,
