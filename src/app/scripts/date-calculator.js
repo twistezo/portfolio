@@ -21,12 +21,8 @@ class DateCalculator {
       to: this._todayDate
     }
     this._Simteract = {
-      from: new Date(2017, 6),
-      to: new Date(2019, 3)
-    }
-    this._Freelancer = {
       from: new Date(2017, 0),
-      to: new Date(2017, 5)
+      to: new Date(2019, 3)
     }
     this._RedRooster = {
       from: new Date(2014, 6),
@@ -64,13 +60,6 @@ class DateCalculator {
       currentLang
     )
     document.getElementById(
-      'exp-freelancer-diff'
-    ).innerHTML = this.generateDiffWithLang(
-      this._Freelancer.from,
-      this._Freelancer.to,
-      currentLang
-    )
-    document.getElementById(
       'exp-redrooster-diff'
     ).innerHTML = this.generateDiffWithLang(
       this._RedRooster.from,
@@ -87,8 +76,8 @@ class DateCalculator {
     document.getElementById(
       'total-exp-it'
     ).innerHTML = this.generateDiffWithLang(
-      this._Freelancer.from,
-      this._Simteract.to,
+      this._Simteract.from,
+      this._Codest.to,
       currentLang
     )
     document.getElementById(
