@@ -35,13 +35,17 @@ export default class App {
       1500
     )
     console.log(noBugsAsciiArt) // eslint-disable-line no-console
+    window.location.hash = '🙈🙊🙉';
   }
 
   _initSmoothScrolling = () => {
+    const parent = this;
+
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
         e.preventDefault()
         const hrefAttr = this.getAttribute('href')
+
         if (hrefAttr !== '#') {
           document.querySelector(hrefAttr).scrollIntoView({
             behavior: 'smooth',
@@ -49,8 +53,33 @@ export default class App {
             inline: 'nearest'
           })
         }
+
+        parent._setUrlWithEmoji(hrefAttr);
       })
     })
+  }
+
+  _setUrlWithEmoji(hrefAttr) {
+    switch (hrefAttr) {
+      case '#about-me':
+        window.location.hash = '👽';
+        break;
+      case '#skills':
+        window.location.hash = '🎓';
+        break;
+      case '#experience':
+        window.location.hash = '💰';
+        break;
+      case '#projects':
+        window.location.hash = '🚀‍';
+        break;
+      case '#references':
+        window.location.hash = '📜';
+        break;
+      case '#contact':
+        window.location.hash = '📞';
+        break;
+    }
   }
 
   _initParallax = () => {
