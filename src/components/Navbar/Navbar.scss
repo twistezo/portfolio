@@ -13,8 +13,13 @@
     padding: 8px;
     cursor: pointer;
 
-    a.active {
+    &.active {
       color: blue;
+    }
+
+    &:hover,
+    &:focus {
+      color: pink;
     }
   }
 }

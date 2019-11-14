@@ -3,12 +3,10 @@ import { Element } from 'react-scroll'
 
 interface SectionContainerProps {
   children: ReactNode
+  childrenName: string
 }
 
-const SectionContainer: React.FC<SectionContainerProps> = ({ children }) => {
-  // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-  const childrenName: string = children!.toString()
-
+const SectionContainer: React.FC<SectionContainerProps> = ({ children, childrenName }) => {
   useEffect(() => {
     import(`../components/Sections/${childrenName}/${childrenName}.scss`)
   }, [childrenName])
