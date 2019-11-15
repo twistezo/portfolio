@@ -1,0 +1,18 @@
+.Button {
+  &__Standard {
+    &--link {
+      width: 151px;
+      height: 32px;
+      line-height: 32px;
+      display: inline-block;
+      vertical-align: middle;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 500;
+      text-align: center;
+      letter-spacing: 0.3px;
+      border: none;
+      background-color: darkgreen;
+    }
+  }
+}
