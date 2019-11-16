@@ -4,15 +4,16 @@ import { Element } from 'react-scroll'
 interface SectionContainerProps {
   children: ReactNode
   childrenName: string
+  url: string
 }
 
-const SectionContainer: React.FC<SectionContainerProps> = ({ children, childrenName }) => {
+const SectionContainer: React.FC<SectionContainerProps> = ({ children, childrenName, url }) => {
   useEffect(() => {
     import(`../components/Sections/${childrenName}/${childrenName}.scss`)
   }, [childrenName])
 
   return (
-    <Element name={childrenName} className={'SectionContainer ' + childrenName}>
+    <Element name={url} className={'SectionContainer ' + childrenName}>
       {children}
     </Element>
   )

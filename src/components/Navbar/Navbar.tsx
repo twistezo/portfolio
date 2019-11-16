@@ -1,20 +1,18 @@
 import React from 'react'
 import NavbarItem from './NavbarItem'
-import AppContextProvider from '../../contexts/AppContext'
 import './Navbar.scss'
+import { URL } from './url'
 
 const Navbar: React.FC = () => {
   return (
-    <AppContextProvider>
-      <nav className='Navbar'>
-        <NavbarItem title='About Me' componentName='AboutMe'></NavbarItem>
-        <NavbarItem title='Skills' componentName='Skills'></NavbarItem>
-        <NavbarItem title='Experience' componentName='Experience'></NavbarItem>
-        <NavbarItem title='Code Samples' componentName='CodeSamples'></NavbarItem>
-        <NavbarItem title='References' componentName='References'></NavbarItem>
-        <NavbarItem title='Contact' componentName='Contact'></NavbarItem>
-      </nav>
-    </AppContextProvider>
+    <nav className='Navbar'>
+      <NavbarItem title='About Me' url={URL.ABOUT_ME}></NavbarItem>
+      <NavbarItem title='Skills' url={URL.SKILLS}></NavbarItem>
+      <NavbarItem title='Experience' url={URL.EXPERIENCE}></NavbarItem>
+      <NavbarItem title='Code Samples' url={URL.CODE_SAMPLES}></NavbarItem>
+      <NavbarItem title='References' url={URL.REFERENCES}></NavbarItem>
+      <NavbarItem title='Contact' url={URL.CONTACT}></NavbarItem>
+    </nav>
   )
 }
 

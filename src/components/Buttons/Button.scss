@@ -12,7 +12,14 @@
       text-align: center;
       letter-spacing: 0.3px;
       border: none;
-      background-color: darkgreen;
+    }
+
+    &--Light {
+      background-color: lightblue;
+    }
+
+    &--Dark {
+      background-color: black;
     }
   }
 }

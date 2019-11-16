@@ -6,6 +6,7 @@ import RustImg from '../../../images/parallax-rust.svg'
 import ParallaxBackgroundImg from '../../../images/parallax-background.jpg'
 import ParallaxGroundImg from '../../../images/parallax-ground.png'
 import ParallaxPersonImg from '../../../images/parallax-me.png'
+import { URL } from '../../Navbar/url'
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
 // @ts-ignore
@@ -37,7 +38,7 @@ const AboutMe: React.FC = () => {
   }, [])
 
   return (
-    <SectionContainer childrenName='AboutMe'>
+    <SectionContainer childrenName='AboutMe' url={URL.ABOUT_ME}>
       <div className='AboutMe__scene-container'>
         <div id='AboutMe__scene' ref={scene}>
           <div data-depth='0.4'>

@@ -1,15 +1,28 @@
-import React, { createContext } from 'react'
+import React, { createContext, useState } from 'react'
 import { Theme, AppContextProps } from './types'
 
-const appContext: AppContextProps = {
+const appContextInitialProps: AppContextProps = {
   reactScrollDuration: 500,
-  theme: Theme.Light,
+  appTheme: Theme.Light,
+  setReactScrollDuration: () => {},
+  setAppTheme: () => {},
 }
 
-export const AppContext = createContext<AppContextProps>(appContext)
+export const AppContext = createContext<AppContextProps>(appContextInitialProps)
 
 const AppContextProvider: React.FC = ({ children }) => {
-  return <AppContext.Provider value={appContext}>{children}</AppContext.Provider>
+  const [reactScrollDuration, setReactScrollDuration] = useState<number>(
+    appContextInitialProps.reactScrollDuration
+  )
+  const [appTheme, setAppTheme] = useState<Theme>(appContextInitialProps.appTheme)
+
+  return (
+    <AppContext.Provider
+      value={{ reactScrollDuration, setReactScrollDuration, appTheme, setAppTheme }}
+    >
+      {children}
+    </AppContext.Provider>
+  )
 }
 
 export default AppContextProvider

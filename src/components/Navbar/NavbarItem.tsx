@@ -4,17 +4,18 @@ import { AppContext } from '../../contexts/AppContext'
 
 interface NavbarItemProps {
   title: string
-  componentName: string
+  url: string
 }
 
-const NavbarItem: React.FC<NavbarItemProps> = ({ title, componentName }) => {
+const NavbarItem: React.FC<NavbarItemProps> = ({ title, url }) => {
   const { reactScrollDuration } = useContext(AppContext)
 
   return (
     <Link
       className='Navbar__item'
-      to={componentName}
+      to={url}
       spy={true}
+      hashSpy={true}
       smooth={true}
       duration={reactScrollDuration}
       offset={-55}

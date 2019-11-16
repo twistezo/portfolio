@@ -5,5 +5,7 @@ export enum Theme {
 
 export interface AppContextProps {
   reactScrollDuration: number
-  theme: Theme
+  setReactScrollDuration: Function
+  appTheme: Theme
+  setAppTheme: Function
 }
