@@ -8,7 +8,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 import { URL } from '../../Navbar/url'
 
 const Skills: React.FC = () => {
-  const { t, i18n } = useTranslation()
+  const { i18n } = useTranslation()
 
   return (
     <SectionContainer childrenName='Skills' url={URL.SKILLS}>
@@ -43,8 +43,6 @@ const Skills: React.FC = () => {
           title='English language'
           onClickHandler={() => i18n.changeLanguage('en')}
         ></Button>
-
-        <div>{t('about-me:test')}</div>
       </ScrollAnimation>
     </SectionContainer>
   )

@@ -1,0 +1,122 @@
+.AboutMe__scene {
+  &-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  &--background-img {
+    left: -160px;
+  }
+
+  &--ground-img {
+    left: -160px;
+    top: 1810px;
+  }
+
+  &--me-img {
+    @media (max-width: 991px) {
+      width: 300px;
+      top: 1760px;
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      width: 500px;
+      left: 5px;
+      top: 1595px;
+    }
+    @media (min-width: 1200px) and (max-width: 1399px) {
+      width: 600px;
+      left: 80px;
+      top: 1525px;
+    }
+    @media (min-width: 1400px) {
+      width: 800px;
+      left: 50px;
+      top: 1360px;
+    }
+  }
+
+  &--rust-img {
+    @media (min-width: 992px) and (max-width: 1199px) {
+      left: 600px;
+      top: 1830px;
+    }
+    @media (min-width: 1200px) and (max-width: 1399px) {
+      left: 800px;
+      top: 1810px;
+    }
+    @media (min-width: 1200px) and (max-width: 1399px) {
+      left: 800px;
+      top: 1810px;
+    }
+    @media (min-width: 1400px) {
+      left: 1100px;
+      top: 1745px;
+    }
+  }
+
+  &--java-img {
+    @media (min-width: 992px) and (max-width: 1199px) {
+      left: 650px;
+      top: 1815px;
+    }
+    @media (min-width: 1200px) and (max-width: 1399px) {
+      left: 850px;
+      top: 1800px;
+    }
+
+    @media (min-width: 1400px) {
+      left: 1150px;
+      top: 1745px;
+    }
+  }
+
+  &--js-img {
+    @media (min-width: 992px) and (max-width: 1199px) {
+      left: 700px;
+      top: 1810px;
+    }
+    @media (min-width: 1200px) and (max-width: 1399px) {
+      left: 900px;
+      top: 1790px;
+    }
+    @media (min-width: 1400px) {
+      left: 1200px;
+      top: 1760px;
+    }
+  }
+
+  &--background-img,
+  &--ground-img,
+  &--me-img,
+  &--rust-img,
+  &--java-img,
+  &--js-img {
+    position: relative;
+  }
+
+  &--rust-img,
+  &--java-img,
+  &--js-img {
+    filter: brightness(70%);
+
+    @media (max-width: 991px) {
+      display: none;
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      width: 70px;
+    }
+    @media (min-width: 1200px) and (max-width: 1399px) {
+      width: 80px;
+    }
+    @media (min-width: 1400px) {
+      width: 120px;
+    }
+  }
+}

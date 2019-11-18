@@ -1,0 +1,22 @@
+.Scrollbar {
+  &::-webkit-scrollbar-track {
+    border-radius: 0px;
+  }
+  &::-webkit-scrollbar {
+    width: 14px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background-color: #777;
+  }
+
+  &--Dark {
+    &::-webkit-scrollbar-thumb {
+      background-color: #777;
+    }
+  }
+
+  &--Light::-webkit-scrollbar-thumb {
+    background-color: #dadfe1;
+  }
+}

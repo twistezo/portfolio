@@ -1,25 +1,42 @@
 .Button {
+  display: inline-flex;
+
   &__Standard {
     &--link {
-      width: 151px;
-      height: 32px;
-      line-height: 32px;
-      display: inline-block;
-      vertical-align: middle;
-      border-radius: 4px;
       font-size: 14px;
-      font-weight: 500;
-      text-align: center;
-      letter-spacing: 0.3px;
-      border: none;
+      font-weight: 400;
+      letter-spacing: 1px;
+      text-decoration: none;
+      padding: 8px 24px;
+      cursor: pointer;
+
+      &:visited {
+        color: inherit;
+      }
     }
 
     &--Light {
-      background-color: lightblue;
+      background-color: #dadfe1;
+      color: #000;
+
+      &:active,
+      &:hover,
+      &:focus {
+        background-color: #da0600;
+        color: #fff;
+      }
     }
 
     &--Dark {
-      background-color: black;
+      background-color: #777;
+      color: #f5f5f5;
+
+      &:active,
+      &:hover,
+      &:focus {
+        background-color: orange;
+        color: #000;
+      }
     }
   }
 }

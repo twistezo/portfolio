@@ -3,7 +3,7 @@ import { Theme, AppContextProps } from './types'
 
 const appContextInitialProps: AppContextProps = {
   reactScrollDuration: 500,
-  appTheme: Theme.Light,
+  appTheme: Theme.Dark,
   setReactScrollDuration: () => {},
   setAppTheme: () => {},
 }

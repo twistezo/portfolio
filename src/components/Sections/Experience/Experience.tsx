@@ -4,7 +4,12 @@ import { URL } from '../../Navbar/url'
 import TextScramble from '../../TextScramble/TextScramble'
 import { ScrambleTexts } from '../../TextScramble/types'
 
-const scrambleTexts: ScrambleTexts = ['pierwszy tekst alll', 'drugi tekst', 'trzeci']
+const scrambleTexts: ScrambleTexts = [
+  'Łukasz Kółko',
+  'Rust developer',
+  'JavaScript developer',
+  'Software developer',
+]
 
 const Experience: React.FC = () => {
   const [pause, setPause] = useState(false)

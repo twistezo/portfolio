@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { ButtonType, ReactEl } from './types'
 import { AppContext } from '../../contexts/AppContext'
 import { Theme } from '../../contexts/types'
+import './Button.scss'
 
 interface ButtonProps {
   type: ButtonType
