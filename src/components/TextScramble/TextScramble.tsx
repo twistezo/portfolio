@@ -32,19 +32,21 @@ const TextScramble: React.FC<TextScrambleProps> = ({
 
   const bakeLetter = () => {
     bakeLetterInterval = setInterval(() => {
-      const updatedText: string[] = []
+      if (!paused) {
+        const updatedText: string[] = []
 
-      displayedText.forEach((_, i) => {
-        if (!leftIndexes.includes(i)) {
-          updatedText[i] = currentText[i]
-          return
-        }
+        currentText.split('').forEach((_, i) => {
+          if (!leftIndexes.includes(i)) {
+            updatedText[i] = currentText[i]
+            return
+          }
 
-        const randomSymbol = randomItem(symbols)
-        updatedText[i] = randomSymbol
-      })
+          const randomSymbol = randomItem(symbols)
+          updatedText[i] = randomSymbol
+        })
 
-      setDisplayedText(updatedText)
+        setDisplayedText(updatedText)
+      }
     }, letterSpeed)
   }
 
@@ -53,17 +55,19 @@ const TextScramble: React.FC<TextScrambleProps> = ({
     bakeLetter()
 
     bakeTextInterval = setInterval(() => {
-      if (leftIndexes.length === 0) {
-        clearInterval(bakeLetterInterval)
-        clearInterval(bakeTextInterval)
+      if (!paused) {
+        if (leftIndexes.length === 0) {
+          clearInterval(bakeLetterInterval)
+          clearInterval(bakeTextInterval)
 
-        setTimeout(() => {
-          setCurrentText(nextItem(texts, currentText))
-          defaultLeftIndexes()
-        }, pauseTime)
+          setTimeout(() => {
+            setCurrentText(nextItem(texts, currentText))
+            defaultLeftIndexes()
+          }, pauseTime)
+        }
+
+        leftIndexes.shift()
       }
-
-      leftIndexes.shift()
     }, nextLetterSpeed)
   }
 

@@ -2,18 +2,15 @@ import React from 'react'
 import SectionContainer from '../../../containers/SectionContainer'
 import ParallaxScene from './ParallaxScene'
 import { URL } from '../../Navbar/url'
-
-// eslint-disable-next-line @typescript-eslint/ban-ts-ignore
-// @ts-ignore
 import { ScrambleTexts } from '../../TextScramble/types'
 import TextScramble from '../../TextScramble/TextScramble'
 import { useTranslation } from 'react-i18next'
 
 const scrambleTexts: ScrambleTexts = [
-  'JavaScript developer',
-  'Rust developer',
-  'Software developer',
   'Łukasz Kółko',
+  'Rust developer',
+  'JavaScript developer',
+  'Software developer',
 ]
 
 const AboutMe: React.FC = () => {
