@@ -12,9 +12,11 @@ const Skills: React.FC = () => {
 
   return (
     <SectionContainer childrenName='Skills' url={URL.SKILLS}>
-      <ScrollAnimation animateIn='bounceInLeft'>
+      <ScrollAnimation animateIn='slideInDown'>
         <div>Skills</div>
+      </ScrollAnimation>
 
+      <ScrollAnimation animateIn='slideInLeft'>
         <Button type={ButtonType.Standard} title='Standard' href='https://onet.pl'></Button>
 
         <Button type={ButtonType.WithImage} title='WithImage' href='' img='a'></Button>
@@ -38,6 +40,7 @@ const Skills: React.FC = () => {
           title='Język polski'
           onClickHandler={() => i18n.changeLanguage('pl')}
         ></Button>
+
         <Button
           type={ButtonType.Standard}
           title='English language'
