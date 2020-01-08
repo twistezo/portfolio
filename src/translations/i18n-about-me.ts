@@ -16,6 +16,11 @@ export const i18nAboutMe = {
         'At present I professionally use mainly technologies related to the Rust and JavaScript \
         programming languages.',
     },
+    chooser: {
+      a: 'choose your side',
+      b: 'light',
+      c: 'dark',
+    },
   },
   pl: {
     info: {
@@ -31,6 +36,11 @@ export const i18nAboutMe = {
         trzy lata jako projektant maszyn i urządzeń hobbystycznie programowałem, co szybko \
         przerodziło się z pasji w pracę.',
       d: 'Obecnie zawodowo używam głównie technologii związanych z językiem Rust i JavaScript.',
+    },
+    chooser: {
+      a: 'wybierz swoją stronę',
+      b: 'jasna',
+      c: 'ciemna',
     },
   },
 }

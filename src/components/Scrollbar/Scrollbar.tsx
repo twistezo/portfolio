@@ -8,7 +8,7 @@ const Scrollbar: React.FC = () => {
   const bodyEl = document.getElementsByTagName('body')[0]
 
   useEffect(() => {
-    bodyEl.className += `Scrollbar Scrollbar--${Theme[appTheme]}`
+    bodyEl.className = `body--${Theme[appTheme]} Scrollbar Scrollbar--${Theme[appTheme]}`
   }, [appTheme])
 
   return null

@@ -1,8 +1,6 @@
 import React from 'react'
 import SectionContainer from '../../../containers/SectionContainer'
-import Button from '../../Buttons/Button'
-import { ButtonType } from '../../Buttons/types'
-import { Theme } from '../../../contexts/types'
+import { Button, ButtonType } from '../../Buttons'
 import { useTranslation } from 'react-i18next'
 import ScrollAnimation from 'react-animate-on-scroll'
 import { URL } from '../../Navbar/url'
@@ -17,24 +15,6 @@ const Skills: React.FC = () => {
       </ScrollAnimation>
 
       <ScrollAnimation animateIn='slideInLeft'>
-        <Button type={ButtonType.Standard} title='Standard' href='https://onet.pl'></Button>
-
-        <Button type={ButtonType.WithImage} title='WithImage' href='' img='a'></Button>
-
-        <Button
-          type={ButtonType.ThemeChanger}
-          title='ThemeChanger - Light'
-          img='a'
-          theme={Theme.Light}
-        ></Button>
-
-        <Button
-          type={ButtonType.ThemeChanger}
-          title='ThemeChanger - Dark'
-          img='a'
-          theme={Theme.Dark}
-        ></Button>
-
         <Button
           type={ButtonType.Standard}
           title='Język polski'

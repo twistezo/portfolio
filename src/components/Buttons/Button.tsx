@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { ButtonType, ReactEl } from './types'
 import { AppContext } from '../../contexts/AppContext'
 import { Theme } from '../../contexts/types'
@@ -13,19 +13,9 @@ interface ButtonProps {
   onClickHandler?: Function
 }
 
-const Button: React.FC<ButtonProps> = ({
-  type,
-  title,
-  href,
-  img,
-  theme = Theme.Dark,
-  onClickHandler,
-}) => {
+const Button: React.FC<ButtonProps> = ({ type, title, href, img, theme, onClickHandler }) => {
   const { appTheme, setAppTheme } = useContext(AppContext)
-
-  const buttonTypeName = 'Button__' + ButtonType[type]
-  const buttonClassNames =
-    'Button ' + buttonTypeName + ' ' + buttonTypeName + '--' + Theme[appTheme]
+  const [buttonTheme, setButtonTheme] = useState<string>(Theme[Theme.Dark])
 
   const buttonClick = (e: ReactEl) => {
     if (onClickHandler) {
@@ -42,19 +32,27 @@ const Button: React.FC<ButtonProps> = ({
     }
   }
 
+  useEffect(() => {
+    if (ButtonType.ThemeChanger && theme !== undefined) {
+      setButtonTheme(Theme[theme])
+    } else {
+      setButtonTheme(theme ? Theme[theme] : Theme[appTheme])
+    }
+  })
+
+  const buttonTypeName = `Button__${ButtonType[type]}`
+
   return (
-    <div className={buttonClassNames}>
-      <a
-        target='_blank'
-        rel='noopener noreferrer'
-        href={href}
-        className={buttonTypeName + '--link'}
-        onClick={e => buttonClick(e)}
-      >
-        {title}
-      </a>
-      {img ? <img className={buttonTypeName + '--img'} src={img} alt='button'></img> : ''}
-    </div>
+    <a
+      className={`Button ${buttonTypeName} ${buttonTypeName}--${buttonTheme}`}
+      target='_blank'
+      rel='noopener noreferrer'
+      href={href}
+      onClick={e => buttonClick(e)}
+    >
+      {img ? <img className={`${buttonTypeName}--img`} src={img} alt='button'></img> : ''}
+      {title}
+    </a>
   )
 }
 

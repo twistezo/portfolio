@@ -1,11 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Quicksand:400');
+@import './globalStyles/colors';
 
 body {
+  &.body {
+    &--Dark {
+      background-color: $color-graphite;
+    }
+    &--Light {
+      background-color: $color-white;
+    }
+  }
+
   margin: 0;
+  overflow-x: hidden;
+
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-
-  background-color: #343a40;
-
-  overflow-x:hidden;
 }

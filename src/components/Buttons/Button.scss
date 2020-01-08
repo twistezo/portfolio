@@ -1,41 +1,73 @@
+@import '../../globalStyles/colors';
+
 .Button {
   display: inline-flex;
 
   &__Standard {
-    &--link {
-      font-size: 14px;
-      font-weight: 400;
-      letter-spacing: 1px;
-      text-decoration: none;
-      padding: 8px 24px;
-      cursor: pointer;
-
-      &:visited {
-        color: inherit;
-      }
-    }
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 8px 24px;
+    cursor: pointer;
 
     &--Light {
-      background-color: #dadfe1;
-      color: #000;
+      background-color: $color-gray-light;
 
       &:active,
       &:hover,
       &:focus {
-        background-color: #da0600;
-        color: #fff;
+        background-color: $color-red;
+        color: $color-white;
+      }
+
+      color: $color-black;
+    }
+
+    &--Dark {
+      background-color: $color-gray-dark;
+
+      &:active,
+      &:hover,
+      &:focus {
+        background-color: $color-orange;
+        color: $color-black;
+      }
+
+      color: $color-white;
+    }
+  }
+
+  &__ThemeChanger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 25px;
+    width: 90px;
+    cursor: pointer;
+
+    &--img {
+      height: 40px;
+    }
+
+    &--Light {
+      border-bottom: 1px solid $color-orange;
+
+      &:hover {
+        background-color: $color-orange;
       }
     }
 
     &--Dark {
-      background-color: #777;
-      color: #f5f5f5;
+      border-bottom: 1px solid $color-red;
 
-      &:active,
-      &:hover,
-      &:focus {
-        background-color: orange;
-        color: #000;
+      &:hover {
+        background-color: $color-red;
+        color: $color-black;
+
+        img {
+          filter: invert(1);
+        }
       }
     }
   }
