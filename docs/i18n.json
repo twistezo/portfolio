@@ -215,6 +215,10 @@
     "pl": "czasami Ruby i Ruby on Rails",
     "en": "sometimes Ruby and Ruby on Rails"
   },
+  "i18nExpCodest4": {
+    "pl": "Od 03.2020",
+    "en": "From 03.2020"
+  },
   "i18nProjects0": {
     "pl": "próbki kodu",
     "en": "code samples"
