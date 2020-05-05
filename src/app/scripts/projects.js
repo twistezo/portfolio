@@ -5,9 +5,9 @@ class Projects {
     {
       repositoryOwner(login: "twistezo") {
         ... on User {
-          pinnedRepositories(first: 6) {
-            edges {
-              node {
+          pinnedItems(first: 6, types: REPOSITORY) {
+            nodes {
+              ... on Repository {
                 object(expression: "master:readme.md") {
                   ... on Blob {
                     text
@@ -53,19 +53,21 @@ class Projects {
     }
 
     let unwrappedData = []
-    const repositoriesArray = data.data.repositoryOwner.pinnedRepositories.edges
+    const repositoriesArray = data.data.repositoryOwner.pinnedItems.nodes
+
     repositoriesArray.forEach(repository => {
-      const repositoryNodeObject = repository.node.object
-      const parsedTools = this._parseTools(repository.node.object.text)
+      const repositoryNodeObject = repository.object
+      const parsedTools = this._parseTools(repository.object.text)
       const tools =
         repositoryNodeObject === null || parsedTools === null
           ? ''
-          : this._parseTools(repository.node.object.text)
+          : this._parseTools(repository.object.text)
+
       unwrappedData.push({
-        name: repository.node.name,
-        description: repository.node.description,
+        name: repository.name,
+        description: repository.description,
         tools,
-        url: repository.node.url
+        url: repository.url
       })
     })
     return unwrappedData
@@ -99,8 +101,7 @@ class Projects {
     let updatedCards = document.getElementsByClassName('card')
     for (let i = 0; i < data.length; i++) {
       updatedCards[i].querySelector('.card-title').innerHTML = data[i].name
-      updatedCards[i].querySelector('.card-text').innerHTML =
-        data[i].description
+      updatedCards[i].querySelector('.card-text').innerHTML = data[i].description
 
       // convert string ex. `java, spring` to `#java #spring`
       data[i].tools
