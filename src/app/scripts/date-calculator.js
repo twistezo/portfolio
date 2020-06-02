@@ -16,9 +16,13 @@ class DateCalculator {
     }
 
     // experience dates
+    this._Yieldbird = {
+      from: new Date(2020, 5),
+      to: this._todayDate
+    }
     this._Codest = {
       from: new Date(2019, 4),
-      to: this._todayDate
+      to: new Date(2020, 5)
     }
     this._Simteract = {
       from: new Date(2017, 0),
@@ -45,6 +49,13 @@ class DateCalculator {
   }
 
   _render = currentLang => {
+    document.getElementById(
+      'exp-yieldbird-diff'
+    ).innerHTML = this.generateDiffWithLang(
+      this._Yieldbird.from,
+      this._Yieldbird.to,
+      currentLang
+    )
     document.getElementById(
       'exp-codest-diff'
     ).innerHTML = this.generateDiffWithLang(
@@ -77,7 +88,7 @@ class DateCalculator {
       'total-exp-it'
     ).innerHTML = this.generateDiffWithLang(
       this._Simteract.from,
-      this._Codest.to,
+      this._Yieldbird.to,
       currentLang
     )
     document.getElementById(

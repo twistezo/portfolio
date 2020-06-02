@@ -203,13 +203,9 @@
     "pl": "w Codest - Kraków",
     "en": "at Codest - Kraków"
   },
-  "i18nExpCodest1": {
-    "pl": "Od 04.2019",
-    "en": "From 04.2019"
-  },
   "i18nExpCodest2": {
-    "pl": "Tworzenie aplikacji webowych dla firm z branży e-commerce, FinTech i AdTech.",
-    "en": "Creating Web applications for e-commerce, FinTech and AdTech companies."
+    "pl": "Tworzenie aplikacji webowych w software house specjalizującym się w budowaniu produktów od podstaw.",
+    "en": "Creating Web applications in software house specialized in building custom products from scratch."
   },
   "i18nExpCodest3": {
     "pl": "czasami Ruby i Ruby on Rails",
@@ -218,6 +214,22 @@
   "i18nExpCodest4": {
     "pl": "Od 03.2020",
     "en": "From 03.2020"
+  },
+  "i18nExpCodest5": {
+    "pl": "Branże FinTech i AdTech, e-commerce, airlines",
+    "en": "FinTech and AdTech companies, e-commerce, airlines"
+  },
+  "i18nExpYieldbird1": {
+    "pl": "Od 06.2020",
+    "en": "From 06.2020"
+  },
+  "i18nExpYieldbird2": {
+    "pl": "w Yieldbird - Warszawa",
+    "en": "at Yieldbird - Warszawa"
+  },
+  "i18nExpYieldbird3": {
+    "pl": "Tworzenie aplikacji webowych dla firm z branży AdTech.",
+    "en": "Creating Web applications for AdTech companies."
   },
   "i18nProjects0": {
     "pl": "próbki kodu",
