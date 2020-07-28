@@ -1,9 +1,6 @@
-<div style="color: red; font-weight: bold;">
-   This project is no longer maintained.
+**This project is no longer maintained!**
 
-Currently it's a complete draft for portfolio website in three versions.
-
-</div>
+**Currently it's a complete draft for portfolio website in three versions.**
 
 ---
 
