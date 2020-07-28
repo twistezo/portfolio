@@ -31,15 +31,8 @@ class TextScramble {
         let child = document.createElement('span')
         el.appendChild(child)
       })
-      let childs = [
-        ...document.querySelectorAll('.' + this._domClass + ' > span')
-      ]
-      this._drawSentence(
-        text,
-        childs,
-        this._symbolChangeTime,
-        this._oneLetterTime
-      )
+      let childs = [...document.querySelectorAll('.' + this._domClass + ' > span')]
+      this._drawSentence(text, childs, this._symbolChangeTime, this._oneLetterTime)
 
       await this._delay(childs.length * this._oneLetterTime + this._nextDelay)
       while (el.firstChild) {
@@ -77,9 +70,7 @@ class TextScramble {
 
   _fillSpanWithSymbol = childs => {
     if (childs.length > 0)
-      this._randomArrayItem(childs).innerText = this._randomArrayItem(
-        this._symbols
-      )
+      this._randomArrayItem(childs).innerText = this._randomArrayItem(this._symbols)
   }
 
   _randomArrayItem = array => array[Math.floor(Math.random() * array.length)]

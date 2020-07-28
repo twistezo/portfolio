@@ -14,22 +14,17 @@ class I18n {
 
   init = () => {
     let browserLanguage = this._getBrowserLanguage()
-    if (
-      browserLanguage === this._Language.PL ||
-      browserLanguage === this._Language.PL_2
-    ) {
+    if (browserLanguage === this._Language.PL || browserLanguage === this._Language.PL_2) {
       this._currentLanguage = this._Language.PL
     }
-    
+
     this._initButtonsBehaviour()
     this._setLanguage(this._currentLanguage)
     this.render()
   }
 
   _getBrowserLanguage = () =>
-    navigator.languages != undefined
-      ? navigator.languages[0]
-      : navigator.language
+    navigator.languages != undefined ? navigator.languages[0] : navigator.language
 
   _setLanguage = chosenLanguage => {
     if (chosenLanguage === 'pl') {

@@ -8,10 +8,8 @@ import CookieWarning from '../scripts/cookie-warning'
 import TextScramble from './scramble'
 import { noBugsAsciiArt } from './no-bugs-ascii-art'
 import 'parsleyjs'
-
 import 'bootstrap/js/dist/collapse'
 import 'bootstrap/js/dist/scrollspy'
-
 import '../styles/_index.scss'
 
 export default class App {
@@ -29,20 +27,20 @@ export default class App {
     new CookieWarning().init()
     new TextScramble(
       'textScramble',
-      ['Łukasz Kółko', 'Rust developer', 'JavaScript developer', 'Software developer'],
+      ['Lorem ipsum 1', 'Lorem ipsum 2', 'Lorem ipsum 3'],
       5,
       100,
       1500
     )
     console.log(noBugsAsciiArt) // eslint-disable-line no-console
-    window.location.hash = '🙈🙊🙉';
+    window.location.hash = '🙈🙊🙉'
   }
 
   _initSmoothScrolling = () => {
-    const parent = this;
+    const parent = this
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
+      anchor.addEventListener('click', function (e) {
         e.preventDefault()
         const hrefAttr = this.getAttribute('href')
 
@@ -54,7 +52,7 @@ export default class App {
           })
         }
 
-        parent._setUrlWithEmoji(hrefAttr);
+        parent._setUrlWithEmoji(hrefAttr)
       })
     })
   }
@@ -62,23 +60,23 @@ export default class App {
   _setUrlWithEmoji(hrefAttr) {
     switch (hrefAttr) {
       case '#about-me':
-        window.location.hash = '👽';
-        break;
+        window.location.hash = '👽'
+        break
       case '#skills':
-        window.location.hash = '🎓';
-        break;
+        window.location.hash = '🎓'
+        break
       case '#experience':
-        window.location.hash = '💰';
-        break;
+        window.location.hash = '💰'
+        break
       case '#projects':
-        window.location.hash = '🚀‍';
-        break;
+        window.location.hash = '🚀‍'
+        break
       case '#references':
-        window.location.hash = '📜';
-        break;
+        window.location.hash = '📜'
+        break
       case '#contact':
-        window.location.hash = '📞';
-        break;
+        window.location.hash = '📞'
+        break
     }
   }
 
@@ -134,6 +132,7 @@ export default class App {
       lightBtn.classList.toggle('vibrate')
     }
     vibrateLightBtn()
+
     let interval = setInterval(() => {
       vibrateLightBtn()
       darkBtn.classList.toggle('vibrate')
@@ -150,12 +149,15 @@ export default class App {
     lightBtn.addEventListener('click', e => {
       e.preventDefault()
       clearInterval(interval)
+
       body.classList.remove('dark-mode')
       body.classList.add('light-mode')
     })
+
     darkBtn.addEventListener('click', e => {
       e.preventDefault()
       clearInterval(interval)
+
       body.classList.remove('light-mode')
       body.classList.add('dark-mode')
     })

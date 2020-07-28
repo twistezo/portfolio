@@ -6,14 +6,11 @@
       <span class="square-bracket">/&gt;</span>
     </h3>
   </div>
+
   <div data-aos="fade-up" data-aos-delay="150" class="container-fluid">
     <div class="row">
       <div class="col-12 col-sm-10 col-md-8 col-lg-7 col-xl-5 mx-auto">
-        <form
-          id="contact-form"
-          method="POST"
-          action="https://formspree.io/kolkolukasz@gmail.com"
-        >
+        <form id="contact-form" method="POST" action="https://formspree.io/{type-your-email-here}">
           <div class="form-row">
             <div class="form-group col-xl-6">
               <input
@@ -27,6 +24,7 @@
                 data-parsley-error-message="Poprawny format: example@gmail.com"
               />
             </div>
+
             <div class="form-group col-xl-6">
               <input
                 type="phone"
@@ -40,6 +38,7 @@
               />
             </div>
           </div>
+
           <div class="form-group">
             <textarea
               class="form-control"
@@ -54,12 +53,9 @@
               data-parsley-error-message="Wymagana ilość znaków pom. 10-500"
             ></textarea>
           </div>
+
           <div class="row justify-content-end submit-button">
-            <button
-              type="submit"
-              class="btn btn-primary btn-sm"
-              value="validate"
-            >
+            <button type="submit" class="btn btn-primary btn-sm" value="validate">
               <span class="i18nContact3"></span>
             </button>
           </div>

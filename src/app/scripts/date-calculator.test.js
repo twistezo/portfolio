@@ -34,43 +34,31 @@ test('_formatMonthsWithLocale', () => {
 })
 
 test('generateDiffWithLang with real data', () => {
-  expect(
-    dc.generateDiffWithLang(dc._Simteract.from, dc._Simteract.to, dc._Locale.Pl)
-  ).toBe('(2 lata, 4 miesiące)')
-  expect(
-    dc.generateDiffWithLang(
-      dc._RedRooster.from,
-      dc._RedRooster.to,
-      dc._Locale.Pl
-    )
-  ).toBe('(2 lata, 6 miesięcy)')
-  expect(
-    dc.generateDiffWithLang(dc._Wedzony.from, dc._Wedzony.to, dc._Locale.Pl)
-  ).toBe('(6 miesięcy)')
+  expect(dc.generateDiffWithLang(dc._Simteract.from, dc._Simteract.to, dc._Locale.Pl)).toBe(
+    '(2 lata, 4 miesiące)'
+  )
+  expect(dc.generateDiffWithLang(dc._RedRooster.from, dc._RedRooster.to, dc._Locale.Pl)).toBe(
+    '(2 lata, 6 miesięcy)'
+  )
+  expect(dc.generateDiffWithLang(dc._Wedzony.from, dc._Wedzony.to, dc._Locale.Pl)).toBe(
+    '(6 miesięcy)'
+  )
 })
 
 test('generateDiffWithLang with test data', () => {
-  expect(
-    dc.generateDiffWithLang(
-      new Date(2017, 0),
-      new Date(2018, 11),
-      dc._Locale.Pl
-    )
-  ).toBe('(2 lata)')
-  expect(
-    dc.generateDiffWithLang(new Date(2011, 0), new Date(2018, 0), dc._Locale.Pl)
-  ).toBe('(7 lat)')
-  expect(
-    dc.generateDiffWithLang(new Date(2018, 2), new Date(2019, 6), dc._Locale.Pl)
-  ).toBe('(1 rok, 5 miesięcy)')
-  expect(
-    dc.generateDiffWithLang(new Date(2017, 2), new Date(2019, 8), dc._Locale.Pl)
-  ).toBe('(2 lata, 7 miesięcy)')
-  expect(
-    dc.generateDiffWithLang(
-      new Date(2017, 2),
-      new Date(2019, 11),
-      dc._Locale.Pl
-    )
-  ).toBe('(2 lata, 10 miesięcy)')
+  expect(dc.generateDiffWithLang(new Date(2017, 0), new Date(2018, 11), dc._Locale.Pl)).toBe(
+    '(2 lata)'
+  )
+  expect(dc.generateDiffWithLang(new Date(2011, 0), new Date(2018, 0), dc._Locale.Pl)).toBe(
+    '(7 lat)'
+  )
+  expect(dc.generateDiffWithLang(new Date(2018, 2), new Date(2019, 6), dc._Locale.Pl)).toBe(
+    '(1 rok, 5 miesięcy)'
+  )
+  expect(dc.generateDiffWithLang(new Date(2017, 2), new Date(2019, 8), dc._Locale.Pl)).toBe(
+    '(2 lata, 7 miesięcy)'
+  )
+  expect(dc.generateDiffWithLang(new Date(2017, 2), new Date(2019, 11), dc._Locale.Pl)).toBe(
+    '(2 lata, 10 miesięcy)'
+  )
 })

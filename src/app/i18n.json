@@ -1,32 +1,21 @@
 {
   "i18nAboutMe0": {
-    "pl": "Znajdziesz tutaj krótkie podsumowanie moich umiejętności, używanych przeze mnie narzędzi, wybrane projekty, referencje oraz przebieg edukacji i kariery zawodowej.",
-    "en": "You will find here a short summary of my skills, tools used by me, selected projects, references and the course of my education and career."
+    "pl": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec turpis posuere, porttitor arcu nec, posuere quam. Quisque porttitor vitae ligula et fringilla. Nullam nec cursus massa, ut egestas arcu. Phasellus molestie ex non orci venenatis, sed ultricies velit pretium. Donec pretium urna ac eros iaculis, eget lacinia sem commodo.",
+    "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec turpis posuere, porttitor arcu nec, posuere quam. Quisque porttitor vitae ligula et fringilla. Nullam nec cursus massa, ut egestas arcu. Phasellus molestie ex non orci venenatis, sed ultricies velit pretium. Donec pretium urna ac eros iaculis, eget lacinia sem commodo."
   },
   "i18nAboutMe1": {
-    "pl": "Każdy projekt posiada odnośnik do GitHuba, gdzie znajdziesz szczegółowy opis oraz kod źródłowy.",
-    "en": "Each project has a link to my GitHub profile where you will find a detailed description and source code."
-  },
-  "i18nAboutMe2": {
-    "pl": "W technikum oraz na studiach miałem styczność z Asemblerem, C, C++, MATLAB, JavaScript, HTML, CSS, programowaniem mikrokontrolerów oraz sterowników PLC. Później pracując przez trzy lata jako projektant maszyn i urządzeń hobbystycznie programowałem, co szybko przerodziło się z pasji w pracę.",
-    "en": "In high school and at university I had contact with Assembler, C, C ++, MATLAB, JavaScript, HTML, CSS, programming of microcontrollers and PLC controllers. Later working for three years as a Mechanical Design Engineer I programmed hobbyistically and its quickly turned from passion into work."
-  },
-  "i18nAboutMe3": {
-    "pl": "Obecnie zawodowo używam głównie technologii związanych z językiem Rust i JavaScript.",
-    "en": "At present I professionally use mainly technologies related to the Rust and JavaScript programming languages."
-  },
-  "i18nAboutMe5": {
     "pl": "wybierz swoją stronę",
     "en": "choose your side"
   },
-  "i18nAboutMe6": {
+  "i18nAboutMe2": {
     "pl": "jasna",
     "en": "light"
   },
-  "i18nAboutMe7": {
+  "i18nAboutMe3": {
     "pl": "ciemna",
     "en": "dark"
   },
+
   "i18nNavbar0": {
     "pl": "o mnie",
     "en": "about me"
@@ -51,198 +40,103 @@
     "pl": "kontakt",
     "en": "contact"
   },
+
   "i18nSkills0": {
     "pl": "umiejętności",
     "en": "skills"
   },
+  "i18nSkills1": {
+    "pl": "Lorem ipsum 1",
+    "en": "Lorem ipsum 1"
+  },
   "i18nSkills2": {
-    "pl": "bazy danych",
-    "en": "databases"
+    "pl": "Lorem ipsum 2",
+    "en": "Lorem ipsum 2"
   },
   "i18nSkills3": {
-    "pl": "testy",
-    "en": "tests"
+    "pl": "Lorem ipsum 3",
+    "en": "Lorem ipsum 3"
   },
   "i18nSkills4": {
-    "pl": "grafika",
-    "en": "graphics"
+    "pl": "Lorem ipsum 4",
+    "en": "Lorem ipsum 4"
   },
   "i18nSkills5": {
-    "pl": "ulubione narzędzia",
-    "en": "favorite tools"
+    "pl": "Lorem ipsum 5",
+    "en": "Lorem ipsum 5"
   },
-  "i18nExperience0a": {
+  "i18nSkills6": {
+    "pl": "Lorem ipsum 6",
+    "en": "Lorem ipsum 6"
+  },
+  "i18nSkills7": {
+    "pl": "Lorem ipsum 7",
+    "en": "Lorem ipsum 7"
+  },
+
+  "i18nExperience0": {
     "pl": "doświadczenie",
     "en": "experience"
   },
-  "i18nExperience0b": {
+  "i18nExperience1": {
     "pl": "Suma IT",
     "en": "Total IT"
   },
-  "i18nExperience0c": {
-    "pl": "Suma CAD",
-    "en": "Total CAD"
+  "i18nExperience2": {
+    "pl": "w Lorem ipsum",
+    "en": "at Lorem ipsum"
   },
-  "i18nExperience1b": {
-    "pl": "Rust developer",
-    "en": "Rust developer"
+  "i18nExperience3": {
+    "pl": "Lorem ipsum",
+    "en": "Lorem ipsum"
   },
-  "i18nExperience1c": {
-    "pl": " w Simteract - Rzeszów",
-    "en": " at Simteract - Rzeszów"
+  "i18nExperience4": {
+    "pl": "Lorem ipsum",
+    "en": "Lorem ipsum"
   },
-  "i18nExperience1d": {
-    "pl": "Długoterminowy projekt symulacji rzeczywistego ruchu drogowego oparty na sztucznej inteligencji i prawdziwych mapach.",
-    "en": "Long-term project of real traffic simulator based on artificial intelligence and real maps."
+  "i18nExperience5": {
+    "pl": "w Lorem ipsum",
+    "en": "at Lorem ipsum"
   },
-  "i18nExperience1f": {
-    "pl": "algorytmy sztucznej inteligencji",
-    "en": "AI algorithms"
-  },
-  "i18nExperience1g": {
-    "pl": "algorytmy do przetwarzania danych geograficznych",
-    "en": "algorithms for geographic data processing"
-  },
-  "i18nExperience1h": {
-    "pl": "grafika 3D czasu rzeczywistego",
-    "en": "realtime 3D graphics"
-  },
-  "i18nExperience1k": {
-    "pl": "głównie język Rust",
-    "en": "mostly Rust language"
-  },
-  "i18nExperience1l": {
-    "pl": "czasami C# (Unity) oraz C",
-    "en": "sometimes C# (Unity) and C"
-  },
-  "i18nExperience2a": {
-    "pl": "Tworzenie poprawek i ulepszeń do różnych projektów webowych.",
-    "en": "Making fixes and improvements for various web projects."
-  },
-  "i18nExperience2c": {
-    "pl": "głównie JavaScript, HTML oraz CSS",
-    "en": "mostly JavaScript, HTML and CSS"
-  },
-  "i18nExperience2d": {
-    "pl": "czasami React oraz Angular",
-    "en": "sometimes React and Angular"
+  "i18nExperience6": {
+    "pl": "Lorem ipsum",
+    "en": "Lorem ipsum"
   },
   "i18nExperience7": {
-    "pl": "w Red Rooster - Kraków",
-    "en": "at Red Rooster - Kraków"
+    "pl": "Lorem ipsum",
+    "en": "Lorem ipsum"
   },
   "i18nExperience8": {
-    "pl": "projektowanie maszyn i urządzeń dla branży Offshore",
-    "en": "designing lifting & measuring equipments for oil industry"
+    "pl": "w Lorem ipsum",
+    "en": "at Lorem ipsum"
   },
   "i18nExperience9": {
-    "pl": "modelowanie 3D w Inventor",
-    "en": "drawing, 3D modeling in Inventor"
+    "pl": "Lorem ipsum",
+    "en": "Lorem ipsum"
   },
   "i18nExperience10": {
-    "pl": "obliczenia wytrzymałościowe + MES",
-    "en": "manual strength calculating + FEA"
+    "pl": "Lorem ipsum",
+    "en": "Lorem ipsum"
   },
   "i18nExperience11": {
-    "pl": "wizualizacje 3D produktów w Autodesk Showcase i Adobe Photoshop",
-    "en": "making 3D product visualizations in Showcase, Photoshop"
+    "pl": "Od",
+    "en": "From"
   },
-  "i18nExperience12": {
-    "pl": "animacje produktów w Adobe Premiere",
-    "en": "making product animation in Premiere"
-  },
-  "i18nExperience13": {
-    "pl": " w T. Wędzony Firma Inż. - Kraków",
-    "en": " at T. Wędzony Firma Inż. - Kraków"
-  },
-  "i18nExperience14": {
-    "pl": "projektowanie maszyn przemysłowych opartych o systemy wizyjne",
-    "en": "designing industrial machines based on optical systems"
-  },
-  "i18nExperience15": {
-    "pl": "modelowanie 3D w SolidWorks",
-    "en": "drawing, 3D modeling in SolidWorks"
-  },
-  "i18nExperience16": {
-    "pl": "obliczenia wytrzymałościowe",
-    "en": "manual strength calculating"
-  },
-  "i18nExperience17": {
-    "pl": "Politechnika Krakowska -",
-    "en": "Cracow University of Technology -"
-  },
-  "i18nExperience18": {
-    "pl": "mgr inż.",
-    "en": "MEng"
-  },
-  "i18nExperience19": {
-    "pl": "kier. Automatyka i robotyka",
-    "en": "major: Automatics and Robotics"
-  },
-  "i18nExperience20": {
-    "pl": "spec. Technologie informacyjne w systemach produkcyjnych",
-    "en": "specialty: Information technologies in production"
-  },
-  "i18nExperience21": {
-    "pl": "Politechnika Rzeszowska -",
-    "en": "Rzeszow University of Technology -"
-  },
-  "i18nExperience22": {
-    "pl": "inż.",
-    "en": "BEng"
-  },
-  "i18nExperience23": {
-    "pl": "kier. Mechatronika",
-    "en": "major: Mechatronics"
-  },
-  "i18nExperience24": {
-    "pl": "spec. Informatyka i robotyka",
-    "en": "specialty: Informatics and Robotics"
-  },
-  "i18nExpCodest0": {
-    "pl": "w Codest - Kraków",
-    "en": "at Codest - Kraków"
-  },
-  "i18nExpCodest2": {
-    "pl": "Tworzenie aplikacji webowych w software house specjalizującym się w budowaniu produktów od podstaw.",
-    "en": "Creating Web applications in software house specialized in building custom products from scratch."
-  },
-  "i18nExpCodest3": {
-    "pl": "czasami Ruby i Ruby on Rails",
-    "en": "sometimes Ruby and Ruby on Rails"
-  },
-  "i18nExpCodest4": {
-    "pl": "Od 03.2020",
-    "en": "From 03.2020"
-  },
-  "i18nExpCodest5": {
-    "pl": "Branże FinTech i AdTech, e-commerce, airlines",
-    "en": "FinTech and AdTech companies, e-commerce, airlines"
-  },
-  "i18nExpYieldbird1": {
-    "pl": "Od 06.2020",
-    "en": "From 06.2020"
-  },
-  "i18nExpYieldbird2": {
-    "pl": "w Yieldbird - Warszawa",
-    "en": "at Yieldbird - Warszawa"
-  },
-  "i18nExpYieldbird3": {
-    "pl": "Tworzenie aplikacji webowych dla firm z branży AdTech.",
-    "en": "Creating Web applications for AdTech companies."
-  },
+
   "i18nProjects0": {
     "pl": "próbki kodu",
     "en": "code samples"
   },
-  "i18nProjects13": {
+  "i18nProjects2": {
     "pl": "więcej",
     "en": "more"
   },
+
   "i18nReferences0": {
     "pl": "referencje",
     "en": "references"
   },
+
   "i18nContact0": {
     "pl": "kontakt",
     "en": "contact"
@@ -259,6 +153,7 @@
     "pl": "wyślij",
     "en": "send"
   },
+
   "i18nCookieWarning0": {
     "pl": "Strona wykorzystuje pliki cookies oraz podobne technologie m.in. w celach statystycznych.",
     "en": "This site uses cookies and similar technologies among others for statistical purposes."

@@ -26,15 +26,11 @@ class CookieWarning {
   }
 
   _hideOnClickCookieWarning = () => {
-    document
-      .querySelector('.btn-cookie-warning')
-      .addEventListener('click', e => {
-        e.preventDefault()
-        document
-          .querySelector('.cookie-warning')
-          .classList.add('roll-out-right')
-        this._createCookie(this._cookieWarningName, 1, 30)
-      })
+    document.querySelector('.btn-cookie-warning').addEventListener('click', e => {
+      e.preventDefault()
+      document.querySelector('.cookie-warning').classList.add('roll-out-right')
+      this._createCookie(this._cookieWarningName, 1, 30)
+    })
   }
 
   _createCookie = (name, value, days) => {

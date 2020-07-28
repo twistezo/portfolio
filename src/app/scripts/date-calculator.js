@@ -3,38 +3,21 @@ class DateCalculator {
     this._todayDate = new Date()
     this._todayDate.setMonth(this._todayDate.getMonth() - 1) // for natural calculations
     this._Locale = {
-      Pl: [
-        'miesiąc',
-        'miesiące',
-        'miesięcy',
-        'rok',
-        'lata',
-        'lat',
-        'mniej niż'
-      ],
+      Pl: ['miesiąc', 'miesiące', 'miesięcy', 'rok', 'lata', 'lat', 'mniej niż'],
       En: ['month', 'months', 'months', 'year', 'years', 'years', 'less than']
     }
 
-    // experience dates
-    this._Yieldbird = {
-      from: new Date(2020, 5),
-      to: this._todayDate
+    this._company0 = {
+      from: new Date(2010, 0),
+      to: new Date(2013, 5)
     }
-    this._Codest = {
-      from: new Date(2019, 4),
-      to: new Date(2020, 5)
+    this._comapany1 = {
+      from: new Date(2013, 7),
+      to: new Date(2016, 12)
     }
-    this._Simteract = {
+    this._company2 = {
       from: new Date(2017, 0),
-      to: new Date(2019, 3)
-    }
-    this._RedRooster = {
-      from: new Date(2014, 6),
-      to: new Date(2016, 11)
-    }
-    this._Wedzony = {
-      from: new Date(2014, 0),
-      to: new Date(2014, 5)
+      to: this._todayDate
     }
   }
 
@@ -49,53 +32,17 @@ class DateCalculator {
   }
 
   _render = currentLang => {
-    document.getElementById(
-      'exp-yieldbird-diff'
-    ).innerHTML = this.generateDiffWithLang(
-      this._Yieldbird.from,
-      this._Yieldbird.to,
-      currentLang
-    )
-    document.getElementById(
-      'exp-codest-diff'
-    ).innerHTML = this.generateDiffWithLang(
-      this._Codest.from,
-      this._Codest.to,
-      currentLang
-    )
-    document.getElementById(
-      'exp-simteract-diff'
-    ).innerHTML = this.generateDiffWithLang(
-      this._Simteract.from,
-      this._Simteract.to,
-      currentLang
-    )
-    document.getElementById(
-      'exp-redrooster-diff'
-    ).innerHTML = this.generateDiffWithLang(
-      this._RedRooster.from,
-      this._RedRooster.to,
-      currentLang
-    )
-    document.getElementById(
-      'exp-wedzony-diff'
-    ).innerHTML = this.generateDiffWithLang(
-      this._Wedzony.from,
-      this._Wedzony.to,
-      currentLang
-    )
-    document.getElementById(
-      'total-exp-it'
-    ).innerHTML = this.generateDiffWithLang(
-      this._Simteract.from,
-      this._Yieldbird.to,
-      currentLang
-    )
-    document.getElementById(
-      'total-exp-cad'
-    ).innerHTML = this.generateDiffWithLang(
-      this._Wedzony.from,
-      this._RedRooster.to,
+    for (let i of Array(3).keys()) {
+      document.getElementById(`exp-company${i}-diff`).innerHTML = this.generateDiffWithLang(
+        this._company0.from,
+        this._company0.to,
+        currentLang
+      )
+    }
+
+    document.getElementById('total-exp').innerHTML = this.generateDiffWithLang(
+      this._company0.from,
+      this._company2.to,
       currentLang
     )
   }

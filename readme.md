@@ -1,8 +1,19 @@
+<div style="color: red; font-weight: bold;">
+   This project is no longer maintained.
+
+Currently it's a complete draft for portfolio website in three versions.
+
+</div>
+
+---
+
 ## Portfolio
 
 [![Build Status](https://travis-ci.org/twistezo/portfolio.svg?branch=master)](https://travis-ci.org/twistezo/portfolio)
 
-My programming portfolio website. Check [live](https://twistezo.github.io/portfolio) version.
+Portfolio website draft.
+
+[Live](https://twistezo.github.io/portfolio) version.
 
 ### History
 
